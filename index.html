@@ -620,71 +620,46 @@
       white-space: nowrap;
     }
 
-    /* ===== STATS STRIP ===== */
-    .stats-strip {
-      background: var(--bg);
-      padding: 5rem 8% 5.5rem;
-      position: relative;
-      overflow: hidden;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-    .stats-strip::before {
-      content: '';
-      position: absolute; inset: 0; pointer-events: none;
-      background-image:
-        linear-gradient(rgba(245,237,220,0.014) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(245,237,220,0.014) 1px, transparent 1px);
-      background-size: 56px 56px;
-    }
-    .stats-strip > * { position: relative; z-index: 1; }
-    .stats-eyebrow {
-      font-family: var(--heading); font-size: 0.74rem; font-weight: 500;
-      letter-spacing: 0.26em; text-transform: uppercase; color: var(--olive-soft);
-      display: flex; align-items: center; justify-content: center; gap: 0.85rem;
-      margin-bottom: 3rem;
-    }
-    .stats-eyebrow::before, .stats-eyebrow::after {
-      content: ''; flex: 1; max-width: 80px; height: 1px;
-      background: linear-gradient(to right, transparent, var(--olive), transparent);
-    }
-    .stats-grid {
+    /* ===== EXPERIENCE STATS HIGHLIGHTS (inline above timeline) ===== */
+    .exp-stats {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 0;
-      align-items: end;
+      margin-bottom: 4rem;
+      padding: 2.4rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
     }
-    .stat-cell {
-      padding: 0 1.5rem;
+    .exp-stat {
+      padding: 0 1.25rem;
       border-right: 1px solid var(--border);
-      text-align: center;
+      text-align: left;
       position: relative;
       transition: transform 0.4s ease;
     }
-    .stat-cell:last-child { border-right: none; }
-    .stat-cell:hover { transform: translateY(-4px); }
-    .stat-num {
+    .exp-stat:last-child { border-right: none; }
+    .exp-stat:hover { transform: translateY(-3px); }
+    .exp-stat-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      font-size: clamp(2.4rem, 4.6vw, 3.8rem);
       font-weight: 400;
       line-height: 1;
       color: var(--cream);
       letter-spacing: -0.01em;
       font-variant-numeric: tabular-nums;
-      margin-bottom: 0.5rem;
-      position: relative;
+      margin-bottom: 0.55rem;
       display: inline-block;
     }
-    .stat-num .accent { color: var(--olive-soft); }
-    .stat-num .small { font-size: 0.55em; color: var(--olive-soft); }
-    .stat-label {
+    .exp-stat-num .accent { color: var(--olive-soft); }
+    .exp-stat-num .small { font-size: 0.55em; color: var(--olive-soft); }
+    .exp-stat-label {
       font-family: var(--heading);
-      font-size: 0.74rem;
+      font-size: 0.7rem;
       font-weight: 500;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: rgba(245,237,220,0.6);
-      line-height: 1.4;
+      line-height: 1.45;
     }
 
     /* ===== MOUNTAIN DIVIDER (from Mullen's sign motif) ===== */
@@ -1132,9 +1107,9 @@
       .pillars-strip { grid-template-columns: repeat(2, 1fr); }
       .pillar-item:nth-child(2) { border-right: none; }
       .pillar-item:nth-child(1), .pillar-item:nth-child(2) { border-bottom: 1px solid rgba(245,237,220,0.07); }
-      .stats-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2.5rem; }
-      .stat-cell:nth-child(3) { border-right: none; }
-      .stat-cell:nth-child(4), .stat-cell:nth-child(5) { padding-top: 0; }
+      .exp-stats { grid-template-columns: repeat(3, 1fr); row-gap: 2rem; }
+      .exp-stat:nth-child(3) { border-right: none; }
+      .exp-stat:nth-child(4), .exp-stat:nth-child(5) { padding-top: 0; }
     }
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 90px; }
@@ -1161,11 +1136,10 @@
       .connect-heading { font-size: clamp(2.2rem, 7vw, 3rem); }
     }
     @media (max-width: 768px) {
-      .stats-strip { padding: 3rem 5% 3.5rem; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 2.5rem; }
-      .stat-cell { border-right: none !important; padding: 0 0.5rem; }
-      .stat-cell:nth-child(odd) { border-right: 1px solid var(--border) !important; }
-      .stat-cell:nth-child(5) { grid-column: 1 / -1; }
+      .exp-stats { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; padding: 1.75rem 0; margin-bottom: 3rem; }
+      .exp-stat { border-right: none !important; padding: 0 0.5rem; }
+      .exp-stat:nth-child(odd) { border-right: 1px solid var(--border) !important; }
+      .exp-stat:nth-child(5) { grid-column: 1 / -1; }
       .countdown { display: none; }
       section, .issues, .recognition, .updates, .connect-section { padding: 4rem 5%; }
       .experience, .bio-content { padding: 4rem 5%; }
@@ -1479,33 +1453,6 @@
   </div>
 </div>
 
-<!-- STATS STRIP -->
-<section class="stats-strip" aria-label="Dave Mullen by the numbers">
-  <div class="stats-eyebrow">By the Numbers</div>
-  <div class="stats-grid">
-    <div class="stat-cell fade-up">
-      <div class="stat-num"><span class="counter" data-target="6">0</span></div>
-      <div class="stat-label">Years U.S.<br>Air Force</div>
-    </div>
-    <div class="stat-cell fade-up" data-delay="1">
-      <div class="stat-num"><span class="accent">$</span><span class="counter" data-target="3.1" data-decimal="1">0</span><span class="small">M</span></div>
-      <div class="stat-label">Healthcare<br>Savings · FY21</div>
-    </div>
-    <div class="stat-cell fade-up" data-delay="2">
-      <div class="stat-num"><span class="counter" data-target="3000">0</span><span class="small">+</span></div>
-      <div class="stat-label">Youth Sports<br>Participants</div>
-    </div>
-    <div class="stat-cell fade-up" data-delay="3">
-      <div class="stat-num"><span class="counter" data-target="100">0</span><span class="small">%</span></div>
-      <div class="stat-label">Training<br>Pass Rate</div>
-    </div>
-    <div class="stat-cell fade-up" data-delay="4">
-      <div class="stat-num"><span class="counter" data-target="15">0</span><span class="small">+</span></div>
-      <div class="stat-label">Years Executive<br>Experience</div>
-    </div>
-  </div>
-</section>
-
 <!-- PILLARS STRIP -->
 <section class="pillars-strip" aria-label="Dave Mullen's core commitments">
   <div class="pillar-item fade-up">
@@ -1560,6 +1507,30 @@
   <div class="section-eyebrow fade-up">Experience</div>
   <h2 class="section-heading fade-up">Proven.<br>Local. Ready.</h2>
   <p class="experience-intro fade-up">Dave Mullen's commitment to public service is rooted in real experience, steady leadership, and a deep connection to the community he serves. Every role he has taken demands accountability, thoughtful decision-making, and practical results.</p>
+
+  <div class="exp-stats" aria-label="Dave Mullen by the numbers">
+    <div class="exp-stat fade-up">
+      <div class="exp-stat-num"><span class="counter" data-target="6">0</span></div>
+      <div class="exp-stat-label">Years<br>Air Force</div>
+    </div>
+    <div class="exp-stat fade-up" data-delay="1">
+      <div class="exp-stat-num"><span class="accent">$</span><span class="counter" data-target="3.1" data-decimal="1">0</span><span class="small">M</span></div>
+      <div class="exp-stat-label">Healthcare<br>Savings · FY21</div>
+    </div>
+    <div class="exp-stat fade-up" data-delay="2">
+      <div class="exp-stat-num"><span class="counter" data-target="3000">0</span><span class="small">+</span></div>
+      <div class="exp-stat-label">Youth Sports<br>Participants</div>
+    </div>
+    <div class="exp-stat fade-up" data-delay="3">
+      <div class="exp-stat-num"><span class="counter" data-target="100">0</span><span class="small">%</span></div>
+      <div class="exp-stat-label">Training<br>Pass Rate</div>
+    </div>
+    <div class="exp-stat fade-up" data-delay="4">
+      <div class="exp-stat-num"><span class="counter" data-target="15">0</span><span class="small">+</span></div>
+      <div class="exp-stat-label">Years Executive<br>Experience</div>
+    </div>
+  </div>
+
   <div class="exp-timeline">
 
     <div class="exp-item fade-up" data-delay="1">
