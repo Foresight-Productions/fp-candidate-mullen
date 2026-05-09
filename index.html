@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave Mullen for Yakima County Commissioner · District 1</title>
+<meta name="description" content="Dave Mullen, U.S. Air Force veteran and proven executive leader, is running for Yakima County Commissioner, District 1. A lifelong Yakima Valley resident with a record of fiscal stewardship, crisis leadership, and people-first government.">
+
+<!-- Design System
+  Style: Editorial Civic (override on ui-ux-pro-max "Vibrant Block-based" default)
+  Archetype: EDITORIAL SPLIT (impeccable reflex-check moved off Bold Poster red/navy default; Mullen is a credentialed, gravitas-forward candidate, not a populist challenger)
+  Fonts: Fraunces (serif headings, gpt-taste shortlist) / Inter (body, neutral)
+  Color strategy: Restrained tinted neutrals + one Committed accent (warm gold honoring AF service, breaks the R-red reflex)
+  Palette (OKLCH):
+    primary  oklch(0.22 0.04 245)   deep navy
+    accent   oklch(0.66 0.13 75)    burnished gold
+    bg       oklch(0.97 0.012 80)   warm cream
+    text     oklch(0.18 0.025 245)  navy-tinted near-black
+  Impeccable bans honored: no side-stripe accent borders, no gradient text, no glassmorphism, no hero-metric SaaS template, no identical card grid, transform/opacity-only animation, NO em dashes
+  gpt-taste gates honored: AIDA flow (hero -> bio+issues -> record+recognition -> donate+volunteer+contact), H1 = 2 lines, no SECTION 01 meta-labels, hero discipline (no floating badges, no pill-tags, no raw stats above fold)
+-->
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://foresight-productions.github.io/fp-candidate-mullen/">
+<meta property="og:title" content="Dave Mullen for Yakima County Commissioner · District 1">
+<meta property="og:description" content="U.S. Air Force veteran and proven executive leader running for Yakima County Commissioner, District 1. A lifetime of service. A record of results.">
+<meta property="og:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dave Mullen, candidate for Yakima County Commissioner District 1">
+<meta property="og:site_name" content="Dave Mullen for Yakima County">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dave Mullen for Yakima County Commissioner · District 1">
+<meta name="twitter:description" content="U.S. Air Force veteran and proven executive leader running for Yakima County Commissioner, District 1.">
+<meta name="twitter:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: oklch(0.22 0.04 245);
+  --primary-deep: oklch(0.16 0.03 245);
+  --primary-soft: oklch(0.30 0.04 245);
+  --accent: oklch(0.66 0.13 75);
+  --accent-deep: oklch(0.55 0.12 65);
+  --accent-soft: oklch(0.86 0.06 80);
+  --bg: oklch(0.97 0.012 80);
+  --bg-warm: oklch(0.94 0.014 75);
+  --surface: oklch(0.99 0.008 80);
+  --text: oklch(0.18 0.025 245);
+  --text-muted: oklch(0.45 0.018 245);
+  --border: oklch(0.85 0.013 75);
+  --border-strong: oklch(0.72 0.015 75);
+  --shadow-sm: 0 1px 2px oklch(0.18 0.025 245 / 0.06);
+  --shadow-md: 0 8px 24px oklch(0.18 0.025 245 / 0.10);
+  --shadow-lg: 0 24px 60px oklch(0.18 0.025 245 / 0.16);
+  --max: 1280px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+*:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.018em;
+  color: var(--primary);
+}
+
+.eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  display: inline-block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.6rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  transition: transform 180ms ease-out, background-color 180ms ease-out, color 180ms ease-out;
+  min-height: 48px;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--primary-deep);
+  border: 1.5px solid var(--accent);
+}
+.btn-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--bg); transform: translateY(-1px); }
+.btn-outline {
+  background: transparent;
+  color: var(--bg);
+  border: 1.5px solid var(--bg);
+}
+.btn-outline:hover { background: var(--bg); color: var(--primary); transform: translateY(-1px); }
+.btn-outline-dark {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.btn-outline-dark:hover { background: var(--primary); color: var(--bg); transform: translateY(-1px); }
+
+/* ====== NAV ====== */
+#nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--gutter);
+  height: 72px;
+  background: oklch(0.97 0.012 80 / 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+#nav.scrolled {
+  border-bottom-color: var(--border);
+  box-shadow: 0 2px 16px oklch(0.18 0.025 245 / 0.05);
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+}
+.nav-logo-mark {
+  display: inline-block;
+  width: 4px;
+  height: 28px;
+  background: var(--accent);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+  flex-shrink: 0;
+}
+.nav-links a {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--text);
+  transition: color 150ms ease;
+}
+.nav-links a:hover { color: var(--accent-deep); }
+.nav-donate {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.88rem;
+  background: var(--primary);
+  color: var(--bg);
+  border-radius: 2px;
+  font-weight: 600;
+  transition: background-color 180ms ease;
+}
+.nav-donate:hover { background: var(--accent-deep); color: var(--primary-deep); }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  flex-shrink: 0;
+}
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--primary);
+  transition: transform 200ms, opacity 200ms;
+}
+.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  position: fixed;
+  top: 72px;
+  left: 0; right: 0;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1.5rem var(--gutter) 2rem;
+  transform: translateY(-110%);
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 999;
+}
+.mobile-menu.open { transform: translateY(0); }
+.mobile-menu a {
+  display: block;
+  padding: 0.85rem 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.mobile-menu .nav-donate {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.85rem 1.5rem;
+}
+
+/* ====== HERO (Editorial Split) ====== */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100svh;
+  margin-top: 0;
+  padding-top: 72px;
+}
+.hero-text {
+  background: var(--primary);
+  color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(3rem, 7vw, 6rem) clamp(1.75rem, 5vw, 5rem);
+  position: relative;
+}
+.hero-text::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+}
+.hero-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.hero-eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 38px;
+  height: 1px;
+  background: var(--accent);
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 5.4vw, 4.6rem);
+  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--bg);
+  margin-bottom: 1.5rem;
+  max-width: 18ch;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--accent);
+  font-weight: 500;
+}
+.hero-sub {
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.5;
+  color: oklch(0.97 0.012 80 / 0.82);
+  margin-bottom: 2.5rem;
+  max-width: 44ch;
+  font-weight: 400;
+}
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid oklch(0.97 0.012 80 / 0.18);
+  font-size: 0.85rem;
+  color: oklch(0.97 0.012 80 / 0.72);
+  letter-spacing: 0.04em;
+}
+.hero-meta strong { color: var(--accent); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.78rem; }
+
+.hero-photo {
+  background-color: var(--bg-warm);
+  background-image: url('dave-mullen.jpeg');
+  background-size: cover;
+  background-position: center 25%;
+  position: relative;
+}
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, oklch(0.22 0.04 245 / 0.05) 0%, transparent 30%);
+  pointer-events: none;
+}
+
+/* ====== PROOF STRIP ====== */
+.proof {
+  background: var(--primary-deep);
+  color: var(--bg);
+  padding: 1.4rem var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+}
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: oklch(0.97 0.012 80 / 0.88);
+}
+.proof-item svg { width: 18px; height: 18px; color: var(--accent); flex-shrink: 0; }
+.proof-sep {
+  width: 1px;
+  height: 18px;
+  background: oklch(0.97 0.012 80 / 0.22);
+}
+
+/* ====== SECTION SHELL ====== */
+section { padding: clamp(4.5rem, 10vw, 8rem) var(--gutter); }
+.shell { max-width: var(--max); margin: 0 auto; }
+.section-head { max-width: 56rem; margin-bottom: clamp(3rem, 5vw, 4.5rem); }
+.section-head h2 {
+  font-size: clamp(2.1rem, 4.2vw, 3.4rem);
+  margin-top: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+/* ====== ABOUT / WHY ====== */
+.about { background: var(--bg); }
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: start;
+}
+.about-aside {
+  position: sticky;
+  top: 96px;
+}
+.about-aside .pull {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  line-height: 1.25;
+  color: var(--primary);
+  letter-spacing: -0.015em;
+}
+.about-aside .pull::before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: var(--accent);
+  margin-bottom: 1.5rem;
+}
+.about-aside cite {
+  display: block;
+  margin-top: 1.5rem;
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.about-body p {
+  font-size: 1.075rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1.4rem;
+  max-width: 65ch;
+}
+.about-body p strong { color: var(--primary); font-weight: 600; }
+.about-body p:first-of-type::first-letter {
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 4.2rem;
+  float: left;
+  line-height: 0.85;
+  margin: 0.4rem 0.6rem 0 0;
+  color: var(--accent-deep);
+}
+
+/* ====== PRIORITIES ====== */
+.priorities { background: var(--bg-warm); }
+.priorities-list { border-top: 1px solid var(--border); }
+.priority {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  padding: clamp(2.25rem, 4vw, 3.25rem) 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  transition: padding-left 250ms ease;
+}
+.priority:hover { padding-left: 0.6rem; }
+.priority-num {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.2rem, 3.4vw, 3rem);
+  font-weight: 500;
+  color: var(--accent-deep);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.priority-body h3 {
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  margin-bottom: 0.65rem;
+  letter-spacing: -0.015em;
+}
+.priority-body p {
+  font-size: 1.025rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 60ch;
+}
+.priority-mark {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0.5rem;
+  text-align: right;
+}
+
+/* ====== RECORD STATS ====== */
+.record { background: var(--primary); color: var(--bg); position: relative; overflow: hidden; }
+.record::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: oklch(0.97 0.012 80 / 0.1);
+}
+.record .eyebrow { color: var(--accent); }
+.record h2 { color: var(--bg); }
+.record-intro {
+  font-size: 1.1rem;
+  color: oklch(0.97 0.012 80 / 0.78);
+  max-width: 56ch;
+  margin-top: 1.25rem;
+  line-height: 1.55;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: clamp(3rem, 5vw, 4.5rem);
+  border-top: 1px solid oklch(0.97 0.012 80 / 0.18);
+}
+.stat {
+  padding: clamp(1.75rem, 3vw, 2.5rem) clamp(0.5rem, 2vw, 1.5rem);
+  border-right: 1px solid oklch(0.97 0.012 80 / 0.18);
+}
+.stat:last-child { border-right: none; }
+.stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-weight: 500;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  display: block;
+  margin-bottom: 0.7rem;
+}
+.stat-label {
+  font-size: 0.92rem;
+  color: oklch(0.97 0.012 80 / 0.82);
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+/* ====== RECOGNITION (in lieu of endorsements) ====== */
+.recognition { background: var(--bg); }
+.featured-quote {
+  text-align: center;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.featured-quote .mark {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(5rem, 8vw, 7.5rem);
+  color: var(--accent);
+  line-height: 0.6;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+.featured-quote p {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.45rem, 2.6vw, 2.1rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--primary);
+  letter-spacing: -0.015em;
+  margin-bottom: 2rem;
+}
+.featured-quote cite {
+  display: block;
+  font-style: normal;
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.recognition-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: clamp(4rem, 6vw, 5.5rem);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.recognition-item {
+  padding: 2.2rem clamp(1rem, 2.5vw, 2rem);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+.recognition-item:last-child { border-right: none; }
+.recognition-item .award-mark {
+  width: 36px;
+  height: 36px;
+  color: var(--accent-deep);
+}
+.recognition-item h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+.recognition-item p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* ====== DONATE BANNER ====== */
+.banner {
+  background: var(--accent);
+  color: var(--primary-deep);
+  padding: clamp(3.5rem, 7vw, 5.5rem) var(--gutter);
+  text-align: center;
+}
+.banner h2 {
+  color: var(--primary-deep);
+  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 22ch;
+  margin: 0 auto 1.25rem;
+  letter-spacing: -0.02em;
+}
+.banner p {
+  font-size: 1.1rem;
+  max-width: 44ch;
+  margin: 0 auto 2.25rem;
+  color: oklch(0.18 0.025 245 / 0.78);
+  line-height: 1.5;
+}
+.banner-cta {
+  display: inline-flex;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.banner .btn-primary { background: var(--primary); color: var(--bg); border-color: var(--primary); }
+.banner .btn-primary:hover { background: var(--primary-deep); border-color: var(--primary-deep); }
+.banner .btn-outline-dark { color: var(--primary-deep); border-color: var(--primary-deep); }
+.banner .btn-outline-dark:hover { background: var(--primary-deep); color: var(--bg); }
+
+/* ====== INVOLVED (volunteer + contact merged) ====== */
+.involved { background: var(--bg); }
+.involved-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 5vw, 5rem);
+  align-items: start;
+}
+.involved-info h2 {
+  font-size: clamp(2rem, 3.6vw, 2.8rem);
+  margin-bottom: 1.5rem;
+}
+.involved-info p {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 50ch;
+}
+.contact-block {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.6rem 0;
+  font-size: 0.96rem;
+  color: var(--text);
+}
+.contact-row svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-deep);
+  flex-shrink: 0;
+}
+.contact-row a:hover { color: var(--accent-deep); }
+
+.form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: clamp(2rem, 3.5vw, 2.75rem);
+  border-radius: 4px;
+}
+.form h3 {
+  font-size: 1.45rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+.form-row { margin-bottom: 1.1rem; }
+.form-row label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+.form-row input, .form-row textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: border-color 150ms ease, background-color 150ms ease;
+  min-height: 48px;
+}
+.form-row input:focus, .form-row textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.form-row textarea { resize: vertical; min-height: 120px; }
+.checks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  transition: border-color 150ms, background-color 150ms;
+  min-height: 44px;
+}
+.check input { width: 16px; height: 16px; accent-color: var(--accent-deep); cursor: pointer; }
+.check:hover { border-color: var(--accent); }
+.form .btn-primary {
+  width: 100%;
+  background: var(--primary);
+  color: var(--bg);
+  border-color: var(--primary);
+}
+.form .btn-primary:hover { background: var(--accent-deep); border-color: var(--accent-deep); color: var(--primary-deep); }
+
+/* ====== FOOTER ====== */
+footer {
+  background: var(--primary-deep);
+  color: oklch(0.97 0.012 80 / 0.74);
+  padding: clamp(3rem, 5vw, 4.5rem) var(--gutter) 2rem;
+}
+.footer-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+.footer-brand .nav-logo { color: var(--bg); margin-bottom: 1.25rem; }
+.footer-brand p { font-size: 0.95rem; line-height: 1.6; max-width: 36ch; }
+.footer-col h5 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+.footer-col a { display: block; padding: 0.35rem 0; font-size: 0.92rem; transition: color 150ms; }
+.footer-col a:hover { color: var(--accent); }
+.compliance {
+  border-top: 1px solid oklch(0.97 0.012 80 / 0.12);
+  padding-top: 2rem;
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.83rem;
+  color: oklch(0.97 0.012 80 / 0.6);
+}
+.compliance .paid {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+.compliance a:hover { color: var(--accent); }
+
+/* ====== ANIMATIONS ====== */
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 700ms ease-out, transform 700ms ease-out; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .fade-up { opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 0; }
+  .hero-text { padding: 7rem 1.75rem 4rem; min-height: 70svh; }
+  .hero-photo { min-height: 70svh; background-position: center 22%; }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .about-aside { position: static; }
+  .involved-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid oklch(0.97 0.012 80 / 0.18); }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(3), .stat:nth-child(4) { border-top: 1px solid oklch(0.97 0.012 80 / 0.18); }
+  .stat:nth-child(3) { border-right: 1px solid oklch(0.97 0.012 80 / 0.18); }
+  .recognition-row { grid-template-columns: 1fr; }
+  .recognition-item { border-right: none; border-bottom: 1px solid var(--border); }
+  .recognition-item:last-child { border-bottom: none; }
+  .footer-inner { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-donate { display: none; }
+  .hero-text { padding: 6rem 1.25rem 3.5rem; }
+  .hero h1 { font-size: clamp(2.2rem, 8vw, 3rem); }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .hero-cta .btn { width: 100%; }
+  .hero-meta { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+  .proof { gap: 1rem; padding: 1.25rem 1rem; }
+  .proof-sep { display: none; }
+  .priority { grid-template-columns: 3rem 1fr; gap: 1.25rem; padding: 2rem 0; }
+  .priority-mark { display: none; }
+  .priority-num { font-size: 2rem; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .checks { grid-template-columns: 1fr; }
+  .compliance { flex-direction: column; align-items: flex-start; text-align: left; }
+  .featured-quote .mark { font-size: 4rem; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: auto; }
+}
+
+@media (max-width: 400px) {
+  .stats { grid-template-columns: 1fr; }
+  .stat { border-right: none; border-bottom: 1px solid oklch(0.97 0.012 80 / 0.18); }
+  .stat:last-child { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+
+<header id="nav">
+  <a href="#top" class="nav-logo" aria-label="Dave Mullen for Yakima County Commissioner">
+    <span class="nav-logo-mark"></span>
+    DAVE MULLEN
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#priorities">Priorities</a>
+    <a href="#record">Record</a>
+    <a href="#involved">Get Involved</a>
+    <a href="#" class="nav-donate">Donate</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#priorities">Priorities</a>
+  <a href="#record">Record</a>
+  <a href="#involved">Get Involved</a>
+  <a href="#" class="nav-donate">Donate to the Campaign</a>
+</div>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-text">
+    <span class="hero-eyebrow">Yakima County Commissioner · District 1</span>
+    <h1 id="hero-heading">A lifetime of service. <em>A record of results.</em></h1>
+    <p class="hero-sub">Air Force veteran, executive leader, and lifelong Yakima Valley resident running to bring efficient, effective, and people-first government to Yakima County.</p>
+    <div class="hero-cta">
+      <a href="#" class="btn btn-primary">Donate to the Campaign</a>
+      <a href="#involved" class="btn btn-outline">Join the Team</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>Endorse · Volunteer · Donate</strong></span>
+      <span>Paid for by Friends of Dave Mullen</span>
+    </div>
+  </div>
+  <div class="hero-photo" role="img" aria-label="Dave Mullen, candidate for Yakima County Commissioner District 1"></div>
+</section>
+
+<!-- PROOF STRIP -->
+<div class="proof" aria-label="Key credentials">
+  <span class="proof-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 L15 8.5 L22 9.5 L17 14.5 L18.5 21.5 L12 18 L5.5 21.5 L7 14.5 L2 9.5 L9 8.5 Z"/></svg>
+    U.S. Air Force Veteran
+  </span>
+  <span class="proof-sep"></span>
+  <span class="proof-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21 V8 L12 3 L21 8 V21 Z"/><path d="M9 21 V13 H15 V21"/></svg>
+    Lifelong Yakima Valley Resident
+  </span>
+  <span class="proof-sep"></span>
+  <span class="proof-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7 H21 M3 12 H21 M3 17 H21"/></svg>
+    15+ Years Executive Experience
+  </span>
+  <span class="proof-sep"></span>
+  <span class="proof-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12 l2 2 l4 -4"/></svg>
+    Proven Record of Results
+  </span>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="shell">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Why I'm Running</span>
+      <h2>Servant leadership, built right here in the Yakima Valley.</h2>
+    </div>
+    <div class="about-grid">
+      <aside class="about-aside fade-up">
+        <blockquote class="pull">
+          "I believe Yakima County deserves leaders who put people first, deliver real results, and stay accountable to the residents they serve."
+          <cite>Dave Mullen</cite>
+        </blockquote>
+      </aside>
+      <div class="about-body fade-up">
+        <p>Dave Mullen is a lifelong public servant, U.S. Air Force veteran, and proven leader with deep roots in the Yakima Valley. He is running for Yakima County Commissioner, District 1, to bring more than fifteen years of executive experience in municipal administration, healthcare operations, project management, and community development to the county he calls home.</p>
+        <p>From <strong>Eglin Air Force Base</strong> to the <strong>City of Selah</strong>, the <strong>Moxee City Council</strong>, and the <strong>Town of Naches</strong>, Dave has stepped into difficult moments and delivered. He stabilizes organizations during leadership transitions, negotiates contracts that save taxpayers millions, builds the trust of city, county, and state partners, and keeps services moving for the people who depend on them.</p>
+        <p>Today, Dave continues to invest in the Yakima Valley as a youth sports coach, a longtime church board member, and a husband and father raising his family in the same valley where he grew up. He is asking voters to send him to the courthouse to do for District 1 what he has done in every role he has held: lead with integrity, focus on results, and put people first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITIES -->
+<section id="priorities" class="priorities">
+  <div class="shell">
+    <div class="section-head fade-up">
+      <span class="eyebrow">What I'll Focus On</span>
+      <h2>Practical priorities. Measurable results.</h2>
+    </div>
+    <div class="priorities-list">
+      <article class="priority fade-up">
+        <span class="priority-num">01</span>
+        <div class="priority-body">
+          <h3>Fiscal Responsibility</h3>
+          <p>Yakima County families and small businesses deserve a commissioner who treats every taxpayer dollar with respect. As a healthcare value analyst, Dave delivered $3.1 million in verified savings in a single fiscal year through smart contract negotiation and process improvement. He'll bring that same discipline to the county budget.</p>
+        </div>
+        <span class="priority-mark">Stewardship</span>
+      </article>
+
+      <article class="priority fade-up">
+        <span class="priority-num">02</span>
+        <div class="priority-body">
+          <h3>Effective Local Government</h3>
+          <p>From the Moxee City Council to interim leadership of the Town of Naches, Dave has navigated real-world city operations, infrastructure projects, and the relationships between local, county, and state government. He understands how the system actually works, and where it needs to work better.</p>
+        </div>
+        <span class="priority-mark">Operations</span>
+      </article>
+
+      <article class="priority fade-up">
+        <span class="priority-num">03</span>
+        <div class="priority-body">
+          <h3>Public Safety & Infrastructure</h3>
+          <p>Strong communities need reliable infrastructure and uncompromising public safety. Dave brings six years of military security leadership and direct experience overseeing a $5 million wastewater treatment project to the table. He'll prioritize the basics: roads, water, public safety, and the systems residents count on every day.</p>
+        </div>
+        <span class="priority-mark">Foundations</span>
+      </article>
+
+      <article class="priority fade-up">
+        <span class="priority-num">04</span>
+        <div class="priority-body">
+          <h3>People-First Leadership</h3>
+          <p>Government works best when it stays close to the people it serves. Dave has spent more than a decade investing in the Yakima Valley community as a parks director, a youth sports coach, and a board member. He'll bring the same approachable, accessible style of leadership to the county commission.</p>
+        </div>
+        <span class="priority-mark">Community</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RECORD STATS -->
+<section id="record" class="record">
+  <div class="shell">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Proven Record</span>
+      <h2>Numbers that show the work.</h2>
+      <p class="record-intro">A career of public service in the military, in local government, and in healthcare operations, with a track record of delivering measurable results everywhere he's served.</p>
+    </div>
+    <div class="stats">
+      <div class="stat fade-up">
+        <span class="stat-num" data-count="6">0</span>
+        <span class="stat-label">Years U.S. Air Force, Resource Protection NCOIC</span>
+      </div>
+      <div class="stat fade-up">
+        <span class="stat-num" data-count="3.1" data-suffix="M" data-prefix="$">$0</span>
+        <span class="stat-label">Healthcare savings delivered in a single fiscal year</span>
+      </div>
+      <div class="stat fade-up">
+        <span class="stat-num" data-count="3000" data-suffix="+">0</span>
+        <span class="stat-label">Youth sports participants supported as Parks Director</span>
+      </div>
+      <div class="stat fade-up">
+        <span class="stat-num" data-count="100" data-suffix="%">0</span>
+        <span class="stat-label">Pass rate on security training he led for 100+ Airmen</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION (in lieu of a sparse endorsement grid) -->
+<section class="recognition">
+  <div class="shell">
+    <div class="featured-quote fade-up">
+      <span class="mark">"</span>
+      <p>Dave's record is one of stabilizing organizations under pressure, saving taxpayers and ratepayers millions, and earning the trust of the partners he serves alongside.</p>
+      <cite>From Dave's Career Record</cite>
+    </div>
+
+    <div class="recognition-row">
+      <div class="recognition-item fade-up">
+        <svg class="award-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M12 2 L14.5 8.5 L21.5 9 L16 13.5 L17.5 20.5 L12 17 L6.5 20.5 L8 13.5 L2.5 9 L9.5 8.5 Z"/>
+        </svg>
+        <h4>Air Force Achievement Medal × 2</h4>
+        <p>Recognized twice for distinguished performance during service at Eglin Air Force Base, Florida.</p>
+      </div>
+      <div class="recognition-item fade-up">
+        <svg class="award-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="12" cy="9" r="6"/>
+          <path d="M8 14 L6 22 L12 19 L18 22 L16 14"/>
+        </svg>
+        <h4>Below-the-Zone Promotion</h4>
+        <p>Selected for the Senior Airman Below-the-Zone promotion, awarded to top-performing junior NCOs.</p>
+      </div>
+      <div class="recognition-item fade-up">
+        <svg class="award-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M4 6 H20 V14 H4 Z"/>
+          <path d="M8 14 V20 H16 V14"/>
+          <path d="M2 6 L6 2 H18 L22 6"/>
+        </svg>
+        <h4>Distinguished Graduate</h4>
+        <p>Honored as a Distinguished Graduate of the Air Force's Airman Leadership School.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE BANNER -->
+<section class="banner">
+  <h2>Help send a proven leader to the courthouse.</h2>
+  <p>Every contribution fuels yard signs, doors knocked, and conversations with neighbors across District 1. Chip in today.</p>
+  <div class="banner-cta">
+    <a href="#" class="btn btn-primary">Donate Now</a>
+    <a href="#involved" class="btn btn-outline-dark">Volunteer Instead</a>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="involved" class="involved">
+  <div class="shell">
+    <div class="involved-grid">
+      <div class="involved-info fade-up">
+        <span class="eyebrow">Get Involved</span>
+        <h2>Win this race together.</h2>
+        <p>Yakima County campaigns are won door by door, sign by sign, conversation by conversation. Sign up to volunteer, request a yard sign, host a meet-and-greet, or just stay in the loop on the campaign.</p>
+
+        <div class="contact-block">
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7 L12 13 L21 7"/><rect x="3" y="6" width="18" height="13" rx="1"/></svg>
+            <a href="mailto:campaign@davemullenforyakima.com">campaign@davemullenforyakima.com</a>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4 H9 L11 9 L8.5 10.5 C9.5 13 11 14.5 13.5 15.5 L15 13 L20 15 V19 C20 19.5 19.5 20 19 20 C11 20 4 13 4 5 C4 4.5 4.5 4 5 4 Z"/></svg>
+            <a href="tel:5095551234">(509) 555-1234</a>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 C7 2 4 6 4 10 C4 16 12 22 12 22 C12 22 20 16 20 10 C20 6 17 2 12 2 Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>P.O. Box · Yakima, WA</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form fade-up" action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
+        <h3>Sign up to help</h3>
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-row">
+          <label>How would you like to help?</label>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="help" value="doorknock"> Knock doors</label>
+            <label class="check"><input type="checkbox" name="help" value="phonebank"> Phone bank</label>
+            <label class="check"><input type="checkbox" name="help" value="yardsign"> Yard sign</label>
+            <label class="check"><input type="checkbox" name="help" value="event"> Host event</label>
+            <label class="check"><input type="checkbox" name="help" value="endorse"> Endorse Dave</label>
+            <label class="check"><input type="checkbox" name="help" value="updates"> Email updates</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message" placeholder="Anything else we should know?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <span class="nav-logo-mark"></span>
+        DAVE MULLEN
+      </div>
+      <p>Lifelong public servant and proven executive leader running for Yakima County Commissioner, District 1.</p>
+    </div>
+    <div class="footer-col">
+      <h5>The Campaign</h5>
+      <a href="#about">About Dave</a>
+      <a href="#priorities">Priorities</a>
+      <a href="#record">Record</a>
+      <a href="#involved">Get Involved</a>
+    </div>
+    <div class="footer-col">
+      <h5>Take Action</h5>
+      <a href="#">Donate</a>
+      <a href="#involved">Volunteer</a>
+      <a href="mailto:campaign@davemullenforyakima.com">Email the Campaign</a>
+      <a href="https://www.pdc.wa.gov/" target="_blank" rel="noopener">WA PDC Filings</a>
+    </div>
+  </div>
+  <div class="compliance">
+    <span class="paid">Paid for by Friends of Dave Mullen</span>
+    <span>&copy; <span id="year">2026</span> Friends of Dave Mullen. All rights reserved.</span>
+  </div>
+</footer>
+
+<script>
+(function() {
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 12); };
+  document.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    const open = toggle.classList.toggle('open');
+    menu.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    toggle.classList.remove('open');
+    menu.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }));
+
+  // Year
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Reduced motion check
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Fade-up via IntersectionObserver
+  const fadeEls = document.querySelectorAll('.fade-up');
+  if (reduced || !('IntersectionObserver' in window)) {
+    fadeEls.forEach(el => el.classList.add('visible'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    fadeEls.forEach(el => io.observe(el));
+  }
+
+  // Count up stats
+  const countEls = document.querySelectorAll('.stat-num[data-count]');
+  const formatNum = (n, target) => {
+    if (Number.isInteger(target)) return Math.round(n).toLocaleString('en-US');
+    return n.toFixed(1);
+  };
+  const animateCount = (el) => {
+    const target = parseFloat(el.dataset.count);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    if (reduced) { el.textContent = `${prefix}${formatNum(target, target)}${suffix}`; return; }
+    const duration = 1400;
+    const start = performance.now();
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    const tick = (now) => {
+      const t = Math.min(1, (now - start) / duration);
+      const v = ease(t) * target;
+      el.textContent = `${prefix}${formatNum(v, target)}${suffix}`;
+      if (t < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  if (!('IntersectionObserver' in window)) {
+    countEls.forEach(animateCount);
+  } else {
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { animateCount(e.target); cio.unobserve(e.target); }
+      });
+    }, { threshold: 0.4 });
+    countEls.forEach(el => cio.observe(el));
+  }
+})();
+</script>
+</body>
+</html>
