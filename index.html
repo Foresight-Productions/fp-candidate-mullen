@@ -945,19 +945,35 @@
       font-family: var(--body); font-size: 0.92rem; font-weight: 300;
       color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;
     }
-    .ways-list { list-style: none; }
-    .ways-list li {
-      font-family: var(--body); font-size: 0.9rem; color: var(--muted);
-      padding: 0.78rem 0; border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; gap: 1rem;
-      transition: color 0.2s;
+    .ways-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
     }
-    .ways-list li:hover { color: var(--cream); }
-    .ways-list li::before {
-      content: '★'; color: var(--olive-soft); font-size: 0.55rem; flex-shrink: 0;
-      filter: drop-shadow(0 0 4px var(--glow));
+    .way-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.95rem;
+      background: rgba(245,237,220,0.035);
+      border: 1px solid var(--border);
+      font-family: var(--heading);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--off-cream);
+      cursor: default;
+      line-height: 1;
+      white-space: nowrap;
     }
-    .ways-list li:last-child { border-bottom: none; }
+    .way-chip::before {
+      content: '★';
+      color: var(--olive-soft);
+      font-size: 0.62rem;
+      filter: drop-shadow(0 0 3px var(--glow));
+    }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
     .form-group { margin-bottom: 1rem; }
     .form-group label {
@@ -1725,14 +1741,14 @@
       <div class="section-eyebrow">Get Involved</div>
       <h2 class="connect-heading">Join the<br>Campaign</h2>
       <p class="connect-panel-desc">Winning District 1 takes neighbors talking to neighbors. Whether you want to volunteer, ask a question, or just say hello, Dave's team wants to hear from you.</p>
-      <ul class="ways-list">
-        <li>Door-to-door canvassing</li>
-        <li>Phone banking</li>
-        <li>Yard signs &amp; literature drops</li>
-        <li>Host a neighborhood meet-and-greet</li>
-        <li>Endorse Dave</li>
-        <li>Social media &amp; digital outreach</li>
-      </ul>
+      <div class="ways-chips" aria-label="Ways to get involved">
+        <span class="way-chip">Canvassing</span>
+        <span class="way-chip">Phone Banking</span>
+        <span class="way-chip">Yard Signs</span>
+        <span class="way-chip">Meet-and-Greets</span>
+        <span class="way-chip">Endorsements</span>
+        <span class="way-chip">Social Media</span>
+      </div>
       <div class="contact-line" style="margin-top:2rem;">
         <span class="contact-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.8 19.79 19.79 0 01.34 2.18 2 2 0 012.33 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.26 7.95a16 16 0 006.07 6.07l1.31-1.31a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
