@@ -325,16 +325,10 @@
     .hero-right {
       position: relative; overflow: hidden; background: #0F1A2D;
     }
-    @keyframes kenBurns {
-      0%   { transform: scale(1.18) translate(0, 0); }
-      100% { transform: scale(1.28) translate(-2%, 2%); }
-    }
     .hero-right .hero-bg-photo {
       width: 100%; height: 100%;
-      object-fit: cover; object-position: center 35%;
-      filter: brightness(0.86) contrast(1.06) saturate(1.06);
-      transform-origin: 50% 50%;
-      animation: kenBurns 22s ease-in-out infinite alternate;
+      object-fit: cover; object-position: center 40%;
+      filter: brightness(0.92) contrast(1.04) saturate(1.04);
     }
     .hero-right-overlay {
       position: absolute; inset: 0;
@@ -453,22 +447,6 @@
       background: #14223A;
       padding: clamp(6rem, 12vw, 12rem) 8%;
       text-align: center; position: relative; overflow: hidden;
-    }
-    .statement-bg {
-      position: absolute; inset: 0; z-index: 0;
-      background-size: cover; background-position: center 40%;
-      background-repeat: no-repeat;
-      transition: opacity 0.8s ease;
-    }
-    .statement-bg::after {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(
-        to bottom,
-        rgba(20,34,58,0.84) 0%,
-        rgba(20,34,58,0.74) 50%,
-        rgba(20,34,58,0.88) 100%
-      );
     }
     .statement::before {
       content: '';
@@ -1342,7 +1320,6 @@
 
 <!-- STATEMENT -->
 <section class="statement">
-  <div class="statement-bg" id="statementBg"></div>
   <div class="statement-stars">
     <span class="stmt-star">★</span>
     <span class="stmt-star">★</span>
@@ -1849,20 +1826,6 @@ document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate')
   btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
 });
 
-const statementBg = document.getElementById('statementBg');
-if (statementBg) {
-  const img = new Image();
-  img.onload = () => { statementBg.style.backgroundImage = `url(${img.src})`; };
-  img.src = 'yk-valley.jpg';
-}
-
-const heroRight = document.querySelector('.hero-right img');
-if (heroRight && window.matchMedia('(min-width: 900px)').matches) {
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    heroRight.style.transform = `scale(1.18) translate(0, ${y * 0.04}%)`;
-  }, { passive: true });
-}
 
 (function() {
   const modal = document.createElement('div');
