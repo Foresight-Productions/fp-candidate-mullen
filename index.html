@@ -46,20 +46,27 @@
 
 <style>
 :root {
-  --paper: oklch(0.94 0.022 80);
-  --paper-deep: oklch(0.90 0.024 78);
-  --paper-soft: oklch(0.96 0.018 82);
-  --ink: oklch(0.20 0.014 65);
-  --ink-deep: oklch(0.13 0.012 60);
-  --ink-soft: oklch(0.30 0.014 65);
-  --bronze: oklch(0.55 0.13 50);
-  --bronze-deep: oklch(0.46 0.13 45);
-  --bronze-soft: oklch(0.78 0.07 60);
-  --sage: oklch(0.42 0.04 145);
-  --stone: oklch(0.62 0.012 70);
-  --stone-deep: oklch(0.48 0.014 65);
-  --rule: oklch(0.78 0.018 75);
-  --rule-strong: oklch(0.65 0.018 70);
+  --paper: oklch(0.95 0.022 88);
+  --paper-deep: oklch(0.91 0.024 85);
+  --paper-soft: oklch(0.97 0.018 90);
+  --navy: oklch(0.27 0.06 250);
+  --navy-deep: oklch(0.20 0.05 248);
+  --navy-soft: oklch(0.42 0.05 248);
+  --olive: oklch(0.55 0.06 115);
+  --olive-deep: oklch(0.45 0.06 110);
+  --olive-soft: oklch(0.80 0.05 110);
+  --water: oklch(0.66 0.11 235);
+  --water-deep: oklch(0.55 0.11 238);
+  --stone: oklch(0.62 0.012 80);
+  --stone-deep: oklch(0.48 0.014 80);
+  --rule: oklch(0.82 0.018 88);
+  --rule-strong: oklch(0.68 0.018 85);
+  --ink: var(--navy);
+  --ink-deep: var(--navy-deep);
+  --ink-soft: var(--navy-soft);
+  --bronze: var(--olive);
+  --bronze-deep: var(--olive-deep);
+  --bronze-soft: var(--olive-soft);
   --gutter: clamp(1.25rem, 4vw, 3rem);
   --max: 1340px;
 }
@@ -157,19 +164,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-shrink: 0;
 }
 .nav-logo-mark {
-  width: 22px;
-  height: 22px;
+  width: 32px;
+  height: 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--ink);
-  color: var(--bronze);
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: 800;
-  font-size: 0.78rem;
-  font-variation-settings: "wdth" 100;
-  border-radius: 1px;
+  color: var(--navy);
+  flex-shrink: 0;
 }
+.nav-logo-mark svg { width: 100%; height: 100%; display: block; }
 .nav-logo-text {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
@@ -295,25 +298,23 @@ main { padding-top: 100px; }
   height: 1px;
   background: var(--bronze);
 }
-.poster-seal {
-  width: 56px;
-  height: 56px;
-  border: 1.5px solid var(--ink);
-  border-radius: 50%;
+.poster-watermark {
+  width: 96px;
+  flex-shrink: 0;
+  color: var(--navy);
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  position: relative;
+  justify-content: flex-end;
 }
-.poster-seal::before {
-  content: "";
+.poster-watermark svg { width: 100%; height: auto; display: block; }
+.poster-landscape {
   position: absolute;
-  inset: 5px;
-  border: 1px solid var(--bronze);
-  border-radius: 50%;
+  bottom: 0; left: 0; right: 0;
+  pointer-events: none;
+  z-index: 0;
+  height: clamp(48px, 8vh, 96px);
 }
-.poster-seal svg { width: 22px; height: 22px; color: var(--bronze); position: relative; z-index: 1; }
+.poster-landscape svg { width: 100%; height: 100%; display: block; }
 
 .wordmark {
   display: flex;
@@ -324,28 +325,27 @@ main { padding-top: 100px; }
 }
 .wordmark-given {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-variation-settings: "wdth" 100, "opsz" 96;
-  font-weight: 500;
-  font-size: clamp(2rem, 4.5vw, 3.6rem);
-  letter-spacing: -0.025em;
-  line-height: 1;
-  color: var(--ink-soft);
-  margin-bottom: clamp(0.4rem, 1vw, 0.8rem);
+  font-variation-settings: "wdth" 95, "opsz" 96;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 6.5vw, 5.5rem);
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+  color: var(--navy);
+  margin-bottom: clamp(0.3rem, 0.6vw, 0.5rem);
   text-transform: uppercase;
-  margin-left: 0.4em;
 }
 .wordmark-family {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-variation-settings: "wdth" 80, "opsz" 96;
+  font-variation-settings: "wdth" 85, "opsz" 96;
   font-weight: 800;
   font-size: clamp(5.5rem, 22vw, 21rem);
-  letter-spacing: -0.06em;
+  letter-spacing: -0.055em;
   line-height: 0.82;
-  color: var(--ink);
+  color: var(--olive);
   text-transform: uppercase;
   position: relative;
 }
-.wordmark-family .accent-letter { color: var(--bronze); }
+.wordmark-family .accent-letter { color: var(--olive); }
 .wordmark-suffix {
   font-family: 'Bricolage Grotesque', sans-serif;
   font-variation-settings: "wdth" 100, "opsz" 24;
@@ -927,7 +927,7 @@ footer {
   border-bottom: 1px solid oklch(0.94 0.022 80 / 0.12);
 }
 .footer-brand .nav-logo-text { color: var(--paper); font-size: 0.86rem; }
-.footer-brand .nav-logo-mark { background: var(--bronze); color: var(--ink-deep); }
+.footer-brand .nav-logo-mark { color: var(--olive-soft); }
 .footer-brand p {
   margin-top: 1.25rem;
   max-width: 36ch;
@@ -1050,7 +1050,12 @@ footer {
 <!-- Secondary nav -->
 <header id="nav">
   <a href="#top" class="nav-logo" aria-label="Mullen for Yakima County">
-    <span class="nav-logo-mark">M</span>
+    <span class="nav-logo-mark" aria-hidden="true">
+      <svg viewBox="0 0 30 18" fill="none">
+        <path d="M2 8 Q 8 4, 14 8 T 28 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M2 14 Q 8 10, 14 14 T 28 14" stroke="var(--water)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </svg>
+    </span>
     <span class="nav-logo-text">Mullen for Yakima</span>
   </a>
   <nav class="nav-links" aria-label="Primary">
@@ -1077,22 +1082,32 @@ footer {
 <!-- HERO: TYPE-ONLY POSTER -->
 <section class="poster" aria-labelledby="hero-name">
   <div class="poster-meta">
-    <span class="poster-filenum">FILE · YK-D1 / 2026 · CANDIDATE BRIEF · REV. 01</span>
-    <span class="poster-seal" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-        <path d="M12 3 L15 9 L21 10 L16.5 14.5 L17.5 21 L12 18 L6.5 21 L7.5 14.5 L3 10 L9 9 Z"/>
+    <span class="poster-filenum">YAKIMA COUNTY · DISTRICT 1 · GENERAL ELECTION 2026</span>
+    <span class="poster-watermark" aria-hidden="true">
+      <svg viewBox="0 0 120 60" fill="none">
+        <path d="M70 14 Q 90 4, 110 14" stroke="currentColor" stroke-width="2" fill="none" opacity="0.85"/>
+        <path d="M88 8 C 84 16, 84 24, 88 26 C 92 24, 92 16, 88 8 Z" fill="var(--water)"/>
+        <path d="M5 36 Q 27 28, 50 36 T 95 36 T 115 34" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+        <path d="M5 50 Q 27 42, 50 50 T 95 50 T 115 48" stroke="var(--water)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
       </svg>
     </span>
   </div>
 
+  <div class="poster-landscape" aria-hidden="true">
+    <svg viewBox="0 0 1200 64" preserveAspectRatio="xMidYMax slice">
+      <path d="M0 50 L 110 22 L 180 38 L 280 12 L 380 30 L 470 18 L 560 36 L 660 24 L 760 32 L 860 14 L 960 28 L 1060 18 L 1200 32 L 1200 64 L 0 64 Z" fill="var(--olive)" opacity="0.18"/>
+      <path d="M0 56 L 90 36 L 170 48 L 260 28 L 360 42 L 460 32 L 550 46 L 640 36 L 740 44 L 840 30 L 940 40 L 1040 32 L 1200 42 L 1200 64 L 0 64 Z" fill="var(--olive)" opacity="0.32"/>
+    </svg>
+  </div>
+
   <div class="wordmark">
     <span class="wordmark-given">Dave</span>
-    <h1 id="hero-name" class="wordmark-family">M<span class="accent-letter">U</span>LLEN</h1>
-    <span class="wordmark-suffix">For Yakima County <span class="dot">·</span> Commissioner <span class="dot">·</span> District 1</span>
+    <h1 id="hero-name" class="wordmark-family">Mullen</h1>
+    <span class="wordmark-suffix">For Yakima County <span class="dot">★</span> Commissioner <span class="dot">★</span> District 1</span>
   </div>
 
   <div class="poster-foot">
-    <p class="poster-tagline">A lifetime of service. <span class="em">A record of results.</span> Built for District 1, by someone who has lived and worked here.</p>
+    <p class="poster-tagline">Working today. <span class="em">Building tomorrow.</span> A proven leader for the Yakima Valley we all call home.</p>
     <div class="poster-cta">
       <a href="#" class="btn btn-primary">Donate to the Campaign</a>
       <a href="#join" class="btn btn-ghost">Join the Team</a>
@@ -1127,8 +1142,8 @@ footer {
         <p>He continues to invest in the Yakima Valley as a youth sports coach, a longtime church board member, and a husband and father raising his family in the same valley where he grew up. He is asking voters to send him to the courthouse to do for District 1 what he has done in every role he has held: lead with integrity, focus on results, and put people first.</p>
 
         <div class="brief-marginalia">
-          <span class="label">Note from Dave</span>
-          Yakima County deserves leaders who put people first, deliver real results, and stay accountable to the residents they serve.
+          <span class="label">From the Candidate</span>
+          The job is simple to describe and hard to do well. Work today on what matters today. Build tomorrow with what we leave behind. Stay accountable to the people who sent you.
         </div>
       </div>
     </div>
@@ -1229,10 +1244,40 @@ footer {
       <article class="tenet fade-up">
         <div class="tenet-id">
           <div class="tenet-num">01</div>
-          <div class="tenet-roman">Tenet I</div>
+          <div class="tenet-roman">Issue I</div>
         </div>
         <div>
-          <h3 class="tenet-title">Fiscal Stewardship as the Default.</h3>
+          <h3 class="tenet-title">Strong Farmers. Supporting Our Agriculture.</h3>
+          <p class="tenet-body">Yakima County agriculture is the backbone of our economy and our identity. Dave will fight for the policies, infrastructure, and water access that keep our growers competitive, our farms profitable, and our valley feeding the country. When agriculture wins, the whole county wins.</p>
+        </div>
+        <div class="tenet-meta">
+          <span>Anchored in</span>
+          <span>Yakima Valley · lifetime</span>
+        </div>
+      </article>
+
+      <article class="tenet fade-up">
+        <div class="tenet-id">
+          <div class="tenet-num">02</div>
+          <div class="tenet-roman">Issue II</div>
+        </div>
+        <div>
+          <h3 class="tenet-title">Advocate for Water Rights. Protecting Our Water. Protecting Our Future.</h3>
+          <p class="tenet-body">Water is the most valuable asset Yakima County has, and we cannot afford a commissioner who treats it as a side issue. Dave will defend our rights, oppose efforts to divert our supply, and advocate for the long-term storage and management our region needs to keep growing.</p>
+        </div>
+        <div class="tenet-meta">
+          <span>Track record</span>
+          <span>$5M WWTP oversight · Naches</span>
+        </div>
+      </article>
+
+      <article class="tenet fade-up">
+        <div class="tenet-id">
+          <div class="tenet-num">03</div>
+          <div class="tenet-roman">Issue III</div>
+        </div>
+        <div>
+          <h3 class="tenet-title">Fiscal Responsibility. Managing Tax Dollars With Integrity.</h3>
           <p class="tenet-body">Every taxpayer dollar gets the same scrutiny Dave gave $3.1 million in healthcare contract savings: ask whether it has to be spent, whether it can be spent better, and whether the result is worth the cost. The county budget belongs to the residents who fund it.</p>
         </div>
         <div class="tenet-meta">
@@ -1243,42 +1288,27 @@ footer {
 
       <article class="tenet fade-up">
         <div class="tenet-id">
-          <div class="tenet-num">02</div>
-          <div class="tenet-roman">Tenet II</div>
-        </div>
-        <div>
-          <h3 class="tenet-title">Government That Actually Works.</h3>
-          <p class="tenet-body">The job of a county commissioner is not to make speeches. It is to make services run. Dave has run them in Selah, governed in Moxee, and stabilized them in Naches. He understands what working local government looks like, and he knows where it gets stuck.</p>
-        </div>
-        <div class="tenet-meta">
-          <span>Track record</span>
-          <span>3 cities served</span>
-        </div>
-      </article>
-
-      <article class="tenet fade-up">
-        <div class="tenet-id">
-          <div class="tenet-num">03</div>
-          <div class="tenet-roman">Tenet III</div>
-        </div>
-        <div>
-          <h3 class="tenet-title">Public Safety and the Basics, First.</h3>
-          <p class="tenet-body">Roads, water, public safety, infrastructure. The unglamorous foundations a community is built on. Dave brings six years of military security leadership and direct oversight of a $5M wastewater treatment project. He treats the basics like the priorities they are.</p>
-        </div>
-        <div class="tenet-meta">
-          <span>Track record</span>
-          <span>$5M WWTP · 6 yrs USAF</span>
-        </div>
-      </article>
-
-      <article class="tenet fade-up">
-        <div class="tenet-id">
           <div class="tenet-num">04</div>
-          <div class="tenet-roman">Tenet IV</div>
+          <div class="tenet-roman">Issue IV</div>
         </div>
         <div>
-          <h3 class="tenet-title">Accountable to Real People.</h3>
-          <p class="tenet-body">The residents of District 1 are not abstractions. They are the families Dave coaches youth sports for, the neighbors at his church, and the people he has lived alongside in the Yakima Valley his entire adult life. They deserve a commissioner who answers the phone and shows up.</p>
+          <h3 class="tenet-title">Stronger Communities. Safe, Vibrant Communities Across Yakima County.</h3>
+          <p class="tenet-body">Strong communities need reliable infrastructure, uncompromising public safety, and government that actually shows up. Dave brings six years of military security leadership and direct experience running parks, councils, and town operations across the Yakima Valley. He treats the foundations like the priorities they are.</p>
+        </div>
+        <div class="tenet-meta">
+          <span>Track record</span>
+          <span>6 yrs USAF · 3 cities served</span>
+        </div>
+      </article>
+
+      <article class="tenet fade-up">
+        <div class="tenet-id">
+          <div class="tenet-num">05</div>
+          <div class="tenet-roman">Issue V</div>
+        </div>
+        <div>
+          <h3 class="tenet-title">Local Values, Local Voice. Listening. Leading. Delivering.</h3>
+          <p class="tenet-body">The residents of District 1 are not abstractions. They are the families Dave coaches youth sports for, the neighbors at his church, and the people he has lived alongside in the Yakima Valley his entire adult life. They deserve a commissioner who answers the phone, shows up, and delivers.</p>
         </div>
         <div class="tenet-meta">
           <span>Track record</span>
@@ -1294,8 +1324,8 @@ footer {
   <div class="statement-shell">
     <span class="statement-mark" aria-hidden="true">"</span>
     <div>
-      <p class="statement-text">My job is to keep services running, treat tax dollars with respect, and stay accountable to the people I serve. That is the entire job.</p>
-      <span class="statement-byline">— Dave Mullen</span>
+      <p class="statement-text">Working today. Building tomorrow. That is the standard for every dollar spent, every meeting taken, and every decision made on behalf of District 1.</p>
+      <span class="statement-byline">Dave Mullen · Candidate, Yakima County Commissioner</span>
     </div>
   </div>
 </section>
@@ -1323,8 +1353,8 @@ footer {
 
         <a href="#" class="donate-card" style="text-decoration: none;">
           <div>
-            <div class="label">Take Action</div>
-            <div class="heading">Stand With Mullen. Donate.</div>
+            <div class="label">Working today. Building tomorrow.</div>
+            <div class="heading">Stand with Dave. Donate.</div>
           </div>
           <span class="btn btn-bronze" style="pointer-events: none;">Donate &rarr;</span>
         </a>
@@ -1375,10 +1405,15 @@ footer {
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="#top" class="nav-logo">
-        <span class="nav-logo-mark">M</span>
+        <span class="nav-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 30 18" fill="none">
+            <path d="M2 8 Q 8 4, 14 8 T 28 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <path d="M2 14 Q 8 10, 14 14 T 28 14" stroke="var(--water)" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
         <span class="nav-logo-text">Mullen for Yakima</span>
       </a>
-      <p>Lifelong public servant and proven executive leader running for Yakima County Commissioner, District 1.</p>
+      <p>Working today. Building tomorrow. A proven leader running for Yakima County Commissioner, District 1.</p>
     </div>
     <div class="footer-col">
       <h5>The Campaign</h5>
