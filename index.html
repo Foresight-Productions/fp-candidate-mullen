@@ -1,1729 +1,1734 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dave Mullen for Yakima County Commissioner · District 1 · 2026</title>
-<meta name="description" content="Dave Mullen, U.S. Air Force veteran and proven executive leader, is running for Yakima County Commissioner, District 1. Working today. Building tomorrow.">
+  <!-- Design System
+    Style: Dark Presidential — adapted from Berg LD-15 template
+    Archetype: BOLD POSTER × AGENCY PREMIUM hybrid
+    Fonts: Bebas Neue / Oswald / Inter
+    Palette: bg #1A2942 (sign navy) | accent #6B7547 (sign olive) | text #F5EDDC (sign cream)
+    Vibe: Mullen's lawn sign blown up to 100vh. Stars. Olive. Navy. Aggression with class.
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dave Mullen for Yakima County Commissioner | District 1 · 2026</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="description" content="Dave Mullen, U.S. Air Force veteran and proven executive leader, is running for Yakima County Commissioner, District 1. Working today. Building tomorrow.">
 
-<!-- Design System (per ui-ux-pro-max --design-system + supplementary domain searches)
-  Style: BENTO GRID (per ui-ux-pro-max styles.csv) + Mullen brand palette
-  Archetype: Modular asymmetric card grid. Apple/Bento aesthetic adapted to a civic candidate site.
-  Override note: ui-ux-pro-max recommended Vibrant & Block-based as the base style for political community pattern; Bento Grid surfaced as a stronger visual differentiator from the prior Editorial Split / Civic Poster attempts. Pattern (Community/Forum) influenced the photo-forward, member-showcase feel.
-  Fonts: Barlow Condensed (display, distinctive civic/athletic energy) + Barlow (body) — per typography.csv "Sports/Fitness" pairing, repurposed for a grounded civic feel that matches Mullen's parks-director / coach / veteran identity. NOT serif (avoids Editorial Split repeat).
-  Color strategy: His sign palette held intact. Navy + Olive + Cream + Water blue. Cards as design system primitives.
-  Palette (OKLCH from his sign):
-    cream    oklch(0.95 0.022 88)   sign background
-    navy     oklch(0.27 0.06 250)   DAVE color
-    olive    oklch(0.55 0.06 115)   MULLEN color
-    water    oklch(0.66 0.11 235)   wave/drop accent
-    ink      oklch(0.18 0.012 65)   body text
-  Impeccable bans honored: no side-stripe accent borders on cards (full borders or top stripes only), no gradient text, no glassmorphism, no hero-metric SaaS template, no identical card grid (varied spans intentionally), transform/opacity-only animation, NO em dashes.
-  Bento principles applied: rounded corners 24px, soft elevation, varied card spans (6/4/3/2 col), gap-based rhythm, hover scale 1.01.
--->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://foresight-productions.github.io/fp-candidate-mullen/">
+  <meta property="og:title" content="Dave Mullen for Yakima County Commissioner · District 1 · 2026">
+  <meta property="og:description" content="Air Force veteran. Executive leader. Lifelong Yakima Valley. Working today. Building tomorrow.">
+  <meta property="og:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Dave Mullen for Yakima County Commissioner District 1">
+  <meta property="og:site_name" content="Mullen for Yakima County">
+  <meta property="og:locale" content="en_US">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://foresight-productions.github.io/fp-candidate-mullen/">
-<meta property="og:title" content="Dave Mullen for Yakima County Commissioner · District 1">
-<meta property="og:description" content="Working today. Building tomorrow. U.S. Air Force veteran and proven executive leader running for Yakima County Commissioner, District 1.">
-<meta property="og:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Dave Mullen, candidate for Yakima County Commissioner District 1">
-<meta property="og:site_name" content="Mullen for Yakima County">
-<meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dave Mullen for Yakima County Commissioner · District 1 · 2026">
+  <meta name="twitter:description" content="Air Force veteran. Executive leader. Working today. Building tomorrow.">
+  <meta name="twitter:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Dave Mullen for Yakima County Commissioner · District 1">
-<meta name="twitter:description" content="Working today. Building tomorrow. Air Force veteran running for Yakima County Commissioner, District 1.">
-<meta name="twitter:image" content="https://foresight-productions.github.io/fp-candidate-mullen/og-image.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== TOKENS ===== */
+    :root {
+      --bg:        #1A2942;
+      --bg-2:      #213151;
+      --surface:   #2A3D60;
+      --surface-2: #324870;
+      --olive:     #6B7547;
+      --olive-b:   #859264;
+      --olive-dark:#525B36;
+      --olive-soft:#A4AC7E;
+      --water:     #5B9BD5;
+      --cream:     #F5EDDC;
+      --off-cream: #E8DFC8;
+      --muted:     rgba(245,237,220,0.55);
+      --border:    rgba(245,237,220,0.10);
+      --glow:      rgba(133,146,100,0.42);
+      --display:   'Bebas Neue', 'Oswald', sans-serif;
+      --heading:   'Oswald', sans-serif;
+      --body:      'Inter', sans-serif;
+    }
 
-<style>
-:root {
-  --cream: oklch(0.95 0.022 88);
-  --cream-deep: oklch(0.92 0.024 86);
-  --paper: oklch(0.98 0.014 88);
-  --paper-soft: oklch(0.97 0.018 90);
-  --navy: oklch(0.27 0.06 250);
-  --navy-deep: oklch(0.20 0.05 248);
-  --navy-soft: oklch(0.42 0.05 248);
-  --olive: oklch(0.55 0.06 115);
-  --olive-deep: oklch(0.45 0.06 110);
-  --olive-soft: oklch(0.82 0.05 110);
-  --water: oklch(0.66 0.11 235);
-  --water-deep: oklch(0.55 0.11 238);
-  --ink: oklch(0.18 0.012 65);
-  --ink-soft: oklch(0.36 0.014 70);
-  --ink-muted: oklch(0.52 0.014 75);
-  --rule: oklch(0.84 0.014 88);
-  --rule-strong: oklch(0.72 0.018 88);
-  --shadow-card: 0 1px 0 oklch(0.18 0.012 65 / 0.04), 0 4px 12px oklch(0.18 0.012 65 / 0.04), 0 16px 32px oklch(0.18 0.012 65 / 0.05);
-  --shadow-card-hover: 0 1px 0 oklch(0.18 0.012 65 / 0.06), 0 8px 20px oklch(0.18 0.012 65 / 0.06), 0 24px 48px oklch(0.18 0.012 65 / 0.08);
-  --radius: 28px;
-  --radius-sm: 14px;
-  --gap: clamp(0.6rem, 1vw, 1rem);
-  --gutter: clamp(1rem, 3vw, 2.25rem);
-  --max: 1400px;
-}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      background: var(--bg);
+      color: var(--cream);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-*:focus-visible { outline: 2.5px solid var(--olive-deep); outline-offset: 4px; }
+    /* ===== SCROLL PROGRESS ===== */
+    .scroll-progress {
+      position: fixed; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--olive); transform-origin: left; transform: scaleX(0);
+      z-index: 2000; pointer-events: none;
+      box-shadow: 0 0 12px var(--glow);
+    }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body {
-  font-family: 'Barlow', system-ui, -apple-system, sans-serif;
-  font-size: 17px;
-  line-height: 1.55;
-  color: var(--ink);
-  background: var(--cream);
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  font-feature-settings: "kern" 1, "liga" 1;
-}
+    /* ===== NAV ===== */
+    #nav {
+      position: fixed; top: 3px; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 5%; height: 88px;
+      background: var(--cream);
+      border-bottom: 2px solid var(--olive);
+      box-shadow: 0 2px 20px rgba(26,41,66,0.12);
+      transition: box-shadow 0.3s;
+    }
+    #nav.scrolled { box-shadow: 0 4px 30px rgba(26,41,66,0.20); }
+    .nav-brand {
+      flex-shrink: 0;
+      display: flex; align-items: center; gap: 0.85rem;
+    }
+    .nav-brand-mark {
+      width: 46px; height: 28px;
+      flex-shrink: 0;
+      color: var(--bg);
+      display: flex; align-items: center;
+    }
+    .nav-brand-mark svg { width: 100%; height: 100%; display: block; }
+    .nav-brand-name {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.85rem;
+      letter-spacing: 0.02em;
+      color: var(--bg);
+      line-height: 0.95;
+      display: flex; flex-direction: column;
+    }
+    .nav-brand-name em {
+      font-family: 'Bebas Neue', sans-serif;
+      font-style: normal;
+      color: var(--olive);
+      font-size: 1.85rem;
+      letter-spacing: 0.02em;
+      line-height: 0.95;
+    }
+    .nav-brand-sub {
+      font-family: var(--heading);
+      font-size: 0.58rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(26,41,66,0.55);
+      margin-top: 2px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2.4rem; flex-shrink: 0; }
+    .nav-links a {
+      font-family: var(--heading); font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--bg); transition: color 0.2s; position: relative;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+      height: 1px; background: var(--olive); transform: scaleX(0);
+      transform-origin: left; transition: transform 0.25s;
+    }
+    .nav-links a:hover { color: var(--olive); }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    .btn-nav-donate {
+      font-family: var(--heading); font-size: 0.76rem; font-weight: 700;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      background: var(--olive); color: var(--cream) !important;
+      padding: 0.55rem 1.4rem; cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s; min-height: 38px;
+      display: inline-flex; align-items: center; border: none;
+    }
+    .btn-nav-donate:hover { background: var(--olive-dark); box-shadow: 0 0 20px var(--glow); }
+    .btn-nav-donate::after { display: none !important; }
+    .nav-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      flex-direction: column; gap: 5px; padding: 4px; flex-shrink: 0;
+    }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: var(--bg); transition: transform 0.3s, opacity 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .nav-overlay {
+      display: none; position: fixed; inset: 0; z-index: 999;
+      background: #14223A; flex-direction: column; align-items: center;
+      justify-content: center; gap: 2.5rem; padding-top: 71px;
+    }
+    .nav-overlay.open { display: flex; }
+    .nav-overlay a {
+      font-family: var(--heading); font-size: 2.4rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--cream);
+      transition: color 0.2s;
+    }
+    .nav-overlay a:hover { color: var(--olive-soft); }
+    .nav-overlay .btn-nav-donate { font-size: 1rem; padding: 0.9rem 2.8rem; }
 
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 91px;
+      position: relative;
+    }
+    .hero-left {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 6rem 6% 6rem 8%;
+      background: var(--bg);
+      position: relative; z-index: 1; overflow: hidden;
+    }
+    .hero-left::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(245,237,220,0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,237,220,0.018) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .hero-left > * { position: relative; z-index: 2; }
 
-.display { font-family: 'Barlow Condensed', 'Barlow', system-ui, sans-serif; }
+    .hero-left-bar {
+      position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+      background: var(--olive);
+      box-shadow: 0 0 24px var(--glow), 0 0 60px rgba(133,146,100,0.2);
+      z-index: 3;
+    }
 
-/* === TOPBAR === */
-.topbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  background: var(--navy);
-  color: var(--cream);
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--gutter);
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
-  font-weight: 500;
-}
-.topbar .left { display: flex; align-items: center; gap: 1rem; }
-.topbar .right { display: flex; align-items: center; gap: 1.25rem; }
-.topbar .meta { color: oklch(0.95 0.022 88 / 0.75); display: none; }
-@media (min-width: 720px) { .topbar .meta { display: inline; } }
-.topbar .pulse {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  font-weight: 600;
-}
-.topbar .pulse::before {
-  content: "";
-  display: inline-block;
-  width: 7px; height: 7px;
-  background: var(--olive-soft);
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 oklch(0.82 0.05 110 / 0.5);
-  animation: livePulse 2.4s ease-out infinite;
-}
-@keyframes livePulse {
-  0% { box-shadow: 0 0 0 0 oklch(0.82 0.05 110 / 0.5); }
-  100% { box-shadow: 0 0 0 8px oklch(0.82 0.05 110 / 0); }
-}
+    .hero-stars {
+      display: flex; gap: 0.55rem; margin-bottom: 1.8rem; align-items: center;
+    }
+    .hero-star {
+      color: var(--olive-soft); font-size: 0.9rem; line-height: 1;
+      filter: drop-shadow(0 0 6px var(--glow));
+    }
+    .hero-stars-line {
+      flex: 1; height: 1px; background: linear-gradient(to right, var(--olive), transparent);
+      max-width: 120px; opacity: 0.5;
+    }
 
-/* === NAV === */
-#nav {
-  position: fixed;
-  top: 40px; left: 0; right: 0;
-  z-index: 999;
-  background: oklch(0.95 0.022 88 / 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 var(--gutter);
-  border-bottom: 1px solid transparent;
-  transition: border-color 200ms ease, box-shadow 200ms ease;
-}
-#nav.scrolled { border-bottom-color: var(--rule); }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-  flex-shrink: 0;
-}
-.nav-logo-mark {
-  width: 36px; height: 22px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--navy);
-}
-.nav-logo-mark svg { width: 100%; height: 100%; display: block; }
-.nav-logo-text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: 1.32rem;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: var(--navy);
-  line-height: 1;
-}
-.nav-logo-text .accent { color: var(--olive); }
-.nav-links { display: flex; align-items: center; gap: 2rem; flex-shrink: 0; }
-.nav-links a {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--ink);
-  position: relative;
-  padding: 0.4rem 0;
-  transition: color 150ms ease;
-}
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: -2px;
-  height: 2px;
-  background: var(--olive);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 220ms ease;
-}
-.nav-links a:hover { color: var(--navy); }
-.nav-links a:hover::after { transform: scaleX(1); }
-.nav-links .cta {
-  background: var(--olive);
-  color: var(--paper);
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
-  letter-spacing: 0.1em;
-  transition: background-color 180ms ease, transform 180ms ease;
-}
-.nav-links .cta:hover { background: var(--olive-deep); transform: translateY(-1px); color: var(--paper); }
-.nav-links .cta::after { display: none; }
+    .hero-tag {
+      font-family: var(--heading); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--olive-soft); margin-bottom: 1.2rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .hero-tag::before { content: ''; display: block; width: 24px; height: 2px; background: var(--olive); }
 
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
-  flex-shrink: 0;
-}
-.nav-toggle span {
-  display: block; width: 22px; height: 2px;
-  background: var(--navy);
-  transition: transform 200ms, opacity 200ms;
-}
-.nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.nav-toggle.open span:nth-child(2) { opacity: 0; }
-.nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .hero-name {
+      font-family: 'Bebas Neue', 'Oswald', sans-serif;
+      font-weight: 400;
+      line-height: 0.85;
+      font-size: clamp(6rem, 11vw, 14rem);
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .hero-name-solid { display: block; color: var(--cream); }
+    .hero-name-outline {
+      display: block; color: transparent;
+      -webkit-text-stroke: 3px var(--olive);
+      text-shadow: 0 0 40px rgba(133,146,100,0.30);
+    }
 
-.mobile-menu {
-  position: fixed;
-  top: 104px; left: 0; right: 0;
-  background: var(--cream);
-  border-bottom: 1px solid var(--rule);
-  padding: 1.25rem var(--gutter) 1.5rem;
-  transform: translateY(-130%);
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
-  z-index: 998;
-}
-.mobile-menu.open { transform: translateY(0); }
-.mobile-menu a {
-  display: block;
-  padding: 0.85rem 0;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-size: 1.1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--navy);
-  border-bottom: 1px solid var(--rule);
-}
-.mobile-menu a.cta {
-  margin-top: 1rem;
-  background: var(--olive);
-  color: var(--paper);
-  padding: 0.85rem 1.25rem;
-  border-radius: 999px;
-  text-align: center;
-  border: none;
-}
+    .hero-divider {
+      display: flex; align-items: center; gap: 1rem;
+      margin: 2rem 0 1.6rem;
+    }
+    .hero-divider-line { flex: 1; height: 1px; background: var(--border); max-width: 280px; }
+    .hero-divider-dot { width: 5px; height: 5px; background: var(--olive); flex-shrink: 0; transform: rotate(45deg); }
 
-main { padding-top: 104px; }
+    .hero-sub {
+      font-family: var(--body); font-size: 0.82rem; font-weight: 300;
+      letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase;
+      margin-bottom: 1.4rem;
+    }
+    .hero-tagline {
+      font-family: var(--heading); font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+      font-weight: 300; color: var(--off-cream); line-height: 1.55;
+      max-width: 440px; margin-bottom: 2.4rem;
+    }
+    .hero-tagline em {
+      font-style: normal; color: var(--olive-soft); font-weight: 500;
+    }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.4rem; }
+    .hero-election-date {
+      font-family: var(--body); font-size: 0.74rem; font-weight: 400;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: rgba(245,237,220,0.7);
+      line-height: 1.8;
+    }
+    .hero-election-date span { color: var(--olive-soft); margin-right: 0.4rem; }
 
-/* === SHELL === */
-.shell {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 0 var(--gutter);
-}
+    .btn-olive {
+      font-family: var(--heading); font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      background: var(--olive); color: var(--cream);
+      padding: 0.95rem 2.6rem; border: 2px solid var(--olive);
+      cursor: pointer; transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
+      min-height: 50px; display: inline-flex; align-items: center;
+    }
+    .btn-olive:hover { background: var(--olive-b); border-color: var(--olive-b); box-shadow: 0 6px 30px var(--glow); }
+    .btn-ghost {
+      font-family: var(--heading); font-size: 0.82rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      background: transparent; color: var(--cream);
+      padding: 0.95rem 2.6rem; border: 2px solid rgba(245,237,220,0.25);
+      cursor: pointer; transition: border-color 0.2s, background 0.2s;
+      min-height: 50px; display: inline-flex; align-items: center;
+    }
+    .btn-ghost:hover { border-color: var(--cream); background: rgba(245,237,220,0.06); }
 
-/* === BENTO === */
-.bento {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--gap);
-}
-.card {
-  background: var(--paper);
-  border-radius: var(--radius);
-  padding: clamp(1.5rem, 2.5vw, 2.5rem);
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease;
-}
-.card.is-link { cursor: pointer; }
-.card.is-link:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
-.card-eyebrow {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--olive-deep);
-  margin-bottom: 0.85rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-}
-.card-eyebrow.on-dark { color: var(--olive-soft); }
-.card-eyebrow .roman {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 24px; height: 24px;
-  padding: 0 0.35rem;
-  border: 1.5px solid currentColor;
-  border-radius: 6px;
-  font-size: 0.74rem;
-}
+    .hero-right {
+      position: relative; overflow: hidden; background: #0F1A2D;
+    }
+    @keyframes kenBurns {
+      0%   { transform: scale(1.18) translate(0, 0); }
+      100% { transform: scale(1.28) translate(-2%, 2%); }
+    }
+    .hero-right .hero-bg-photo {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 35%;
+      filter: brightness(0.86) contrast(1.06) saturate(1.06);
+      transform-origin: 50% 50%;
+      animation: kenBurns 22s ease-in-out infinite alternate;
+    }
+    .hero-right-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, rgba(26,41,66,0.92) 0%, rgba(26,41,66,0.2) 14%, transparent 30%),
+        linear-gradient(to top, rgba(26,41,66,0.55) 0%, transparent 35%);
+    }
+    .hero-slice {
+      position: absolute; top: 0; left: -2px; bottom: 0; width: 60px;
+      z-index: 3;
+      background: var(--bg);
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      pointer-events: none;
+    }
 
-/* === HERO BENTO === */
-.hero { padding: clamp(1rem, 2vw, 1.5rem) 0 0; }
-.hero .bento {
-  grid-auto-rows: minmax(60px, auto);
-}
+    /* ===== TICKER ===== */
+    .ticker-wrap {
+      background: var(--olive); overflow: hidden;
+      border-top: 1px solid rgba(245,237,220,0.15);
+      border-bottom: 1px solid rgba(0,0,0,0.18);
+    }
+    .ticker { white-space: nowrap; padding: 0.95rem 0; overflow: hidden; }
+    .ticker-track {
+      display: inline-flex; align-items: center; gap: 2rem;
+      animation: marquee 32s linear infinite;
+    }
+    .ticker-track span {
+      font-family: var(--heading); font-size: 0.78rem; font-weight: 600;
+      letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--cream); flex-shrink: 0;
+    }
+    .ticker-star { color: rgba(245,237,220,0.6) !important; font-size: 0.6rem !important; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
 
-.card-name {
-  grid-column: span 8;
-  grid-row: span 2;
-  background: var(--paper);
-  padding: clamp(2rem, 4vw, 3.5rem);
-  justify-content: space-between;
-  position: relative;
-  min-height: clamp(380px, 50vh, 540px);
-}
-.name-given {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(2.4rem, 5vw, 4.5rem);
-  line-height: 0.92;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-.name-family {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: clamp(5rem, 14vw, 13rem);
-  line-height: 0.84;
-  color: var(--olive);
-  letter-spacing: -0.025em;
-  text-transform: uppercase;
-  margin: 0.05em 0 0 -0.04em;
-}
-.name-meta {
-  margin-top: clamp(1.25rem, 2vw, 1.75rem);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.65rem 1.2rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: clamp(0.95rem, 1.3vw, 1.15rem);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--navy-deep);
-}
-.name-meta .star { color: var(--olive); font-weight: 900; font-size: 1.1em; line-height: 0; }
-.name-mark {
-  position: absolute;
-  top: clamp(1.5rem, 3vw, 2.5rem);
-  right: clamp(1.5rem, 3vw, 2.5rem);
-  width: clamp(60px, 8vw, 90px);
-  height: auto;
-  color: var(--navy);
-  opacity: 0.95;
-}
+    /* ===== SECTION UTILITIES ===== */
+    .section-eyebrow {
+      font-family: var(--heading); font-size: 0.74rem; font-weight: 500;
+      letter-spacing: 0.26em; text-transform: uppercase; color: var(--olive-soft);
+      display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.4rem;
+    }
+    .section-eyebrow::before { content: ''; display: block; width: 28px; height: 2px; background: var(--olive); }
+    .section-heading {
+      font-family: 'Bebas Neue', 'Oswald', sans-serif;
+      font-weight: 400; text-transform: uppercase;
+      font-size: clamp(3rem, 6vw, 6rem); letter-spacing: 0.02em;
+      color: var(--cream); line-height: 0.9; margin-bottom: 4rem;
+    }
 
-.card-photo {
-  grid-column: span 4;
-  grid-row: span 3;
-  background: url('dave-mullen.jpeg') center 25% / cover no-repeat var(--navy-deep);
-  padding: 0;
-  min-height: clamp(380px, 60vh, 660px);
-  position: relative;
-}
-.card-photo::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 50%;
-  background: linear-gradient(to bottom, transparent, oklch(0.20 0.05 248 / 0.55));
-  pointer-events: none;
-}
-.card-photo .photo-caption {
-  position: absolute;
-  left: 1.5rem; right: 1.5rem; bottom: 1.5rem;
-  z-index: 2;
-  color: var(--paper);
-}
-.photo-caption .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--olive-soft);
-  margin-bottom: 0.4rem;
-}
-.photo-caption .role {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.1rem, 1.6vw, 1.45rem);
-  line-height: 1.1;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-}
+    /* ===== ISSUES ===== */
+    .issues {
+      background: var(--bg); padding: 8rem 8%;
+      position: relative; overflow: hidden;
+    }
+    .issues::before {
+      content: 'PLATFORM';
+      position: absolute; right: -2%; top: 50%; transform: translateY(-50%);
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(10rem, 18vw, 22rem);
+      color: rgba(245,237,220,0.025); line-height: 1;
+      pointer-events: none; z-index: 0; letter-spacing: 0.04em; user-select: none;
+    }
+    .issues > * { position: relative; z-index: 1; }
+    .issues-list { display: flex; flex-direction: column; }
+    .issue-row {
+      display: grid; grid-template-columns: 90px 1fr 40px;
+      align-items: center; gap: 2.5rem;
+      padding: 0; border-top: 1px solid var(--border);
+      transition: border-color 0.3s;
+      cursor: default; position: relative; overflow: hidden;
+    }
+    .issue-row:last-child { border-bottom: 1px solid var(--border); }
+    .issue-row::before {
+      content: ''; position: absolute; inset: 0;
+      background: var(--olive);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 0;
+    }
+    .issue-row:hover::before { transform: scaleX(1); }
+    .issue-row:hover { border-top-color: var(--olive); }
+    .issue-row > * { position: relative; z-index: 1; }
+    .issue-num {
+      font-family: 'Bebas Neue', sans-serif; font-size: 4.5rem;
+      color: var(--olive); letter-spacing: -0.02em; line-height: 1;
+      opacity: 0.32; transition: opacity 0.3s, color 0.3s;
+      padding: 2rem 0;
+    }
+    .issue-row:hover .issue-num { opacity: 1; color: rgba(245,237,220,0.7); }
+    .issue-body { padding: 2rem 0; }
+    .issue-title {
+      font-family: var(--heading); font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+      font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
+      color: var(--cream); margin-bottom: 0.5rem; line-height: 1;
+      transition: color 0.2s;
+    }
+    .issue-sub {
+      font-family: var(--body); font-size: 0.82rem; font-weight: 400;
+      font-style: italic; letter-spacing: 0.04em;
+      color: var(--olive-soft); margin-bottom: 0.8rem;
+    }
+    .issue-row:hover .issue-sub { color: rgba(245,237,220,0.92); }
+    .issue-desc {
+      font-family: var(--body); font-size: 0.92rem; font-weight: 300;
+      color: var(--muted); line-height: 1.7; max-width: 580px;
+      transition: color 0.2s;
+    }
+    .issue-row:hover .issue-desc { color: rgba(245,237,220,0.88); }
+    .issue-arrow {
+      font-size: 1.4rem; color: rgba(245,237,220,0.18);
+      transition: color 0.2s, transform 0.3s;
+    }
+    .issue-row:hover .issue-arrow { color: var(--cream); transform: translateX(6px); }
 
-.card-tagline {
-  grid-column: span 5;
-  background: var(--navy);
-  color: var(--paper);
-  padding: clamp(1.75rem, 2.5vw, 2.25rem);
-  min-height: 160px;
-  justify-content: center;
-}
-.card-tagline .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--olive-soft);
-  margin-bottom: 0.7rem;
-}
-.card-tagline .text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-  line-height: 1.05;
-  letter-spacing: -0.005em;
-  text-transform: uppercase;
-}
-.card-tagline .text .accent { color: var(--olive-soft); }
+    /* ===== STATEMENT ===== */
+    .statement {
+      background: #14223A;
+      padding: clamp(6rem, 12vw, 12rem) 8%;
+      text-align: center; position: relative; overflow: hidden;
+    }
+    .statement-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background-size: cover; background-position: center 40%;
+      background-repeat: no-repeat;
+      transition: opacity 0.8s ease;
+    }
+    .statement-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20,34,58,0.84) 0%,
+        rgba(20,34,58,0.74) 50%,
+        rgba(20,34,58,0.88) 100%
+      );
+    }
+    .statement::before {
+      content: '';
+      position: absolute; inset: 0; z-index: 1;
+      background-image:
+        linear-gradient(rgba(245,237,220,0.008) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,237,220,0.008) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .statement-stars {
+      display: flex; justify-content: center; gap: 1.2rem;
+      margin-bottom: 3rem; position: relative; z-index: 2;
+    }
+    .stmt-star {
+      color: var(--olive-soft); font-size: 1.4rem; line-height: 1;
+      filter: drop-shadow(0 0 10px var(--glow));
+      animation: starPulse 2.5s ease-in-out infinite;
+    }
+    .stmt-star:nth-child(2) { animation-delay: 0.4s; }
+    .stmt-star:nth-child(3) { animation-delay: 0.8s; }
+    @keyframes starPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(0.9); }
+    }
+    .statement-quote {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.2rem, 7vw, 8.5rem);
+      font-weight: 400; letter-spacing: 0.03em; text-transform: uppercase;
+      color: var(--cream); line-height: 0.94; margin-bottom: 2.5rem;
+      position: relative; z-index: 2;
+      text-shadow: 0 2px 40px rgba(0,0,0,0.6);
+    }
+    .statement-quote em {
+      color: var(--olive-soft); font-style: normal;
+      text-shadow: 0 0 60px rgba(133,146,100,0.5), 0 2px 40px rgba(0,0,0,0.6);
+    }
+    .statement-cite {
+      font-family: var(--heading); font-size: 0.82rem; font-weight: 400;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      color: rgba(245,237,220,0.55); position: relative; z-index: 2;
+    }
 
-.card-cta {
-  grid-column: span 3;
-  background: var(--olive);
-  color: var(--navy-deep);
-  padding: clamp(1.5rem, 2.5vw, 2rem);
-  justify-content: space-between;
-  min-height: 160px;
-}
-.card-cta .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: oklch(0.20 0.05 248 / 0.7);
-  margin-bottom: 0.4rem;
-}
-.card-cta .heading {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
-  line-height: 1;
-  letter-spacing: -0.005em;
-  text-transform: uppercase;
-}
-.card-cta-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.8rem;
-  margin-top: 1.5rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-.card-cta-row .arrow {
-  width: 36px; height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--navy);
-  color: var(--olive-soft);
-  border-radius: 50%;
-  font-size: 1rem;
-  transition: transform 200ms ease;
-}
-.card-cta:hover .card-cta-row .arrow { transform: translateX(4px); }
+    /* ===== VALLEY PHOTO STRIP ===== */
+    .valley-strip {
+      display: grid; grid-template-columns: 1fr 1fr 1fr 1fr;
+      height: clamp(220px, 28vw, 400px);
+      overflow: hidden;
+    }
+    .valley-panel {
+      position: relative; overflow: hidden; cursor: default;
+    }
+    .valley-panel img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      filter: brightness(0.65) saturate(1.1) contrast(1.05);
+      transition: transform 0.7s cubic-bezier(0.16,1,0.3,1), filter 0.4s;
+    }
+    .valley-panel:hover img {
+      transform: scale(1.06);
+      filter: brightness(0.78) saturate(1.2) contrast(1.08);
+    }
+    .valley-panel-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,41,66,0.74) 0%, transparent 55%);
+      transition: background 0.4s;
+    }
+    .valley-panel:hover .valley-panel-overlay {
+      background: linear-gradient(to top, rgba(107,117,71,0.55) 0%, transparent 55%);
+    }
+    .valley-panel-label {
+      position: absolute; bottom: 1.4rem; left: 1.6rem;
+      font-family: var(--heading); font-size: 0.72rem; font-weight: 600;
+      letter-spacing: 0.22em; text-transform: uppercase;
+      color: rgba(245,237,220,0.78);
+      transition: color 0.3s;
+    }
+    .valley-panel:hover .valley-panel-label { color: var(--cream); }
+    @media (max-width: 640px) {
+      .valley-strip { grid-template-columns: 1fr 1fr; height: auto; }
+      .valley-panel { height: 56vw; max-height: 280px; }
+    }
 
-.card-info {
-  grid-column: span 4;
-  padding: clamp(1.5rem, 2.5vw, 2rem);
-  min-height: 160px;
-  justify-content: space-between;
-}
-.card-info .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.76rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--olive-deep);
-  margin-bottom: 0.7rem;
-}
-.card-info .stat {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(2rem, 3.4vw, 2.8rem);
-  line-height: 0.95;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-}
-.card-info .sub {
-  margin-top: 0.6rem;
-  font-size: 0.92rem;
-  color: var(--ink-soft);
-  line-height: 1.4;
-}
+    /* ===== BIO ===== */
+    .bio {
+      background: var(--surface);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 85vh; position: relative;
+    }
+    .bio-photo { position: relative; overflow: hidden; background: #0F1A2D; }
+    .bio-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center 22%;
+      filter: brightness(0.86) contrast(1.08) saturate(1.06);
+    }
+    .bio-photo-overlay {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to right, transparent 55%, var(--surface) 100%),
+        linear-gradient(to top, rgba(107,117,71,0.12) 0%, transparent 40%);
+    }
+    .bio-photo-accent {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+      background: var(--olive); box-shadow: 0 0 20px var(--glow);
+    }
 
-/* === SECTION === */
-section { padding: clamp(3rem, 6vw, 5rem) 0; }
-.section-head {
-  margin-bottom: clamp(2rem, 4vw, 3rem);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.85rem;
-}
-.section-kicker {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--olive-deep);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-.section-kicker::before {
-  content: "";
-  width: 28px; height: 2px;
-  background: var(--olive);
-}
-.section-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: clamp(2rem, 4.4vw, 3.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.015em;
-  color: var(--navy);
-  text-transform: uppercase;
-  max-width: 26ch;
-}
-.section-lede {
-  margin-top: 0.5rem;
-  font-size: 1.05rem;
-  color: var(--ink-soft);
-  max-width: 56ch;
-  line-height: 1.55;
-}
+    .bio-content {
+      padding: 7rem 8% 7rem 5%;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .bio-content::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(245,237,220,0.012) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,237,220,0.012) 1px, transparent 1px);
+      background-size: 40px 40px; pointer-events: none;
+    }
+    .bio-content > * { position: relative; z-index: 1; }
+    .bio-pull {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 3.5vw, 3.5rem);
+      font-weight: 400; text-transform: uppercase; letter-spacing: 0.03em;
+      color: var(--cream); line-height: 1.05; margin-bottom: 2rem;
+    }
+    .bio-pull em { color: var(--olive-soft); font-style: normal; }
+    .bio-body {
+      font-family: var(--body); font-size: 0.92rem; font-weight: 300;
+      color: rgba(245,237,220,0.78); line-height: 1.85; margin-bottom: 0.9rem;
+    }
+    .bio-body-highlight {
+      font-family: var(--body); font-size: 0.92rem; font-weight: 400;
+      color: var(--off-cream); line-height: 1.8; margin-bottom: 0;
+      font-style: italic; border-left: 3px solid var(--olive);
+      padding-left: 1.2rem; margin-top: 0.8rem;
+    }
+    .bio-creds {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      margin-top: 2rem;
+    }
+    .bio-cred {
+      font-family: var(--body); font-size: 0.78rem; font-weight: 500;
+      color: var(--off-cream);
+      background: rgba(245,237,220,0.06);
+      border: 1px solid rgba(245,237,220,0.12);
+      border-left: 3px solid var(--olive);
+      padding: 0.5rem 0.9rem;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
 
-/* === ABOUT BENTO === */
-.about-bento { grid-auto-rows: minmax(60px, auto); }
-.card-bio {
-  grid-column: span 8;
-  padding: clamp(2rem, 3vw, 2.75rem);
-}
-.card-bio .lede {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
-  line-height: 1.18;
-  color: var(--navy);
-  letter-spacing: -0.005em;
-  margin-bottom: 1.5rem;
-  max-width: 38ch;
-}
-.card-bio p {
-  font-size: 1.025rem;
-  line-height: 1.65;
-  color: var(--ink-soft);
-  margin-bottom: 1.1rem;
-  max-width: 64ch;
-}
-.card-bio p strong { color: var(--navy); font-weight: 600; }
+    /* ===== PILLARS STRIP ===== */
+    .pillars-strip {
+      background: #14213A;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      position: relative; overflow: hidden;
+      border-top: 3px solid var(--olive);
+    }
+    .pillar-item {
+      padding: 4rem 2.5rem;
+      border-right: 1px solid rgba(245,237,220,0.07);
+      position: relative; overflow: hidden;
+      cursor: default;
+      transition: background 0.4s ease;
+    }
+    .pillar-item:last-child { border-right: none; }
+    .pillar-item::before {
+      content: ''; position: absolute; inset: 0;
+      background: var(--olive);
+      transform: scaleY(0); transform-origin: bottom;
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 0;
+    }
+    .pillar-item:hover::before { transform: scaleY(1); }
+    .pillar-icon {
+      width: 48px; height: 48px;
+      margin-bottom: 1.2rem;
+      position: relative; z-index: 1;
+      color: var(--olive-soft);
+      transition: color 0.3s;
+    }
+    .pillar-item:hover .pillar-icon { color: var(--cream); }
+    .pillar-icon svg { width: 100%; height: 100%; }
+    .pillar-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(1.7rem, 2.4vw, 2.4rem);
+      color: var(--cream); letter-spacing: 0.04em;
+      line-height: 1.05; margin-bottom: 0.8rem;
+      position: relative; z-index: 1;
+    }
+    .pillar-desc {
+      font-family: var(--body); font-size: 0.84rem;
+      color: rgba(245,237,220,0.6); line-height: 1.6;
+      position: relative; z-index: 1;
+      transition: color 0.3s;
+    }
+    .pillar-item:hover .pillar-desc { color: rgba(245,237,220,0.95); }
 
-.card-quick {
-  grid-column: span 4;
-  background: var(--cream-deep);
-  padding: clamp(1.5rem, 2.5vw, 2.25rem);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0;
-}
-.quick-row {
-  padding: 0.9rem 0;
-  border-bottom: 1px solid var(--rule);
-  display: flex;
-  align-items: baseline;
-  gap: 0.85rem;
-}
-.quick-row:first-child { padding-top: 0; }
-.quick-row:last-child { border-bottom: none; padding-bottom: 0; }
-.quick-row .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--olive-deep);
-  flex-shrink: 0;
-  width: 5.5rem;
-}
-.quick-row .value {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-size: 1.08rem;
-  color: var(--navy);
-  letter-spacing: -0.005em;
-  line-height: 1.25;
-}
+    /* ===== EXPERIENCE ===== */
+    .experience {
+      background: var(--bg-2); padding: 8rem 8%;
+      position: relative; overflow: hidden;
+    }
+    .experience::before {
+      content: 'RECORD';
+      position: absolute; right: -1%; bottom: -4%;
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(8rem, 16vw, 20rem);
+      color: rgba(245,237,220,0.022); line-height: 1;
+      pointer-events: none; z-index: 0; letter-spacing: 0.04em; user-select: none;
+    }
+    .experience > * { position: relative; z-index: 1; }
+    .experience-intro {
+      font-family: var(--body); font-size: 0.96rem; line-height: 1.85;
+      color: rgba(245,237,220,0.6); margin-bottom: 4rem; max-width: 660px;
+    }
+    .exp-timeline { display: flex; flex-direction: column; position: relative; }
+    .exp-timeline::before {
+      content: ''; position: absolute; left: 196px; top: 0; bottom: 0;
+      width: 2px; background: linear-gradient(to bottom, var(--olive), rgba(133,146,100,0.1));
+    }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 3rem;
+      padding: 2.2rem 0;
+      border-top: 1px solid var(--border);
+      align-items: center;
+      transition: border-color 0.25s;
+      position: relative;
+    }
+    .exp-item:last-child { border-bottom: 1px solid var(--border); }
+    .exp-item:hover { border-top-color: var(--olive); }
+    .exp-item::after {
+      content: ''; position: absolute; left: 190px; top: 50%;
+      width: 14px; height: 14px; background: var(--olive); border-radius: 0;
+      transform: translateY(-50%) rotate(45deg);
+      box-shadow: 0 0 12px var(--glow);
+      transition: transform 0.2s;
+    }
+    .exp-item:hover::after { transform: translateY(-50%) rotate(45deg) scale(1.3); }
+    .exp-dates {
+      font-family: var(--heading); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--olive-soft); text-align: right;
+    }
+    .exp-right { padding-left: 1.5rem; }
+    .exp-role {
+      font-family: var(--heading); font-size: 1.55rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--cream); line-height: 1.1; margin-bottom: 0.25rem;
+    }
+    .exp-org {
+      font-family: var(--body); font-size: 0.84rem;
+      color: rgba(245,237,220,0.45); letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .exp-result {
+      font-family: var(--body); font-size: 0.88rem;
+      color: rgba(245,237,220,0.62); margin-top: 0.6rem;
+      line-height: 1.55;
+    }
 
-.card-family {
-  grid-column: span 12;
-  padding: 0;
-  position: relative;
-  min-height: clamp(320px, 42vw, 520px);
-  background: var(--navy-deep) url('family.jpg') center 30% / cover no-repeat;
-  overflow: hidden;
-}
-.card-family::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to right, oklch(0.20 0.05 248 / 0.7) 0%, oklch(0.20 0.05 248 / 0.2) 38%, transparent 60%),
-    linear-gradient(to top, oklch(0.20 0.05 248 / 0.55) 0%, transparent 35%);
-  pointer-events: none;
-}
-.card-family .family-content {
-  position: relative;
-  z-index: 1;
-  padding: clamp(1.75rem, 3.5vw, 3rem);
-  max-width: 36rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  color: var(--paper);
-}
-.card-family .family-eyebrow {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--olive-soft);
-  margin-bottom: 0.85rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-.card-family .family-eyebrow::before {
-  content: "";
-  width: 28px; height: 2px;
-  background: var(--olive-soft);
-}
-.card-family .family-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  color: var(--paper);
-  margin-bottom: 1rem;
-}
-.card-family .family-title .accent { color: var(--olive-soft); }
-.card-family .family-caption {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: oklch(0.95 0.022 88 / 0.92);
-  max-width: 36ch;
-}
+    /* ===== RECOGNITION ===== */
+    .recognition {
+      background: var(--surface-2); padding: 8rem 8%;
+      position: relative; overflow: hidden;
+    }
+    .recognition::before {
+      content: '★';
+      position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+      font-size: 40vw; color: rgba(245,237,220,0.014);
+      pointer-events: none; z-index: 0; line-height: 1; user-select: none;
+    }
+    .recognition > * { position: relative; z-index: 1; }
+    .recognition-intro {
+      font-family: var(--body); font-size: 0.95rem; color: rgba(245,237,220,0.62);
+      max-width: 600px; margin-bottom: 3.5rem; line-height: 1.75;
+    }
+    .recognition-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .recog-card {
+      background: var(--bg);
+      padding: 1.8rem 1.9rem;
+      position: relative;
+      transition: background 0.2s;
+    }
+    .recog-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; width: 3px; height: 0;
+      background: var(--olive);
+      transition: height 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    .recog-card:hover { background: rgba(107,117,71,0.06); }
+    .recog-card:hover::before { height: 100%; }
+    .recog-icon {
+      width: 32px; height: 32px;
+      margin-bottom: 1rem;
+      color: var(--olive-soft);
+    }
+    .recog-icon svg { width: 100%; height: 100%; }
+    .recog-name {
+      font-family: var(--heading); font-size: 0.9rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--cream); margin-bottom: 0.4rem;
+    }
+    .recog-desc {
+      font-family: var(--body); font-size: 0.83rem;
+      color: var(--muted); line-height: 1.55;
+    }
 
-/* === ISSUES BENTO === */
-.issues-bento { grid-auto-rows: minmax(60px, auto); }
-.issue {
-  background: var(--paper);
-  border-radius: var(--radius);
-  padding: clamp(1.75rem, 2.8vw, 2.5rem);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  box-shadow: var(--shadow-card);
-  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease;
-  overflow: hidden;
-}
-.issue:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
-.issue-icon {
-  width: clamp(48px, 5vw, 64px);
-  height: clamp(48px, 5vw, 64px);
-  background: var(--cream);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--olive-deep);
-  margin-bottom: 1.25rem;
-  flex-shrink: 0;
-}
-.issue-icon svg { width: 60%; height: 60%; }
-.issue-num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--olive-deep);
-  margin-bottom: 0.5rem;
-}
-.issue-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
-  line-height: 1;
-  color: var(--navy);
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-.issue-sub {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1rem;
-  color: var(--ink-soft);
-  margin-bottom: 1rem;
-  letter-spacing: 0.005em;
-}
-.issue-body {
-  font-size: 1rem;
-  line-height: 1.55;
-  color: var(--ink-soft);
-  flex: 1;
-}
-.issue-meta {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--navy);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6rem;
-}
-.issue-meta .tag {
-  background: var(--olive);
-  color: var(--paper);
-  padding: 0.3rem 0.65rem;
-  border-radius: 999px;
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
-}
+    /* ===== UPDATES ===== */
+    .updates { background: var(--surface); padding: 7rem 8%; }
+    .updates-inner { max-width: 640px; }
+    .updates-form { display: flex; gap: 0; margin-top: 2.5rem; }
+    .updates-form input {
+      flex: 1; padding: 1rem 1.2rem;
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-right: none; color: var(--cream);
+      font-family: var(--body); font-size: 0.92rem; min-height: 54px;
+      transition: border-color 0.2s;
+    }
+    .updates-form input:focus { outline: none; border-color: var(--olive); }
+    .updates-form input::placeholder { color: rgba(245,237,220,0.25); }
+    .updates-form button {
+      background: var(--olive); color: var(--cream); border: none;
+      padding: 0 2rem; font-family: var(--heading); font-size: 0.8rem;
+      font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.2s, box-shadow 0.2s;
+      white-space: nowrap; min-height: 54px;
+    }
+    .updates-form button:hover { background: var(--olive-b); box-shadow: 0 4px 20px var(--glow); }
 
-/* Issue spans (varied for bento feel) */
-.issue-1 { grid-column: span 7; grid-row: span 2; }
-.issue-1 .issue-title { font-size: clamp(1.7rem, 3.4vw, 2.6rem); }
-.issue-2 { grid-column: span 5; }
-.issue-3 { grid-column: span 5; }
-.issue-4 { grid-column: span 4; }
-.issue-5 { grid-column: span 8; }
+    /* ===== DONATE ===== */
+    .donate-section {
+      background: var(--olive);
+      padding: clamp(7rem, 12vw, 12rem) 8%;
+      position: relative; overflow: hidden; text-align: center;
+    }
+    .donate-section::before {
+      content: 'MULLEN';
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(14rem, 28vw, 38rem);
+      color: rgba(0,0,0,0.10); line-height: 1;
+      pointer-events: none; z-index: 0; letter-spacing: 0.06em; user-select: none;
+      white-space: nowrap;
+    }
+    .donate-section::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(245,237,220,0.07) 0%, transparent 60%);
+    }
+    .donate-inner { position: relative; z-index: 1; }
+    .donate-stars {
+      display: flex; justify-content: center; gap: 1rem; margin-bottom: 2.5rem;
+    }
+    .donate-star {
+      color: rgba(245,237,220,0.78); font-size: 1.2rem;
+      filter: drop-shadow(0 0 8px rgba(245,237,220,0.4));
+    }
+    .donate-tagline {
+      font-family: var(--heading); font-size: 0.84rem; font-weight: 400;
+      letter-spacing: 0.3em; text-transform: uppercase;
+      color: rgba(245,237,220,0.78); margin-bottom: 1.5rem;
+    }
+    .donate-headline {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.5rem, 7vw, 8rem);
+      font-weight: 400; text-transform: uppercase; letter-spacing: 0.03em;
+      color: var(--cream); line-height: 0.92; margin-bottom: 3rem;
+    }
+    .btn-cream {
+      font-family: var(--heading); font-size: 0.9rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      background: var(--cream); color: var(--bg);
+      padding: 1.2rem 4rem; border: 2px solid var(--cream);
+      cursor: pointer; transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+      min-height: 56px; display: inline-flex; align-items: center;
+    }
+    .btn-cream:hover { background: transparent; color: var(--cream); box-shadow: 0 0 40px rgba(245,237,220,0.25); }
 
-/* Featured issue (Strong Farmers) gets its own treatment */
-.issue-1 {
-  background: linear-gradient(135deg, var(--olive) 0%, var(--olive-deep) 100%);
-  color: var(--paper);
-}
-.issue-1 .issue-num { color: oklch(0.95 0.022 88 / 0.75); }
-.issue-1 .issue-title { color: var(--paper); }
-.issue-1 .issue-sub { color: oklch(0.95 0.022 88 / 0.85); }
-.issue-1 .issue-body { color: oklch(0.95 0.022 88 / 0.92); font-size: 1.05rem; }
-.issue-1 .issue-icon { background: oklch(0.95 0.022 88 / 0.18); color: var(--paper); }
-.issue-1 .issue-meta { color: oklch(0.95 0.022 88 / 0.85); border-top-color: oklch(0.95 0.022 88 / 0.22); }
-.issue-1 .issue-meta .tag { background: var(--paper); color: var(--olive-deep); }
+    /* ===== CONNECT ===== */
+    .connect-section {
+      background: var(--bg); padding: 8rem 8%;
+      position: relative; overflow: hidden;
+    }
+    .connect-section::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(245,237,220,0.016) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,237,220,0.016) 1px, transparent 1px);
+      background-size: 52px 52px; pointer-events: none;
+    }
+    .connect-section > * { position: relative; z-index: 1; }
+    .connect-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 7rem;
+      align-items: start;
+    }
+    .connect-heading {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400; text-transform: uppercase;
+      font-size: clamp(2.8rem, 4.5vw, 4.5rem); letter-spacing: 0.03em;
+      color: var(--cream); line-height: 0.92; margin-top: 0.5rem; margin-bottom: 1.5rem;
+    }
+    .connect-panel-desc {
+      font-family: var(--body); font-size: 0.92rem; font-weight: 300;
+      color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;
+    }
+    .ways-list { list-style: none; }
+    .ways-list li {
+      font-family: var(--body); font-size: 0.9rem; color: var(--muted);
+      padding: 0.78rem 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 1rem;
+      transition: color 0.2s;
+    }
+    .ways-list li:hover { color: var(--cream); }
+    .ways-list li::before {
+      content: '★'; color: var(--olive-soft); font-size: 0.55rem; flex-shrink: 0;
+      filter: drop-shadow(0 0 4px var(--glow));
+    }
+    .ways-list li:last-child { border-bottom: none; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label {
+      display: block; font-family: var(--heading); font-size: 0.68rem;
+      font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.5rem;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%; padding: 0.95rem 1rem;
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--cream); font-family: var(--body); font-size: 0.92rem;
+      min-height: 50px; transition: border-color 0.2s;
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--olive); }
+    .form-group input::placeholder { color: rgba(245,237,220,0.18); }
+    .checkbox-section { padding: 1.5rem 0; }
+    .checkbox-label {
+      font-family: var(--heading); font-size: 0.68rem; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted);
+      display: block; margin-bottom: 1rem;
+    }
+    .checkbox-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.7rem; }
+    .checkbox-grid label {
+      display: flex; align-items: center; gap: 0.6rem;
+      font-family: var(--body); font-size: 0.86rem; color: var(--muted); cursor: pointer;
+      transition: color 0.2s;
+    }
+    .checkbox-grid label:hover { color: var(--cream); }
+    .checkbox-grid input[type="checkbox"] { accent-color: var(--olive); width: 16px; height: 16px; }
+    .btn-submit {
+      width: 100%; background: var(--cream); color: var(--bg);
+      border: none; padding: 1.1rem;
+      font-family: var(--heading); font-size: 0.84rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase; cursor: pointer;
+      transition: background 0.2s; min-height: 54px; margin-top: 1.5rem;
+    }
+    .btn-submit:hover { background: var(--off-cream); }
 
-/* === RECORD BENTO === */
-.record { background: var(--cream); }
-.record-bento { grid-auto-rows: minmax(60px, auto); }
-.card-stat {
-  grid-column: span 3;
-  padding: clamp(1.5rem, 2.5vw, 2rem);
-  background: var(--navy);
-  color: var(--paper);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 180px;
-}
-.card-stat .num {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: clamp(2.6rem, 5vw, 4rem);
-  line-height: 0.9;
-  color: var(--olive-soft);
-  letter-spacing: -0.025em;
-  font-variant-numeric: tabular-nums;
-}
-.card-stat .num .sub-num { font-size: 0.6em; color: oklch(0.95 0.022 88 / 0.7); }
-.card-stat .label {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: oklch(0.95 0.022 88 / 0.7);
-  margin-bottom: 0.4rem;
-}
-.card-stat .desc {
-  margin-top: 1rem;
-  font-size: 0.92rem;
-  line-height: 1.4;
-  color: oklch(0.95 0.022 88 / 0.85);
-}
+    .contact-line {
+      display: flex; align-items: center; gap: 1.2rem;
+      padding: 1.2rem 0; border-bottom: 1px solid var(--border);
+    }
+    .contact-line:first-child { border-top: 1px solid var(--border); }
+    .contact-icon { color: var(--olive-soft); flex-shrink: 0; }
+    .contact-icon svg { width: 18px; height: 18px; }
+    .contact-text { font-family: var(--body); font-size: 0.92rem; color: var(--muted); }
+    .contact-text a { color: var(--cream); transition: color 0.2s; }
+    .contact-text a:hover { color: var(--olive-soft); }
 
-.card-stat--accent { background: var(--olive); color: var(--navy-deep); }
-.card-stat--accent .num { color: var(--navy-deep); }
-.card-stat--accent .num .sub-num { color: oklch(0.20 0.05 248 / 0.6); }
-.card-stat--accent .label { color: oklch(0.20 0.05 248 / 0.7); }
-.card-stat--accent .desc { color: oklch(0.20 0.05 248 / 0.78); }
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0F1A2D; padding: 3.5rem 8%;
+      border-top: 3px solid var(--olive);
+      position: relative; overflow: hidden;
+    }
+    footer::before {
+      content: 'MULLEN 2026';
+      position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(6rem, 14vw, 18rem);
+      color: rgba(245,237,220,0.022); line-height: 1; white-space: nowrap;
+      pointer-events: none; z-index: 0; letter-spacing: 0.08em; user-select: none;
+    }
+    .footer-inner { position: relative; z-index: 1; }
+    .footer-top {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;
+      padding-bottom: 2rem; border-bottom: 1px solid var(--border);
+    }
+    .footer-brand {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 1.5rem;
+      letter-spacing: 0.04em; text-transform: uppercase; color: var(--cream);
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .footer-brand em { color: var(--olive-soft); font-style: normal; }
+    .footer-brand-stars { color: var(--olive-soft); font-size: 0.55rem; letter-spacing: 0.06em; }
+    .footer-nav { display: flex; gap: 2rem; flex-wrap: wrap; }
+    .footer-nav a {
+      font-family: var(--heading); font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted);
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--cream); }
+    .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: var(--body); font-size: 0.74rem; color: rgba(245,237,220,0.25); }
+    .footer-disclosure {
+      font-family: var(--body); font-size: 0.72rem; color: rgba(245,237,220,0.22);
+      text-align: right; max-width: 520px; line-height: 1.65;
+    }
+    .footer-disclosure a { color: rgba(245,237,220,0.32); text-decoration: underline; }
 
-.card-roles {
-  grid-column: span 12;
-  padding: clamp(1.75rem, 3vw, 2.5rem);
-}
-.card-roles h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
-  line-height: 1;
-  color: var(--navy);
-  text-transform: uppercase;
-  letter-spacing: -0.005em;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.25rem;
-  border-bottom: 2px solid var(--olive);
-}
-.role-row {
-  display: grid;
-  grid-template-columns: 7rem 1fr auto;
-  gap: 1.5rem;
-  padding: 1.1rem 0;
-  border-bottom: 1px solid var(--rule);
-  align-items: baseline;
-}
-.role-row:last-child { border-bottom: none; }
-.role-years {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.98rem;
-  letter-spacing: 0.06em;
-  color: var(--olive-deep);
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-.role-detail .role-title {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
-  color: var(--navy);
-  letter-spacing: -0.005em;
-  margin-bottom: 0.15rem;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-.role-detail .role-org {
-  font-size: 0.95rem;
-  color: var(--ink-soft);
-}
-.role-tag {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.75rem;
-  background: var(--cream);
-  color: var(--navy);
-  border-radius: 999px;
-  white-space: nowrap;
-}
+    /* ===== ANIMATIONS ===== */
+    .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    [data-delay="1"] { transition-delay: 0.1s; }
+    [data-delay="2"] { transition-delay: 0.2s; }
+    [data-delay="3"] { transition-delay: 0.3s; }
+    [data-delay="4"] { transition-delay: 0.4s; }
+    [data-delay="5"] { transition-delay: 0.5s; }
+    [data-delay="6"] { transition-delay: 0.6s; }
 
-/* === STATEMENT BANNER === */
-.statement {
-  padding: clamp(4rem, 7vw, 6rem) var(--gutter);
-  background: var(--navy);
-  color: var(--paper);
-  position: relative;
-  overflow: hidden;
-}
-.statement::before {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 80px;
-  background: var(--olive);
-  clip-path: polygon(0 100%, 100% 100%, 100% 30%, 50% 80%, 0 30%);
-  opacity: 0.18;
-  pointer-events: none;
-}
-.statement-shell {
-  max-width: var(--max);
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: center;
-}
-.statement-mark {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 900;
-  font-size: clamp(7rem, 14vw, 12rem);
-  line-height: 0.7;
-  color: var(--olive-soft);
-}
-.statement-text {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 600;
-  font-size: clamp(1.6rem, 3vw, 2.4rem);
-  line-height: 1.18;
-  color: var(--paper);
-  letter-spacing: -0.005em;
-  max-width: 36ch;
-}
-.statement-text .accent { color: var(--olive-soft); }
-.statement-byline {
-  display: block;
-  margin-top: 1.5rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: oklch(0.95 0.022 88 / 0.7);
-}
+    @keyframes nameReveal {
+      from { clip-path: inset(0 0 100% 0); transform: translateY(10px); opacity: 0; }
+      to   { clip-path: none; transform: translateY(0); opacity: 1; }
+    }
+    .hero-left.in .hero-name-solid { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
+    .hero-left.in .hero-name-outline { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.32s both; }
 
-/* === JOIN BENTO === */
-.join { padding: clamp(3rem, 6vw, 5rem) 0; }
-.join-bento { grid-auto-rows: minmax(60px, auto); }
-.card-form {
-  grid-column: span 7;
-  padding: clamp(1.75rem, 3vw, 2.5rem);
-}
-.card-form h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
-  text-transform: uppercase;
-  letter-spacing: -0.005em;
-  color: var(--navy);
-  margin-bottom: 0.5rem;
-}
-.card-form .help {
-  color: var(--ink-soft);
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-.form-row { margin-bottom: 1rem; }
-.form-row label {
-  display: block;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin-bottom: 0.4rem;
-}
-.form-row input, .form-row textarea {
-  width: 100%;
-  padding: 0.85rem 1rem;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  color: var(--ink);
-  background: var(--cream);
-  border: 1px solid transparent;
-  border-radius: 12px;
-  min-height: 48px;
-  transition: border-color 150ms ease, background-color 150ms ease;
-}
-.form-row input:focus, .form-row textarea:focus {
-  outline: none;
-  border-color: var(--olive);
-  background: var(--paper);
-}
-.form-row textarea { resize: vertical; min-height: 110px; }
-.checks {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
-.check {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.6rem 0.85rem;
-  background: var(--cream);
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.92rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--navy);
-  cursor: pointer;
-  transition: border-color 150ms, background-color 150ms;
-  min-height: 44px;
-}
-.check input { width: 14px; height: 14px; accent-color: var(--olive); cursor: pointer; }
-.check:hover { border-color: var(--olive); }
-.btn-submit {
-  width: 100%;
-  padding: 1rem 1.5rem;
-  background: var(--navy);
-  color: var(--paper);
-  border-radius: 999px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  transition: background-color 180ms ease, transform 180ms ease;
-  min-height: 52px;
-}
-.btn-submit:hover { background: var(--olive); transform: translateY(-1px); }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-up { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .ticker-track, .hero-right img { animation: none !important; }
+    }
 
-.card-contact {
-  grid-column: span 5;
-  background: var(--navy);
-  color: var(--paper);
-  padding: clamp(1.75rem, 3vw, 2.5rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-}
-.card-contact h3 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 800;
-  font-size: clamp(1.5rem, 2.6vw, 2rem);
-  text-transform: uppercase;
-  color: var(--paper);
-  letter-spacing: -0.005em;
-  margin-bottom: 0.5rem;
-}
-.card-contact .intro {
-  color: oklch(0.95 0.022 88 / 0.85);
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-.contact-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.contact-row {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  font-size: 1rem;
-}
-.contact-row .icon {
-  width: 36px; height: 36px;
-  background: oklch(0.95 0.022 88 / 0.1);
-  color: var(--olive-soft);
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.contact-row a:hover { color: var(--olive-soft); }
-.contact-donate {
-  background: var(--olive);
-  color: var(--navy-deep);
-  padding: 1rem 1.4rem;
-  border-radius: 999px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  transition: background-color 180ms ease, transform 180ms ease;
-}
-.contact-donate:hover { background: var(--olive-soft); transform: translateY(-1px); color: var(--navy-deep); }
-
-/* === FOOTER === */
-footer {
-  background: var(--navy-deep);
-  color: oklch(0.95 0.022 88 / 0.78);
-  padding: clamp(3rem, 5vw, 4rem) var(--gutter) 2rem;
-}
-.footer-inner {
-  max-width: var(--max);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 2.5rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid oklch(0.95 0.022 88 / 0.12);
-}
-.footer-brand .nav-logo-text { color: var(--paper); }
-.footer-brand .nav-logo-text .accent { color: var(--olive-soft); }
-.footer-brand .nav-logo-mark { color: var(--olive-soft); }
-.footer-brand p {
-  margin-top: 1.25rem;
-  max-width: 36ch;
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-.footer-col h5 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--olive-soft);
-  margin-bottom: 1rem;
-}
-.footer-col a {
-  display: block;
-  padding: 0.4rem 0;
-  font-size: 0.94rem;
-  transition: color 150ms;
-}
-.footer-col a:hover { color: var(--olive-soft); }
-.compliance {
-  max-width: var(--max);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.85rem;
-  font-size: 0.82rem;
-  color: oklch(0.95 0.022 88 / 0.6);
-}
-.compliance .paid {
-  font-family: 'Barlow Condensed', sans-serif;
-  color: var(--olive-soft);
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-}
-
-/* === ANIMATIONS === */
-.fade-up { opacity: 0; transform: translateY(16px); transition: opacity 700ms ease-out, transform 700ms ease-out; }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-  .fade-up { opacity: 1; transform: none; }
-  .topbar .pulse::before { animation: none; }
-  .card.is-link:hover, .issue:hover { transform: none; }
-  html { scroll-behavior: auto; }
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 1024px) {
-  .card-name { grid-column: span 12; grid-row: auto; min-height: auto; }
-  .card-photo { grid-column: span 12; grid-row: auto; min-height: 60svh; aspect-ratio: 4/5; }
-  .card-tagline, .card-cta, .card-info { grid-column: span 6; }
-  .card-bio { grid-column: span 12; }
-  .card-quick { grid-column: span 12; }
-  .issue-1 { grid-column: span 12; grid-row: auto; }
-  .issue-2, .issue-3, .issue-4, .issue-5 { grid-column: span 6; }
-  .card-stat { grid-column: span 6; }
-  .card-form { grid-column: span 12; }
-  .card-contact { grid-column: span 12; }
-  .footer-inner { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; }
-}
-
-@media (max-width: 720px) {
-  body { font-size: 16px; }
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
-  .topbar { font-size: 0.72rem; }
-  .topbar .meta { display: none; }
-  .card-tagline, .card-cta, .card-info { grid-column: span 12; }
-  .issue-2, .issue-3, .issue-4, .issue-5 { grid-column: span 12; }
-  .card-stat { grid-column: span 12; }
-  .role-row { grid-template-columns: 1fr; gap: 0.4rem; padding: 1rem 0; }
-  .role-tag { justify-self: start; }
-  .checks { grid-template-columns: 1fr; }
-  .statement-shell { grid-template-columns: 1fr; gap: 1rem; }
-  .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
-  .footer-brand { grid-column: auto; }
-  .compliance { flex-direction: column; align-items: flex-start; }
-}
-</style>
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1100px) {
+      .pillars-strip { grid-template-columns: repeat(2, 1fr); }
+      .pillar-item:nth-child(2) { border-right: none; }
+      .pillar-item:nth-child(1), .pillar-item:nth-child(2) { border-bottom: 1px solid rgba(245,237,220,0.07); }
+    }
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 90px; }
+      .hero-right { height: 82vw; max-height: 540px; order: -1; }
+      .hero-right .hero-slice { display: none; }
+      .hero-left { padding: 3rem 5%; align-items: center; text-align: center; justify-content: flex-start; }
+      .hero-tag { justify-content: center; }
+      .hero-tag::before { display: none; }
+      .hero-divider { display: none; }
+      .hero-left-bar { display: none; }
+      .hero-left::before { opacity: 0.3; }
+      .hero-tagline { margin-left: auto; margin-right: auto; }
+      .hero-btns { justify-content: center; }
+      .hero-right-overlay { background: linear-gradient(to top, rgba(26,41,66,0.88) 0%, transparent 50%); }
+      .bio { grid-template-columns: 1fr; min-height: auto; }
+      .bio-photo { height: 90vw; max-height: 460px; }
+      .bio-photo img { filter: brightness(0.92) contrast(1.05) saturate(1.05); object-position: center 18%; }
+      .bio-photo-overlay { background: linear-gradient(to top, var(--surface) 0%, transparent 60%); }
+      .bio-content { padding: 3.5rem 5%; }
+      .connect-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .exp-timeline::before { display: none; }
+      .exp-item::after { display: none; }
+      .experience { padding: 5rem 5%; }
+      .connect-heading { font-size: clamp(2.2rem, 7vw, 3rem); }
+    }
+    @media (max-width: 768px) {
+      section, .issues, .recognition, .updates, .connect-section { padding: 4rem 5%; }
+      .experience, .bio-content { padding: 4rem 5%; }
+      .donate-section { padding: 4rem 5%; }
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; flex-shrink: 0; }
+      #nav { justify-content: space-between; height: 78px; }
+      .nav-brand-name { font-size: 1.55rem; }
+      .nav-brand-name em { font-size: 1.55rem; }
+      .nav-brand-mark { width: 38px; height: 22px; }
+      .section-heading { margin-bottom: 2rem; }
+      .issue-row { grid-template-columns: 48px 1fr; gap: 1rem; }
+      .issue-arrow { display: none; }
+      .issue-num { font-size: 2.5rem; }
+      .hero-tag { display: block; text-align: center; font-size: 0.65rem; letter-spacing: 0.16em; }
+      .hero-btns { flex-direction: column; align-items: center; width: 100%; }
+      .hero-btns .btn-olive, .hero-btns .btn-ghost { width: 100%; max-width: 300px; justify-content: center; }
+      .hero-election-date { display: none; }
+      .pillars-strip { grid-template-columns: 1fr 1fr; }
+      .pillar-item { border-right: none !important; border-bottom: 1px solid rgba(245,237,220,0.07); }
+      .pillar-item:last-child { border-bottom: none; }
+      .updates-form { flex-direction: column; }
+      .updates-form input { border-right: 1px solid var(--border); border-bottom: none; width: 100%; }
+      .updates-form button { width: 100%; padding: 1rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .checkbox-grid { grid-template-columns: 1fr 1fr; }
+      .footer-top { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .footer-nav { gap: 1rem; }
+      .footer-bottom { flex-direction: column; }
+      .footer-disclosure { text-align: left; max-width: 100%; }
+      .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
+      .exp-dates { text-align: left; }
+      .exp-right { padding-left: 0; }
+      .bio-cred { white-space: normal; }
+      .recognition-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 480px) {
+      .hero-name { font-size: clamp(3.8rem, 17vw, 6rem); }
+      .hero-name-outline { -webkit-text-stroke-width: 2px; }
+      .statement-quote { font-size: clamp(2.4rem, 9vw, 4rem); }
+      .pillars-strip { grid-template-columns: 1fr; }
+      .pillar-item { padding: 2rem 1.5rem; }
+      .section-heading { font-size: clamp(2rem, 9vw, 3rem) !important; }
+      .connect-heading { font-size: clamp(2rem, 8vw, 2.8rem); }
+      .bio-photo { height: 100vw; max-height: 420px; }
+      .footer-nav { flex-direction: column; gap: 0.8rem; }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Top bar -->
-<div class="topbar">
-  <div class="left">
-    <span class="pulse">Mullen for Yakima · 2026</span>
-    <span class="meta">Yakima County Commissioner · District 1</span>
-  </div>
-  <div class="right">
-    <span class="meta">General Election · Nov 3, 2026</span>
-    <a href="#" style="color: var(--olive-soft); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.74rem;">Donate</a>
-  </div>
-</div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- Nav -->
-<header id="nav">
-  <a href="#top" class="nav-logo" aria-label="Mullen for Yakima County">
-    <span class="nav-logo-mark" aria-hidden="true">
-      <svg viewBox="0 0 36 22" fill="none">
-        <path d="M2 9 Q 9 3, 16 9 T 30 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <path d="M2 17 Q 9 11, 16 17 T 30 17" stroke="var(--water)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-        <circle cx="33" cy="6" r="2.5" fill="var(--water)"/>
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-brand">
+    <span class="nav-brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 46 28" fill="none">
+        <path d="M3 11 Q 11 4, 19 11 T 36 11" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+        <path d="M3 21 Q 11 14, 19 21 T 36 21" stroke="var(--water)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+        <circle cx="42" cy="7" r="3.2" fill="var(--water)"/>
       </svg>
     </span>
-    <span class="nav-logo-text">Dave <span class="accent">Mullen</span></span>
-  </a>
-  <nav class="nav-links" aria-label="Primary">
-    <a href="#about">About</a>
+    <div>
+      <div class="nav-brand-name">Dave <em>Mullen</em></div>
+      <div class="nav-brand-sub">Yakima County Commissioner · Dist 1</div>
+    </div>
+  </div>
+  <div class="nav-links">
     <a href="#issues">Issues</a>
-    <a href="#record">Record</a>
-    <a href="#join">Join</a>
-    <a href="#" class="cta">Donate</a>
-  </nav>
-  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#donate" class="btn-nav-donate">Donate</a>
+  </div>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
-</header>
+</nav>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#about">About</a>
-  <a href="#issues">Issues</a>
-  <a href="#record">Record</a>
-  <a href="#join">Join</a>
-  <a href="#" class="cta">Donate to the Campaign</a>
+<div class="nav-overlay" id="navOverlay" aria-hidden="true">
+  <a href="#issues" onclick="closeNav()">Issues</a>
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#experience" onclick="closeNav()">Experience</a>
+  <a href="#contact" onclick="closeNav()">Contact</a>
+  <a href="#donate" class="btn-nav-donate" onclick="closeNav()">Donate</a>
 </div>
 
-<main id="top">
+<!-- HERO -->
+<div class="hero" role="banner">
+  <div class="hero-left fade-up">
+    <div class="hero-left-bar"></div>
 
-<!-- HERO BENTO -->
-<section class="hero">
-  <div class="shell">
-    <div class="bento">
-      <article class="card card-name">
-        <div>
-          <div class="name-given">Dave</div>
-          <div class="name-family">Mullen</div>
-          <div class="name-meta">
-            <span>For Yakima County</span>
-            <span class="star">★</span>
-            <span>Commissioner</span>
-            <span class="star">★</span>
-            <span>District 1</span>
-          </div>
-        </div>
-        <svg class="name-mark" viewBox="0 0 120 80" fill="none" aria-hidden="true">
-          <path d="M70 16 Q 90 4, 110 16" stroke="currentColor" stroke-width="2.5" fill="none"/>
-          <path d="M88 8 C 84 18, 84 26, 88 28 C 92 26, 92 18, 88 8 Z" fill="var(--water)"/>
-          <path d="M5 42 Q 30 32, 55 42 T 105 42 T 115 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
-          <path d="M5 58 Q 30 48, 55 58 T 105 58 T 115 56" stroke="var(--water)" stroke-width="4" stroke-linecap="round" fill="none"/>
-        </svg>
-      </article>
+    <div class="hero-stars">
+      <span class="hero-star">★</span>
+      <span class="hero-star">★</span>
+      <span class="hero-star">★</span>
+      <span class="hero-stars-line"></span>
+    </div>
 
-      <article class="card card-photo" role="img" aria-label="Dave Mullen, candidate for Yakima County Commissioner District 1">
-        <div class="photo-caption">
-          <div class="label">Republican · 2026</div>
-          <div class="role">Air Force veteran. Lifelong Yakima Valley.</div>
-        </div>
-      </article>
+    <div class="hero-tag">Republican &middot; Yakima County Commissioner &middot; District 1</div>
 
-      <article class="card card-tagline">
-        <div class="label">The Mission</div>
-        <div class="text">Working today. <span class="accent">Building tomorrow.</span></div>
-      </article>
+    <h1 class="hero-name">
+      <span class="hero-name-solid">Dave</span>
+      <span class="hero-name-outline">Mullen</span>
+    </h1>
 
-      <a href="#" class="card card-cta is-link">
-        <div>
-          <div class="label">Take Action</div>
-          <div class="heading">Donate to the Campaign</div>
-        </div>
-        <div class="card-cta-row">
-          <span>Stand With Dave</span>
-          <span class="arrow" aria-hidden="true">→</span>
-        </div>
-      </a>
+    <div class="hero-divider">
+      <div class="hero-divider-line"></div>
+      <div class="hero-divider-dot"></div>
+    </div>
 
-      <article class="card card-info">
-        <div>
-          <div class="label">General Election</div>
-          <div class="stat">Nov 3</div>
-          <div class="sub">2026 · Yakima County · District 1</div>
-        </div>
-      </article>
+    <div class="hero-sub">Yakima County Commissioner &middot; District 1 &middot; 2026</div>
+    <p class="hero-tagline">Working Today. <em>Building Tomorrow.</em><br>Air Force veteran. Executive leader. Lifelong Yakima Valley.</p>
+    <div class="hero-btns">
+      <a href="#donate" class="btn-olive">Donate Now</a>
+      <a href="#contact" class="btn-ghost">Volunteer</a>
+    </div>
+    <div class="hero-election-date">
+      <span>Primary</span>August 4, 2026<br>
+      <span>General</span>November 3, 2026
     </div>
   </div>
-</section>
 
-<!-- ABOUT BENTO -->
-<section id="about">
-  <div class="shell">
-    <div class="section-head fade-up">
-      <span class="section-kicker">About Dave</span>
-      <h2 class="section-title">A career of public service, built right here in the Yakima Valley.</h2>
-    </div>
-    <div class="bento about-bento">
-      <article class="card card-bio fade-up">
-        <p class="lede">Dave Mullen is a lifelong public servant, U.S. Air Force veteran, and proven executive leader running for Yakima County Commissioner, District 1.</p>
-        <p>Dave brings more than fifteen years of executive experience in municipal administration, healthcare operations, project management, and community development to his candidacy. His record demonstrates a consistent ability to <strong>stabilize organizations, deliver measurable results, reduce costs, and improve services</strong> for the residents he serves.</p>
-        <p>From <strong>Eglin Air Force Base</strong> to the <strong>City of Selah</strong>, the <strong>Moxee City Council</strong>, and the <strong>Town of Naches</strong>, Dave has stepped into difficult moments and delivered. He stabilizes operations during leadership transitions, negotiates contracts that save taxpayers millions, builds the trust of city, county, and state partners, and keeps services moving for the people who count on them.</p>
-        <p>He continues to invest in the Yakima Valley as a youth sports coach, a longtime church board member, and a husband and father raising his family in the same valley where he grew up.</p>
-      </article>
+  <div class="hero-right">
+    <img src="family.jpg" class="hero-bg-photo"
+         alt="Dave Mullen with his family in the Yakima Valley"
+         loading="eager">
+    <div class="hero-right-overlay"></div>
+    <div class="hero-slice"></div>
+  </div>
+</div>
 
-      <article class="card card-quick fade-up">
-        <div class="quick-row">
-          <span class="label">Born</span>
-          <span class="value">Yakima Valley, WA</span>
-        </div>
-        <div class="quick-row">
-          <span class="label">Military</span>
-          <span class="value">U.S. Air Force, NCOIC<br>2009–2015</span>
-        </div>
-        <div class="quick-row">
-          <span class="label">Education</span>
-          <span class="value">B.S. Business · MBA<br>Public Admin Cert</span>
-        </div>
-        <div class="quick-row">
-          <span class="label">Public</span>
-          <span class="value">Selah · Moxee · Naches</span>
-        </div>
-        <div class="quick-row">
-          <span class="label">Today</span>
-          <span class="value">Customer Support Mgr<br>Coach · Church board</span>
-        </div>
-      </article>
-
-      <article class="card card-family fade-up" role="img" aria-label="Dave Mullen with his family in the Yakima Valley">
-        <div class="family-content">
-          <span class="family-eyebrow">Home in the Valley</span>
-          <h3 class="family-title">A husband, a father, <span class="accent">a neighbor.</span></h3>
-          <p class="family-caption">Dave with his family in the Yakima Valley. Raising his kids, coaching youth sports, and serving the same community he grew up in.</p>
-        </div>
-      </article>
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Strong Farmers</span><span class="ticker-star">★</span>
+      <span>Water Rights</span><span class="ticker-star">★</span>
+      <span>Fiscal Responsibility</span><span class="ticker-star">★</span>
+      <span>Stronger Communities</span><span class="ticker-star">★</span>
+      <span>Local Values · Local Voice</span><span class="ticker-star">★</span>
+      <span>Working Today · Building Tomorrow</span><span class="ticker-star">★</span>
+      <span>Vote Mullen 2026</span><span class="ticker-star">★</span>
+      <span>Strong Farmers</span><span class="ticker-star">★</span>
+      <span>Water Rights</span><span class="ticker-star">★</span>
+      <span>Fiscal Responsibility</span><span class="ticker-star">★</span>
+      <span>Stronger Communities</span><span class="ticker-star">★</span>
+      <span>Local Values · Local Voice</span><span class="ticker-star">★</span>
+      <span>Working Today · Building Tomorrow</span><span class="ticker-star">★</span>
+      <span>Vote Mullen 2026</span><span class="ticker-star">★</span>
     </div>
   </div>
-</section>
+</div>
 
-<!-- ISSUES BENTO -->
-<section id="issues">
-  <div class="shell">
-    <div class="section-head fade-up">
-      <span class="section-kicker">The Issues</span>
-      <h2 class="section-title">Five priorities. One job. Working for the Yakima Valley.</h2>
-    </div>
-    <div class="bento issues-bento">
-      <article class="issue issue-1 fade-up">
-        <div class="issue-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M3 18 L7 14 L11 17 L17 11 L21 14"/>
-            <path d="M21 18 L21 14 L17 14"/>
-            <circle cx="6" cy="9" r="2"/>
-            <path d="M3 22 L21 22"/>
-          </svg>
-        </div>
-        <div class="issue-num">Issue I</div>
-        <h3 class="issue-title">Strong Farmers</h3>
+<!-- ISSUES -->
+<section class="issues" id="issues">
+  <div class="section-eyebrow fade-up">Platform</div>
+  <h2 class="section-heading fade-up">What Dave<br>Stands For</h2>
+  <div class="issues-list">
+
+    <div class="issue-row fade-up" data-delay="1">
+      <div class="issue-num">01</div>
+      <div class="issue-body">
+        <div class="issue-title">Strong Farmers</div>
         <p class="issue-sub">Supporting our agriculture.</p>
-        <p class="issue-body">Yakima County agriculture is the backbone of our economy and our identity. Dave will fight for the policies, infrastructure, and water access that keep our growers competitive, our farms profitable, and our valley feeding the country. When agriculture wins, the whole county wins.</p>
-        <div class="issue-meta">
-          <span>Anchored in Yakima Valley · lifetime</span>
-          <span class="tag">Agriculture</span>
-        </div>
-      </article>
+        <p class="issue-desc">Yakima County agriculture is the backbone of our economy and our identity. Dave will fight for the policies, infrastructure, and water access that keep our growers competitive, our farms profitable, and our valley feeding the country. When agriculture wins, the whole county wins.</p>
+      </div>
+      <div class="issue-arrow">&#8594;</div>
+    </div>
 
-      <article class="issue issue-2 fade-up">
-        <div class="issue-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 2 C 8 8, 5 12, 5 16 C 5 19.5, 8 22, 12 22 C 16 22, 19 19.5, 19 16 C 19 12, 16 8, 12 2 Z"/>
-            <path d="M9 16 Q 11 13, 13 16"/>
-          </svg>
-        </div>
-        <div class="issue-num">Issue II</div>
-        <h3 class="issue-title">Water Rights</h3>
+    <div class="issue-row fade-up" data-delay="2">
+      <div class="issue-num">02</div>
+      <div class="issue-body">
+        <div class="issue-title">Advocate for Water Rights</div>
         <p class="issue-sub">Protecting our water. Protecting our future.</p>
-        <p class="issue-body">Water is the most valuable asset Yakima County has. Dave will defend our rights, oppose efforts to divert our supply, and advocate for the long-term storage and management our region needs.</p>
-        <div class="issue-meta">
-          <span>$5M WWTP oversight</span>
-          <span class="tag">Water</span>
-        </div>
-      </article>
+        <p class="issue-desc">Water is the most valuable asset Yakima County has. Dave will defend our rights, oppose efforts to divert our supply, and advocate for the long-term storage and management our region needs to keep growing. He oversaw a $5M wastewater project as Naches Interim City Administrator and knows the system from the ground up.</p>
+      </div>
+      <div class="issue-arrow">&#8594;</div>
+    </div>
 
-      <article class="issue issue-3 fade-up">
-        <div class="issue-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <rect x="5" y="3" width="14" height="18" rx="2"/>
-            <path d="M9 3 V 5 H 15 V 3"/>
-            <path d="M9 10 H 15 M 9 14 H 13"/>
-            <text x="11" y="18" font-family="Barlow Condensed" font-size="6" fill="currentColor" font-weight="800" text-anchor="middle">$</text>
-          </svg>
-        </div>
-        <div class="issue-num">Issue III</div>
-        <h3 class="issue-title">Fiscal Responsibility</h3>
+    <div class="issue-row fade-up" data-delay="3">
+      <div class="issue-num">03</div>
+      <div class="issue-body">
+        <div class="issue-title">Fiscal Responsibility</div>
         <p class="issue-sub">Managing tax dollars with integrity.</p>
-        <p class="issue-body">Every taxpayer dollar gets the same scrutiny Dave gave $3.1 million in healthcare contract savings. The county budget belongs to the residents who fund it.</p>
-        <div class="issue-meta">
-          <span>$3.1M saved · FY21</span>
-          <span class="tag">Budget</span>
-        </div>
-      </article>
+        <p class="issue-desc">Every taxpayer dollar gets the same scrutiny Dave gave $3.1 million in healthcare contract savings in a single fiscal year. The county budget belongs to the residents who fund it, and they deserve a commissioner who treats it that way.</p>
+      </div>
+      <div class="issue-arrow">&#8594;</div>
+    </div>
 
-      <article class="issue issue-4 fade-up">
-        <div class="issue-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <circle cx="9" cy="8" r="3"/>
-            <circle cx="17" cy="9" r="2.4"/>
-            <path d="M3 20 C 3 16, 6 14, 9 14 C 12 14, 15 16, 15 20"/>
-            <path d="M14 20 C 14 17, 16 15, 17 15 C 19 15, 21 17, 21 20"/>
-          </svg>
-        </div>
-        <div class="issue-num">Issue IV</div>
-        <h3 class="issue-title">Stronger Communities</h3>
-        <p class="issue-sub">Safe, vibrant communities.</p>
-        <p class="issue-body">Dave brings six years of military security leadership and direct experience running parks, councils, and town operations across the Valley.</p>
-        <div class="issue-meta">
-          <span>3 cities served</span>
-          <span class="tag">Community</span>
-        </div>
-      </article>
+    <div class="issue-row fade-up" data-delay="4">
+      <div class="issue-num">04</div>
+      <div class="issue-body">
+        <div class="issue-title">Stronger Communities</div>
+        <p class="issue-sub">Safe, vibrant communities across Yakima County.</p>
+        <p class="issue-desc">Strong communities need reliable infrastructure, uncompromising public safety, and government that actually shows up. Dave brings six years of military security leadership and direct experience running parks, councils, and town operations across the Valley. He treats the foundations like the priorities they are.</p>
+      </div>
+      <div class="issue-arrow">&#8594;</div>
+    </div>
 
-      <article class="issue issue-5 fade-up">
-        <div class="issue-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-            <path d="M12 3 L14 9 L20 9 L15.5 13 L17 19 L12 16 L7 19 L8.5 13 L4 9 L10 9 Z"/>
-          </svg>
-        </div>
-        <div class="issue-num">Issue V</div>
-        <h3 class="issue-title">Local Values, Local Voice</h3>
+    <div class="issue-row fade-up" data-delay="5">
+      <div class="issue-num">05</div>
+      <div class="issue-body">
+        <div class="issue-title">Local Values, Local Voice</div>
         <p class="issue-sub">Listening. Leading. Delivering.</p>
-        <p class="issue-body">The residents of District 1 are not abstractions. They are the families Dave coaches youth sports for, the neighbors at his church, and the people he has lived alongside in the Yakima Valley his entire adult life. They deserve a commissioner who answers the phone, shows up, and delivers.</p>
-        <div class="issue-meta">
-          <span>Coaching since 2014</span>
-          <span class="tag">Service</span>
-        </div>
-      </article>
+        <p class="issue-desc">The residents of District 1 are not abstractions. They are the families Dave coaches youth sports for, his neighbors at church, and the people he has lived alongside in the Yakima Valley his entire adult life. They deserve a commissioner who answers the phone, shows up, and delivers.</p>
+      </div>
+      <div class="issue-arrow">&#8594;</div>
     </div>
+
   </div>
 </section>
 
-<!-- RECORD BENTO -->
-<section id="record" class="record">
-  <div class="shell">
-    <div class="section-head fade-up">
-      <span class="section-kicker">The Record</span>
-      <h2 class="section-title">Numbers that show the work. Years that show the commitment.</h2>
-    </div>
-    <div class="bento record-bento">
-      <article class="card card-stat fade-up">
-        <div>
-          <div class="label">Military</div>
-          <div class="num">6<span class="sub-num">yr</span></div>
-        </div>
-        <div class="desc">U.S. Air Force, NCOIC Resource Protection at Eglin AFB.</div>
-      </article>
-      <article class="card card-stat card-stat--accent fade-up">
-        <div>
-          <div class="label">Healthcare</div>
-          <div class="num">$3.1<span class="sub-num">M</span></div>
-        </div>
-        <div class="desc">Saved in a single fiscal year through smart contract negotiation.</div>
-      </article>
-      <article class="card card-stat fade-up">
-        <div>
-          <div class="label">Youth Sports</div>
-          <div class="num">3<span class="sub-num">k+</span></div>
-        </div>
-        <div class="desc">Participants supported as Selah Parks &amp; Recreation Director.</div>
-      </article>
-      <article class="card card-stat fade-up">
-        <div>
-          <div class="label">Training</div>
-          <div class="num">100<span class="sub-num">%</span></div>
-        </div>
-        <div class="desc">Pass rate on security training he led for 100+ Airmen.</div>
-      </article>
+<!-- STATEMENT -->
+<section class="statement">
+  <div class="statement-bg" id="statementBg"></div>
+  <div class="statement-stars">
+    <span class="stmt-star">★</span>
+    <span class="stmt-star">★</span>
+    <span class="stmt-star">★</span>
+  </div>
+  <blockquote class="statement-quote fade-up">
+    Working today.<br><em>Building tomorrow.</em><br>For the Yakima Valley.
+  </blockquote>
+  <p class="statement-cite fade-up" data-delay="2">Dave Mullen &nbsp;·&nbsp; Candidate, Yakima County Commissioner</p>
+</section>
 
-      <article class="card card-roles fade-up">
-        <h3>Service Record</h3>
-        <div class="role-row">
-          <div class="role-years">2009 — 2015</div>
-          <div class="role-detail">
-            <div class="role-title">NCOIC, Resource Protection</div>
-            <div class="role-org">U.S. Air Force · Eglin Air Force Base, FL</div>
-          </div>
-          <span class="role-tag">Military</span>
-        </div>
-        <div class="role-row">
-          <div class="role-years">2015 — 2018</div>
-          <div class="role-detail">
-            <div class="role-title">Parks &amp; Recreation Director</div>
-            <div class="role-org">City of Selah, WA · 10 parks · 44 acres</div>
-          </div>
-          <span class="role-tag">Municipal</span>
-        </div>
-        <div class="role-row">
-          <div class="role-years">2018 — 2022</div>
-          <div class="role-detail">
-            <div class="role-title">Business &amp; Value Analyst</div>
-            <div class="role-org">Yakima Valley Memorial Hospital · 220+ bed facility</div>
-          </div>
-          <span class="role-tag">Operations</span>
-        </div>
-        <div class="role-row">
-          <div class="role-years">2019 — 2021</div>
-          <div class="role-detail">
-            <div class="role-title">City Councilmember</div>
-            <div class="role-org">City of Moxee, WA · Elected office</div>
-          </div>
-          <span class="role-tag">Elected</span>
-        </div>
-        <div class="role-row">
-          <div class="role-years">2024</div>
-          <div class="role-detail">
-            <div class="role-title">Interim City Administrator</div>
-            <div class="role-org">Town of Naches, WA · $5M WWTP project oversight</div>
-          </div>
-          <span class="role-tag">Crisis Lead</span>
-        </div>
-        <div class="role-row">
-          <div class="role-years">2022 — Today</div>
-          <div class="role-detail">
-            <div class="role-title">Customer Support Manager, West Region</div>
-            <div class="role-org">Kyrus · $10M+ ARR portfolio · CSAT +5% YoY</div>
-          </div>
-          <span class="role-tag">Executive</span>
-        </div>
-      </article>
+<!-- VALLEY PHOTO STRIP -->
+<div class="valley-strip" aria-hidden="true">
+  <div class="valley-panel">
+    <img src="yakima-hills.jpg" alt="Yakima Valley hills" loading="lazy">
+    <div class="valley-panel-overlay"></div>
+    <span class="valley-panel-label">Yakima Hills</span>
+  </div>
+  <div class="valley-panel">
+    <img src="yakima-river.jpg" alt="Yakima River" loading="lazy">
+    <div class="valley-panel-overlay"></div>
+    <span class="valley-panel-label">Yakima River</span>
+  </div>
+  <div class="valley-panel">
+    <img src="yakima-apples.jpg" alt="Apple orchards in the Yakima Valley" loading="lazy">
+    <div class="valley-panel-overlay"></div>
+    <span class="valley-panel-label">Valley Orchards</span>
+  </div>
+  <div class="valley-panel">
+    <img src="yakima-hops.jpg" alt="Hop yards in the Yakima Valley" loading="lazy">
+    <div class="valley-panel-overlay"></div>
+    <span class="valley-panel-label">Yakima Hops</span>
+  </div>
+</div>
+
+<!-- BIO -->
+<div class="bio" id="about">
+  <div class="bio-photo">
+    <img src="dave-mullen.jpeg" alt="Dave Mullen, candidate for Yakima County Commissioner District 1">
+    <div class="bio-photo-overlay"></div>
+    <div class="bio-photo-accent"></div>
+  </div>
+  <div class="bio-content fade-up">
+    <div class="section-eyebrow">About Dave</div>
+    <p class="bio-pull">
+      A career of public service.<br>
+      <em>Built right here in the Valley.</em>
+    </p>
+    <p class="bio-body">Dave Mullen is a lifelong public servant, U.S. Air Force veteran, and proven executive leader running for Yakima County Commissioner, District 1. He brings more than fifteen years of executive experience in municipal administration, healthcare operations, project management, and community development to his candidacy.</p>
+    <p class="bio-body">Dave served from 2009 to 2015 as Non-Commissioned Officer in Charge of Resource Protection at Eglin Air Force Base, training more than 100 Airmen of all ranks with a 100% pass rate on end-of-course exams. His leadership earned two Air Force Achievement Medals, the Senior Airman Below-the-Zone promotion, and recognition as a Distinguished Graduate of Airman Leadership School.</p>
+    <p class="bio-body">After the Air Force, Dave returned to the Yakima Valley and served as Parks &amp; Recreation Director for the City of Selah, was elected to the Moxee City Council, served as Business and Value Analyst at Yakima Valley Memorial Hospital (where he saved $3.1M in a single fiscal year), and was hand-picked as Interim City Administrator for the Town of Naches during a leadership crisis.</p>
+    <p class="bio-body">He continues to invest in the Valley as a youth sports coach, longtime church board member, and a husband and father raising his family in the same valley where he grew up.</p>
+    <p class="bio-body-highlight">A conservative Republican committed to fiscal responsibility, water rights, public safety, and government that actually works for the people of District 1.</p>
+    <div class="bio-creds">
+      <span class="bio-cred">U.S. Air Force Veteran</span>
+      <span class="bio-cred">Selah Parks Director</span>
+      <span class="bio-cred">Moxee City Council</span>
+      <span class="bio-cred">Naches City Admin</span>
+      <span class="bio-cred">MBA · Public Admin Cert</span>
     </div>
+  </div>
+</div>
+
+<!-- PILLARS STRIP -->
+<section class="pillars-strip" aria-label="Dave Mullen's core commitments">
+  <div class="pillar-item fade-up">
+    <div class="pillar-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 36 L14 28 L22 34 L34 22 L42 28"/>
+        <path d="M42 36 L42 28 L34 28"/>
+        <circle cx="12" cy="18" r="3.5"/>
+        <path d="M6 42 L42 42"/>
+      </svg>
+    </div>
+    <div class="pillar-title">Strong Farmers</div>
+    <div class="pillar-desc">Supporting Valley agriculture, growers, and the workers who feed the country.</div>
+  </div>
+  <div class="pillar-item fade-up" data-delay="2">
+    <div class="pillar-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M24 4 C 16 16, 10 24, 10 32 C 10 39, 16 44, 24 44 C 32 44, 38 39, 38 32 C 38 24, 32 16, 24 4 Z"/>
+        <path d="M18 32 Q 22 26, 26 32"/>
+      </svg>
+    </div>
+    <div class="pillar-title">Water Rights</div>
+    <div class="pillar-desc">Defending the most valuable asset Yakima County has. Now and for the next generation.</div>
+  </div>
+  <div class="pillar-item fade-up" data-delay="3">
+    <div class="pillar-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="10" y="6" width="28" height="36" rx="2"/>
+        <path d="M18 6 V 10 H 30 V 6"/>
+        <path d="M18 20 H 30 M 18 28 H 26"/>
+      </svg>
+    </div>
+    <div class="pillar-title">Fiscal Discipline</div>
+    <div class="pillar-desc">$3.1M in healthcare savings. Every county dollar gets the same scrutiny.</div>
+  </div>
+  <div class="pillar-item fade-up" data-delay="4">
+    <div class="pillar-icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="18" cy="16" r="6"/>
+        <circle cx="34" cy="18" r="4.6"/>
+        <path d="M6 40 C 6 32, 12 28, 18 28 C 24 28, 30 32, 30 40"/>
+        <path d="M28 40 C 28 34, 32 30, 34 30 C 38 30, 42 34, 42 40"/>
+      </svg>
+    </div>
+    <div class="pillar-title">Safe Communities</div>
+    <div class="pillar-desc">Six years of military security leadership. Public safety treated as a priority.</div>
   </div>
 </section>
 
-<!-- STATEMENT BANNER -->
-<section class="statement" aria-label="Candidate statement">
-  <div class="statement-shell">
-    <span class="statement-mark" aria-hidden="true">"</span>
-    <div>
-      <p class="statement-text"><span class="accent">Working today.</span> Building tomorrow. That is the standard for every dollar spent, every meeting taken, every decision made on behalf of District 1.</p>
-      <span class="statement-byline">Dave Mullen · Candidate, Yakima County Commissioner</span>
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <div class="section-eyebrow fade-up">Experience</div>
+  <h2 class="section-heading fade-up">Proven.<br>Local. Ready.</h2>
+  <p class="experience-intro fade-up">Dave Mullen's commitment to public service is rooted in real experience, steady leadership, and a deep connection to the community he serves. Every role he has taken demands accountability, thoughtful decision-making, and practical results.</p>
+  <div class="exp-timeline">
+
+    <div class="exp-item fade-up" data-delay="1">
+      <div class="exp-dates">2022 &ndash; Present</div>
+      <div class="exp-right">
+        <div class="exp-role">Customer Support Manager, West Region</div>
+        <div class="exp-org">Kyrus · Portland, OR</div>
+        <div class="exp-result">Top-tier accounts representing $10M+ in annual recurring revenue. CSAT up 5% YoY.</div>
+      </div>
     </div>
+
+    <div class="exp-item fade-up" data-delay="2">
+      <div class="exp-dates">2024</div>
+      <div class="exp-right">
+        <div class="exp-role">Interim City Administrator</div>
+        <div class="exp-org">Town of Naches, WA</div>
+        <div class="exp-result">Hand-picked to stabilize town operations. Continued oversight of a $5M wastewater treatment plant project.</div>
+      </div>
+    </div>
+
+    <div class="exp-item fade-up" data-delay="3">
+      <div class="exp-dates">2019 &ndash; 2021</div>
+      <div class="exp-right">
+        <div class="exp-role">City Councilmember</div>
+        <div class="exp-org">City of Moxee, WA</div>
+        <div class="exp-result">Elected to local legislative office. Direct experience with intergovernmental coordination.</div>
+      </div>
+    </div>
+
+    <div class="exp-item fade-up" data-delay="4">
+      <div class="exp-dates">2018 &ndash; 2022</div>
+      <div class="exp-right">
+        <div class="exp-role">Business &amp; Value Analyst</div>
+        <div class="exp-org">Yakima Valley Memorial Hospital</div>
+        <div class="exp-result">Delivered $3.1M in cost savings in FY21. Led two full-lifecycle ERP implementations affecting 3,000+ employees.</div>
+      </div>
+    </div>
+
+    <div class="exp-item fade-up" data-delay="5">
+      <div class="exp-dates">2015 &ndash; 2018</div>
+      <div class="exp-right">
+        <div class="exp-role">Parks &amp; Recreation Director</div>
+        <div class="exp-org">City of Selah, WA</div>
+        <div class="exp-result">Managed 10 parks across 44 acres. Eight youth sports seasons annually serving 3,000+ participants.</div>
+      </div>
+    </div>
+
+    <div class="exp-item fade-up" data-delay="6">
+      <div class="exp-dates">2009 &ndash; 2015</div>
+      <div class="exp-right">
+        <div class="exp-role">NCOIC, Resource Protection</div>
+        <div class="exp-org">U.S. Air Force · Eglin Air Force Base</div>
+        <div class="exp-result">Trained 100+ Airmen with 100% pass rate. Two Air Force Achievement Medals. Distinguished Graduate, Airman Leadership School.</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- JOIN BENTO -->
-<section id="join" class="join">
-  <div class="shell">
-    <div class="section-head fade-up">
-      <span class="section-kicker">Get Involved</span>
-      <h2 class="section-title">District 1 races are won door by door. Take a part of the work.</h2>
-    </div>
-    <div class="bento join-bento">
-      <article class="card card-form fade-up">
-        <h3>Sign up to help</h3>
-        <p class="help">Volunteer, request a yard sign, host a meet-and-greet, or just stay in the loop.</p>
-        <form action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
-          <div class="form-row">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="form-row">
-            <label>How would you like to help?</label>
-            <div class="checks">
-              <label class="check"><input type="checkbox" name="help" value="doorknock"> Knock doors</label>
-              <label class="check"><input type="checkbox" name="help" value="phonebank"> Phone bank</label>
-              <label class="check"><input type="checkbox" name="help" value="yardsign"> Yard sign</label>
-              <label class="check"><input type="checkbox" name="help" value="event"> Host event</label>
-              <label class="check"><input type="checkbox" name="help" value="endorse"> Endorse Dave</label>
-              <label class="check"><input type="checkbox" name="help" value="updates"> Email updates</label>
-            </div>
-          </div>
-          <div class="form-row">
-            <label for="message">Message (optional)</label>
-            <textarea id="message" name="message" placeholder="Anything else we should know?"></textarea>
-          </div>
-          <button type="submit" class="btn-submit">Submit →</button>
-        </form>
-      </article>
+<!-- RECOGNITION -->
+<section class="recognition" id="recognition">
+  <div class="section-eyebrow fade-up">Recognition</div>
+  <h2 class="section-heading fade-up">Service.<br>Recognized.</h2>
+  <p class="recognition-intro fade-up">Six years in the United States Air Force. Years of municipal and healthcare leadership. The decorations that came with that service speak to the standard Dave brings to every role.</p>
+  <div class="recognition-grid">
 
-      <article class="card card-contact fade-up">
-        <div>
-          <h3>Reach the Campaign</h3>
-          <p class="intro">Got a question, an endorsement, or an event you want Dave at? Send a note, give a call, or come find us in the Valley.</p>
-          <div class="contact-list">
-            <div class="contact-row">
-              <span class="icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7 L12 13 L21 7"/><rect x="3" y="6" width="18" height="13" rx="1"/></svg>
-              </span>
-              <a href="mailto:campaign@davemullenforyakima.com">campaign@davemullenforyakima.com</a>
-            </div>
-            <div class="contact-row">
-              <span class="icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4 H9 L11 9 L8.5 10.5 C9.5 13 11 14.5 13.5 15.5 L15 13 L20 15 V19 C20 19.5 19.5 20 19 20 C11 20 4 13 4 5 C4 4.5 4.5 4 5 4 Z"/></svg>
-              </span>
-              <a href="tel:5095551234">(509) 555-1234</a>
-            </div>
-            <div class="contact-row">
-              <span class="icon" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 C7 2 4 6 4 10 C4 16 12 22 12 22 C12 22 20 16 20 10 C20 6 17 2 12 2 Z"/><circle cx="12" cy="10" r="3"/></svg>
-              </span>
-              <span>P.O. Box · Yakima, WA</span>
-            </div>
-          </div>
+    <div class="recog-card fade-up" data-delay="1">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M16 3 L19 11 L27 12 L21 17.5 L23 26 L16 22 L9 26 L11 17.5 L5 12 L13 11 Z"/>
+        </svg>
+      </div>
+      <div class="recog-name">Air Force Achievement Medal</div>
+      <p class="recog-desc">Awarded twice during service at Eglin Air Force Base for distinguished performance and leadership.</p>
+    </div>
+
+    <div class="recog-card fade-up" data-delay="2">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="16" cy="12" r="8"/>
+          <path d="M11 18 L8 30 L16 26 L24 30 L21 18"/>
+        </svg>
+      </div>
+      <div class="recog-name">Below-the-Zone Promotion</div>
+      <p class="recog-desc">Selected for Senior Airman Below-the-Zone — awarded to the top-performing junior NCOs ahead of peers.</p>
+    </div>
+
+    <div class="recog-card fade-up" data-delay="3">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M5 8 H27 V18 H5 Z"/>
+          <path d="M11 18 V28 H21 V18"/>
+          <path d="M2 8 L8 2 H24 L30 8"/>
+        </svg>
+      </div>
+      <div class="recog-name">Distinguished Graduate</div>
+      <p class="recog-desc">Honored as a Distinguished Graduate of the Air Force's Airman Leadership School.</p>
+    </div>
+
+    <div class="recog-card fade-up" data-delay="4">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="6" y="4" width="20" height="24" rx="1.5"/>
+          <path d="M11 12 H21 M11 17 H21 M11 22 H17"/>
+        </svg>
+      </div>
+      <div class="recog-name">100% Training Pass Rate</div>
+      <p class="recog-desc">Led security policy and procedure training for more than 100 Airmen, achieving a perfect end-of-course pass rate.</p>
+    </div>
+
+    <div class="recog-card fade-up" data-delay="5">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 26 H 26 M 8 26 V 12 H 24 V 26 M 12 12 V 8 H 20 V 12"/>
+          <text x="16" y="22" font-family="Bebas Neue, sans-serif" font-size="9" font-weight="800" text-anchor="middle" fill="currentColor">$</text>
+        </svg>
+      </div>
+      <div class="recog-name">$3.1M Saved · FY21</div>
+      <p class="recog-desc">Direct healthcare cost savings delivered through strategic contract negotiation in a single fiscal year.</p>
+    </div>
+
+    <div class="recog-card fade-up" data-delay="6">
+      <div class="recog-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="16" cy="14" r="6"/>
+          <path d="M16 20 V 28 M 12 24 H 20"/>
+        </svg>
+      </div>
+      <div class="recog-name">Coaching Since 2014</div>
+      <p class="recog-desc">More than a decade coaching youth baseball and softball, plus six years on the Heights Church Business Leadership Council.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- UPDATES -->
+<section class="updates" id="updates">
+  <div class="updates-inner fade-up">
+    <div class="section-eyebrow">Stay Connected</div>
+    <h2 class="section-heading" style="font-size:clamp(2.5rem,5vw,5rem); margin-bottom:0.5rem;">Get Campaign<br>Updates</h2>
+    <p style="font-family:var(--body);font-size:0.92rem;color:var(--muted);margin-top:0.8rem;line-height:1.75;">Events, endorsements, and ways to make a difference in District 1.</p>
+    <form class="updates-form" id="updatesForm" action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
+      <input type="email" name="email" id="updatesEmail" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit" id="updatesBtn">Sign Up</button>
+    </form>
+  </div>
+</section>
+
+<!-- DONATE -->
+<div class="donate-section" id="donate" role="region" aria-label="Donate">
+  <div class="donate-inner">
+    <div class="donate-stars">
+      <span class="donate-star">★</span>
+      <span class="donate-star">★</span>
+      <span class="donate-star">★</span>
+      <span class="donate-star">★</span>
+      <span class="donate-star">★</span>
+    </div>
+    <p class="donate-tagline">Help Elect</p>
+    <h2 class="donate-headline fade-up">Dave Mullen<br>For County Commissioner</h2>
+    <a href="#donate-placeholder" class="btn-cream fade-up" data-delay="2">Donate Today</a>
+  </div>
+</div>
+
+<!-- CONNECT -->
+<section class="connect-section" id="contact">
+  <div class="connect-grid">
+
+    <div class="connect-info">
+      <div class="section-eyebrow">Get Involved</div>
+      <h2 class="connect-heading">Join the<br>Campaign</h2>
+      <p class="connect-panel-desc">Winning District 1 takes neighbors talking to neighbors. Whether you want to volunteer, ask a question, or just say hello, Dave's team wants to hear from you.</p>
+      <ul class="ways-list">
+        <li>Door-to-door canvassing</li>
+        <li>Phone banking</li>
+        <li>Yard signs &amp; literature drops</li>
+        <li>Host a neighborhood meet-and-greet</li>
+        <li>Endorse Dave</li>
+        <li>Social media &amp; digital outreach</li>
+      </ul>
+      <div class="contact-line" style="margin-top:2rem;">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.4 10.8 19.79 19.79 0 01.34 2.18 2 2 0 012.33 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.26 7.95a16 16 0 006.07 6.07l1.31-1.31a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </span>
+        <div class="contact-text"><a href="tel:5095551234">(509) 555-1234</a></div>
+      </div>
+      <div class="contact-line">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7 L12 13 L21 7"/><rect x="3" y="6" width="18" height="13" rx="1"/></svg>
+        </span>
+        <div class="contact-text"><a href="mailto:campaign@davemullenforyakima.com">campaign@davemullenforyakima.com</a></div>
+      </div>
+      <div class="contact-line">
+        <span class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <div class="contact-text">P.O. Box · Yakima, WA</div>
+      </div>
+    </div>
+
+    <form class="connect-form" id="campaignForm" action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cf-first">First Name</label>
+          <input type="text" id="cf-first" name="first_name" required>
         </div>
-        <a href="#" class="contact-donate">Donate to Help <span aria-hidden="true">→</span></a>
-      </article>
-    </div>
+        <div class="form-group">
+          <label for="cf-last">Last Name</label>
+          <input type="text" id="cf-last" name="last_name" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cf-email">Email Address</label>
+          <input type="email" id="cf-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="cf-phone">Phone (optional)</label>
+          <input type="tel" id="cf-phone" name="phone">
+        </div>
+      </div>
+      <div class="checkbox-section">
+        <span class="checkbox-label">I want to help with: (optional)</span>
+        <div class="checkbox-grid">
+          <label><input type="checkbox" name="interests" value="canvassing"> Door Knocking</label>
+          <label><input type="checkbox" name="interests" value="phones"> Phone Banking</label>
+          <label><input type="checkbox" name="interests" value="signs"> Yard Signs</label>
+          <label><input type="checkbox" name="interests" value="events"> Host an Event</label>
+          <label><input type="checkbox" name="interests" value="endorse"> Endorse Dave</label>
+          <label><input type="checkbox" name="interests" value="social"> Social Media</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="cf-msg">Message (optional)</label>
+        <textarea id="cf-msg" name="message" placeholder="Say hello, ask a question, or share what matters to you..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit" id="formSubmitBtn">Send Message</button>
+    </form>
+
   </div>
 </section>
-
-</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="#top" class="nav-logo">
-        <span class="nav-logo-mark" aria-hidden="true">
-          <svg viewBox="0 0 36 22" fill="none">
-            <path d="M2 9 Q 9 3, 16 9 T 30 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <path d="M2 17 Q 9 11, 16 17 T 30 17" stroke="var(--water)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <circle cx="33" cy="6" r="2.5" fill="var(--water)"/>
-          </svg>
-        </span>
-        <span class="nav-logo-text">Dave <span class="accent">Mullen</span></span>
-      </a>
-      <p>Working today. Building tomorrow. A proven leader running for Yakima County Commissioner, District 1.</p>
+    <div class="footer-top">
+      <div class="footer-brand">
+        Dave <em>Mullen</em>
+        <span class="footer-brand-stars">★ ★ ★</span>
+      </div>
+      <div class="footer-nav">
+        <a href="#issues">Issues</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#donate">Donate</a>
+      </div>
     </div>
-    <div class="footer-col">
-      <h5>The Campaign</h5>
-      <a href="#about">About Dave</a>
-      <a href="#issues">Issues</a>
-      <a href="#record">Record</a>
-      <a href="#join">Get Involved</a>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 Dave Mullen for Yakima County</span>
+      <span class="footer-disclosure">
+        Paid for by Friends of Dave Mullen &bull;
+        Yakima, WA &bull;
+        Disclosures at <a href="https://www.pdc.wa.gov/" target="_blank" rel="noopener">pdc.wa.gov</a>.
+      </span>
     </div>
-    <div class="footer-col">
-      <h5>Take Action</h5>
-      <a href="#">Donate</a>
-      <a href="#join">Volunteer</a>
-      <a href="mailto:campaign@davemullenforyakima.com">Email Campaign</a>
-      <a href="https://www.pdc.wa.gov/" target="_blank" rel="noopener">WA PDC Filings</a>
-    </div>
-  </div>
-  <div class="compliance">
-    <span class="paid">Paid for by Friends of Dave Mullen</span>
-    <span>&copy; <span id="year">2026</span> Friends of Dave Mullen · All rights reserved</span>
   </div>
 </footer>
 
 <script>
-(function() {
-  const nav = document.getElementById('nav');
-  const onScroll = () => { nav.classList.toggle('scrolled', window.scrollY > 12); };
-  document.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+const toggle = document.getElementById('navToggle');
+const overlay = document.getElementById('navOverlay');
+function closeNav() {
+  toggle.classList.remove('open');
+  overlay.classList.remove('open');
+  toggle.setAttribute('aria-expanded','false');
+  overlay.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+toggle.addEventListener('click', () => {
+  const open = toggle.classList.toggle('open');
+  overlay.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', String(open));
+  overlay.setAttribute('aria-hidden', String(!open));
+  document.body.style.overflow = open ? 'hidden' : '';
+});
 
-  const toggle = document.querySelector('.nav-toggle');
-  const menu = document.getElementById('mobileMenu');
-  toggle.addEventListener('click', () => {
-    const open = toggle.classList.toggle('open');
-    menu.classList.toggle('open', open);
-    toggle.setAttribute('aria-expanded', open);
+const nav = document.getElementById('nav');
+const progressBar = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 20);
+  const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  progressBar.style.transform = `scaleX(${Math.min(pct, 1)})`;
+}, { passive: true });
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      io.unobserve(e.target);
+    }
   });
-  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    toggle.classList.remove('open');
-    menu.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
-  const yearEl = document.getElementById('year');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+const heroLeft = document.querySelector('.hero-left');
+if (heroLeft) setTimeout(() => heroLeft.classList.add('in'), 80);
 
-  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const fadeEls = document.querySelectorAll('.fade-up');
-  if (reduced || !('IntersectionObserver' in window)) {
-    fadeEls.forEach(el => el.classList.add('visible'));
-  } else {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    fadeEls.forEach(el => io.observe(el));
-  }
+document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const r = btn.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width / 2) * 0.18;
+    const y = (e.clientY - r.top - r.height / 2) * 0.18;
+    btn.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+});
+
+const statementBg = document.getElementById('statementBg');
+if (statementBg) {
+  const img = new Image();
+  img.onload = () => { statementBg.style.backgroundImage = `url(${img.src})`; };
+  img.src = 'yakima-valley2.jpg';
+}
+
+const heroRight = document.querySelector('.hero-right img');
+if (heroRight && window.matchMedia('(min-width: 900px)').matches) {
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    heroRight.style.transform = `scale(1.18) translate(0, ${y * 0.04}%)`;
+  }, { passive: true });
+}
+
+(function() {
+  const modal = document.createElement('div');
+  modal.id = 'donate-modal';
+  modal.innerHTML = `
+    <div class="dm-overlay"></div>
+    <div class="dm-box">
+      <div class="dm-stars">★ ★ ★ ★ ★</div>
+      <h2 class="dm-heading">Coming Soon</h2>
+      <p class="dm-sub">Dave Mullen for Yakima County</p>
+      <p class="dm-body">Our secure online donation page is on its way. Check back shortly. Every contribution makes a difference in District 1.</p>
+      <button class="dm-close-btn">Got It</button>
+      <button class="dm-x" aria-label="Close">&#10005;</button>
+    </div>`;
+  document.body.appendChild(modal);
+
+  const style = document.createElement('style');
+  style.textContent = `
+    #donate-modal { display: none; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; }
+    #donate-modal.open { display: flex; }
+    .dm-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.72); backdrop-filter: blur(4px); cursor: pointer; }
+    .dm-box {
+      position: relative; z-index: 1;
+      background: var(--bg); border: 1px solid var(--olive);
+      box-shadow: 0 24px 80px rgba(133,146,100,0.32);
+      padding: 3.5rem; text-align: center;
+      max-width: 440px; width: 90%;
+      animation: dmIn 0.35s cubic-bezier(0.16,1,0.3,1);
+    }
+    @keyframes dmIn { from { opacity:0; transform: scale(0.92) translateY(16px); } to { opacity:1; transform: none; } }
+    .dm-stars { color: var(--olive-soft); font-size: 0.7rem; letter-spacing: 0.4em; margin-bottom: 1.5rem; }
+    .dm-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem,8vw,4rem); letter-spacing: 0.05em; color: var(--cream); line-height: 1; margin-bottom: 0.4rem; }
+    .dm-sub { font-family: var(--heading); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--olive-soft); margin-bottom: 1.5rem; }
+    .dm-body { font-family: var(--body); font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 2rem; }
+    .dm-close-btn {
+      display: block; width: 100%; padding: 1rem;
+      background: var(--olive); color: var(--cream); border: none; cursor: pointer;
+      font-family: var(--heading); font-size: 0.8rem; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      transition: background 0.2s;
+    }
+    .dm-close-btn:hover { background: var(--olive-b); }
+    .dm-x {
+      position: absolute; top: 1rem; right: 1rem;
+      background: none; border: none; color: var(--muted); font-size: 1.1rem;
+      cursor: pointer; padding: 0.4rem; transition: color 0.2s; line-height: 1;
+    }
+    .dm-x:hover { color: var(--cream); }
+  `;
+  document.head.appendChild(style);
+
+  function openModal() { modal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
+
+  modal.querySelector('.dm-overlay').addEventListener('click', closeModal);
+  modal.querySelector('.dm-close-btn').addEventListener('click', closeModal);
+  modal.querySelector('.dm-x').addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  document.querySelectorAll('a[href="#donate"], a[href="#donate-placeholder"], .btn-nav-donate').forEach(el => {
+    el.addEventListener('click', e => { e.preventDefault(); openModal(); });
+  });
 })();
 </script>
 </body>
