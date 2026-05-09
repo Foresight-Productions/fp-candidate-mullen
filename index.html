@@ -620,6 +620,124 @@
       white-space: nowrap;
     }
 
+    /* ===== STATS STRIP ===== */
+    .stats-strip {
+      background: var(--bg);
+      padding: 5rem 8% 5.5rem;
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-strip::before {
+      content: '';
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(245,237,220,0.014) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245,237,220,0.014) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .stats-strip > * { position: relative; z-index: 1; }
+    .stats-eyebrow {
+      font-family: var(--heading); font-size: 0.74rem; font-weight: 500;
+      letter-spacing: 0.26em; text-transform: uppercase; color: var(--olive-soft);
+      display: flex; align-items: center; justify-content: center; gap: 0.85rem;
+      margin-bottom: 3rem;
+    }
+    .stats-eyebrow::before, .stats-eyebrow::after {
+      content: ''; flex: 1; max-width: 80px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--olive), transparent);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      align-items: end;
+    }
+    .stat-cell {
+      padding: 0 1.5rem;
+      border-right: 1px solid var(--border);
+      text-align: center;
+      position: relative;
+      transition: transform 0.4s ease;
+    }
+    .stat-cell:last-child { border-right: none; }
+    .stat-cell:hover { transform: translateY(-4px); }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3.2rem, 6vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    .stat-num .accent { color: var(--olive-soft); }
+    .stat-num .small { font-size: 0.55em; color: var(--olive-soft); }
+    .stat-label {
+      font-family: var(--heading);
+      font-size: 0.74rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,237,220,0.6);
+      line-height: 1.4;
+    }
+
+    /* ===== MOUNTAIN DIVIDER (from Mullen's sign motif) ===== */
+    .mountain-divider {
+      display: block;
+      width: 100%;
+      height: clamp(40px, 6vw, 64px);
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+    .mountain-divider svg { width: 100%; height: 100%; display: block; }
+    .mountain-divider--inverted { background: transparent; }
+
+    /* ===== ELECTION COUNTDOWN (topbar) ===== */
+    .countdown {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--heading);
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(245,237,220,0.95);
+      font-weight: 500;
+    }
+    .countdown .num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+      color: var(--olive-soft);
+      font-weight: 400;
+      font-variant-numeric: tabular-nums;
+    }
+    .countdown .label {
+      color: rgba(245,237,220,0.55);
+      letter-spacing: 0.18em;
+    }
+
+    /* ===== HERO PHOTO WATERMARK ===== */
+    .hero-photo-mark {
+      position: absolute;
+      bottom: 1.75rem;
+      left: 1.75rem;
+      width: clamp(64px, 7vw, 92px);
+      height: auto;
+      z-index: 4;
+      color: var(--cream);
+      opacity: 0.78;
+      filter: drop-shadow(0 2px 12px rgba(0,0,0,0.6));
+    }
+    .hero-photo-mark svg { width: 100%; height: auto; }
+
     /* ===== PILLARS STRIP ===== */
     .pillars-strip {
       background: #14213A;
@@ -1014,6 +1132,9 @@
       .pillars-strip { grid-template-columns: repeat(2, 1fr); }
       .pillar-item:nth-child(2) { border-right: none; }
       .pillar-item:nth-child(1), .pillar-item:nth-child(2) { border-bottom: 1px solid rgba(245,237,220,0.07); }
+      .stats-grid { grid-template-columns: repeat(3, 1fr); row-gap: 2.5rem; }
+      .stat-cell:nth-child(3) { border-right: none; }
+      .stat-cell:nth-child(4), .stat-cell:nth-child(5) { padding-top: 0; }
     }
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 90px; }
@@ -1040,6 +1161,12 @@
       .connect-heading { font-size: clamp(2.2rem, 7vw, 3rem); }
     }
     @media (max-width: 768px) {
+      .stats-strip { padding: 3rem 5% 3.5rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); row-gap: 2.5rem; }
+      .stat-cell { border-right: none !important; padding: 0 0.5rem; }
+      .stat-cell:nth-child(odd) { border-right: 1px solid var(--border) !important; }
+      .stat-cell:nth-child(5) { grid-column: 1 / -1; }
+      .countdown { display: none; }
       section, .issues, .recognition, .updates, .connect-section { padding: 4rem 5%; }
       .experience, .bio-content { padding: 4rem 5%; }
       .donate-section { padding: 4rem 5%; }
@@ -1092,6 +1219,17 @@
 <body>
 
 <div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Election countdown topbar -->
+<div style="position:fixed; top:3px; left:0; right:0; z-index:1001; background:transparent; pointer-events:none; display:flex; justify-content:center; padding:0.55rem 5%;">
+  <div class="countdown" id="countdown" style="pointer-events:auto; background:rgba(26,41,66,0.9); padding:0.45rem 1rem; backdrop-filter:blur(6px); border:1px solid rgba(133,146,100,0.3);">
+    <span class="label">General Election</span>
+    <span class="num" id="countdownDays">—</span>
+    <span class="label">Days</span>
+    <span style="color:var(--olive-soft); margin:0 0.25rem;">★</span>
+    <span class="label">Nov 3, 2026</span>
+  </div>
+</div>
 
 <!-- NAV -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
@@ -1171,6 +1309,14 @@
          loading="eager">
     <div class="hero-right-overlay"></div>
     <div class="hero-slice"></div>
+    <div class="hero-photo-mark" aria-hidden="true">
+      <svg viewBox="0 0 120 80" fill="none">
+        <path d="M70 16 Q 90 4, 110 16" stroke="currentColor" stroke-width="2.5" fill="none"/>
+        <path d="M88 8 C 84 18, 84 26, 88 28 C 92 26, 92 18, 88 8 Z" fill="var(--water)"/>
+        <path d="M5 42 Q 30 32, 55 42 T 105 42 T 115 40" stroke="currentColor" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <path d="M5 58 Q 30 48, 55 58 T 105 58 T 115 56" stroke="var(--water)" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
   </div>
 </div>
 
@@ -1271,6 +1417,16 @@
   <p class="statement-cite fade-up" data-delay="2">Dave Mullen &nbsp;·&nbsp; Candidate, Yakima County Commissioner</p>
 </section>
 
+<!-- MOUNTAIN DIVIDER (from Mullen sign motif) -->
+<div class="mountain-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 50 L 80 30 L 130 38 L 200 18 L 270 32 L 340 22 L 410 36 L 490 16 L 560 30 L 640 22 L 720 38 L 800 18 L 880 32 L 960 24 L 1040 36 L 1120 14 L 1200 28 L 1280 22 L 1360 34 L 1440 26 L 1440 64 L 0 64 Z"
+          fill="var(--olive)" opacity="0.18"/>
+    <path d="M0 56 L 90 40 L 160 48 L 230 30 L 320 42 L 400 32 L 480 46 L 560 36 L 640 46 L 720 30 L 810 42 L 890 32 L 980 44 L 1060 32 L 1140 42 L 1220 28 L 1300 40 L 1380 32 L 1440 42 L 1440 64 L 0 64 Z"
+          fill="var(--olive)" opacity="0.32"/>
+  </svg>
+</div>
+
 <!-- VALLEY PHOTO STRIP -->
 <div class="valley-strip" aria-hidden="true">
   <div class="valley-panel">
@@ -1322,6 +1478,33 @@
     </div>
   </div>
 </div>
+
+<!-- STATS STRIP -->
+<section class="stats-strip" aria-label="Dave Mullen by the numbers">
+  <div class="stats-eyebrow">By the Numbers</div>
+  <div class="stats-grid">
+    <div class="stat-cell fade-up">
+      <div class="stat-num"><span class="counter" data-target="6">0</span></div>
+      <div class="stat-label">Years U.S.<br>Air Force</div>
+    </div>
+    <div class="stat-cell fade-up" data-delay="1">
+      <div class="stat-num"><span class="accent">$</span><span class="counter" data-target="3.1" data-decimal="1">0</span><span class="small">M</span></div>
+      <div class="stat-label">Healthcare<br>Savings · FY21</div>
+    </div>
+    <div class="stat-cell fade-up" data-delay="2">
+      <div class="stat-num"><span class="counter" data-target="3000">0</span><span class="small">+</span></div>
+      <div class="stat-label">Youth Sports<br>Participants</div>
+    </div>
+    <div class="stat-cell fade-up" data-delay="3">
+      <div class="stat-num"><span class="counter" data-target="100">0</span><span class="small">%</span></div>
+      <div class="stat-label">Training<br>Pass Rate</div>
+    </div>
+    <div class="stat-cell fade-up" data-delay="4">
+      <div class="stat-num"><span class="counter" data-target="15">0</span><span class="small">+</span></div>
+      <div class="stat-label">Years Executive<br>Experience</div>
+    </div>
+  </div>
+</section>
 
 <!-- PILLARS STRIP -->
 <section class="pillars-strip" aria-label="Dave Mullen's core commitments">
@@ -1684,6 +1867,57 @@ document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
 
 const heroLeft = document.querySelector('.hero-left');
 if (heroLeft) setTimeout(() => heroLeft.classList.add('in'), 80);
+
+/* ===== COUNTDOWN ===== */
+(function() {
+  const el = document.getElementById('countdownDays');
+  if (!el) return;
+  const target = new Date('2026-11-03T08:00:00-08:00');
+  function tick() {
+    const now = new Date();
+    const diff = Math.max(0, Math.ceil((target - now) / (1000 * 60 * 60 * 24)));
+    el.textContent = diff.toLocaleString();
+  }
+  tick();
+  setInterval(tick, 60 * 60 * 1000);
+})();
+
+/* ===== COUNT-UP COUNTERS ===== */
+(function() {
+  const counters = document.querySelectorAll('.counter');
+  if (!counters.length) return;
+  function animate(el) {
+    const target = parseFloat(el.dataset.target);
+    const decimals = parseInt(el.dataset.decimal || '0', 10);
+    const duration = 1600;
+    const start = performance.now();
+    function step(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      const value = ease * target;
+      el.textContent = decimals
+        ? value.toFixed(decimals)
+        : Math.round(value).toLocaleString();
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = decimals ? target.toFixed(decimals) : target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    counters.forEach(el => {
+      const t = parseFloat(el.dataset.target);
+      const d = parseInt(el.dataset.decimal || '0', 10);
+      el.textContent = d ? t.toFixed(d) : t.toLocaleString();
+    });
+    return;
+  }
+  const counterIO = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { animate(e.target); counterIO.unobserve(e.target); }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => counterIO.observe(el));
+})();
 
 document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate').forEach(btn => {
   btn.addEventListener('mousemove', e => {
