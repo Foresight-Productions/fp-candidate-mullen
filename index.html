@@ -448,6 +448,22 @@
       padding: clamp(6rem, 12vw, 12rem) 8%;
       text-align: center; position: relative; overflow: hidden;
     }
+    .statement-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background-size: cover; background-position: center 50%;
+      background-repeat: no-repeat;
+      transition: opacity 0.8s ease;
+    }
+    .statement-bg::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(20,34,58,0.84) 0%,
+        rgba(20,34,58,0.74) 50%,
+        rgba(20,34,58,0.88) 100%
+      );
+    }
     .statement::before {
       content: '';
       position: absolute; inset: 0; z-index: 1;
@@ -1320,6 +1336,7 @@
 
 <!-- STATEMENT -->
 <section class="statement">
+  <div class="statement-bg" id="statementBg"></div>
   <div class="statement-stars">
     <span class="stmt-star">★</span>
     <span class="stmt-star">★</span>
@@ -1815,6 +1832,14 @@ if (heroLeft) setTimeout(() => heroLeft.classList.add('in'), 80);
   }, { threshold: 0.5 });
   counters.forEach(el => counterIO.observe(el));
 })();
+
+/* ===== STATEMENT BG (Palouse hills - Eastern WA wheat country) ===== */
+const statementBg = document.getElementById('statementBg');
+if (statementBg) {
+  const img = new Image();
+  img.onload = () => { statementBg.style.backgroundImage = `url(${img.src})`; };
+  img.src = 'yk-valley.jpg';
+}
 
 document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate').forEach(btn => {
   btn.addEventListener('mousemove', e => {
