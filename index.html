@@ -620,6 +620,69 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
   line-height: 1.25;
 }
 
+.card-family {
+  grid-column: span 12;
+  padding: 0;
+  position: relative;
+  min-height: clamp(320px, 42vw, 520px);
+  background: var(--navy-deep) url('family.jpg') center 30% / cover no-repeat;
+  overflow: hidden;
+}
+.card-family::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, oklch(0.20 0.05 248 / 0.7) 0%, oklch(0.20 0.05 248 / 0.2) 38%, transparent 60%),
+    linear-gradient(to top, oklch(0.20 0.05 248 / 0.55) 0%, transparent 35%);
+  pointer-events: none;
+}
+.card-family .family-content {
+  position: relative;
+  z-index: 1;
+  padding: clamp(1.75rem, 3.5vw, 3rem);
+  max-width: 36rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: var(--paper);
+}
+.card-family .family-eyebrow {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--olive-soft);
+  margin-bottom: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.card-family .family-eyebrow::before {
+  content: "";
+  width: 28px; height: 2px;
+  background: var(--olive-soft);
+}
+.card-family .family-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.7rem, 3.4vw, 2.6rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: var(--paper);
+  margin-bottom: 1rem;
+}
+.card-family .family-title .accent { color: var(--olive-soft); }
+.card-family .family-caption {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: oklch(0.95 0.022 88 / 0.92);
+  max-width: 36ch;
+}
+
 /* === ISSUES BENTO === */
 .issues-bento { grid-auto-rows: minmax(60px, auto); }
 .issue {
@@ -1292,6 +1355,14 @@ footer {
         <div class="quick-row">
           <span class="label">Today</span>
           <span class="value">Customer Support Mgr<br>Coach · Church board</span>
+        </div>
+      </article>
+
+      <article class="card card-family fade-up" role="img" aria-label="Dave Mullen with his family in the Yakima Valley">
+        <div class="family-content">
+          <span class="family-eyebrow">Home in the Valley</span>
+          <h3 class="family-title">A husband, a father, <span class="accent">a neighbor.</span></h3>
+          <p class="family-caption">Dave with his family in the Yakima Valley. Raising his kids, coaching youth sports, and serving the same community he grew up in.</p>
         </div>
       </article>
     </div>
