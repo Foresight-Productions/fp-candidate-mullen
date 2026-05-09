@@ -327,83 +327,8 @@
     }
     .hero-right .hero-bg-photo {
       width: 100%; height: 100%;
-      object-fit: cover; object-position: center 22%;
-      filter: brightness(0.96) contrast(1.04) saturate(1.04);
-    }
-
-    /* ===== FAMILY BANNER (full-width photo, no cropping) ===== */
-    .family-banner {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      background: var(--bg);
-      border-top: 3px solid var(--olive);
-      border-bottom: 1px solid var(--border);
-      aspect-ratio: 1920 / 760;
-      max-height: 720px;
-    }
-    .family-banner img {
-      width: 100%; height: 100%;
       object-fit: cover; object-position: center 40%;
-      filter: brightness(0.86) contrast(1.04) saturate(1.04);
-      display: block;
-    }
-    .family-banner-overlay {
-      position: absolute; inset: 0;
-      background:
-        linear-gradient(to right, rgba(26,41,66,0.78) 0%, rgba(26,41,66,0.25) 32%, transparent 55%),
-        linear-gradient(to top, rgba(26,41,66,0.55) 0%, transparent 35%);
-      pointer-events: none;
-    }
-    .family-banner-content {
-      position: absolute;
-      left: 8%;
-      bottom: clamp(2rem, 5vw, 4rem);
-      max-width: 36rem;
-      color: var(--cream);
-      z-index: 2;
-    }
-    .family-banner-eyebrow {
-      font-family: var(--heading);
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--olive-soft);
-      margin-bottom: 1.2rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.85rem;
-    }
-    .family-banner-eyebrow .star {
-      font-size: 0.65rem;
-      color: var(--olive-soft);
-      filter: drop-shadow(0 0 6px var(--glow));
-    }
-    .family-banner-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-weight: 400;
-      font-size: clamp(2.2rem, 4.4vw, 4rem);
-      line-height: 0.96;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      color: var(--cream);
-      margin-bottom: 1.4rem;
-      text-shadow: 0 2px 30px rgba(0,0,0,0.5);
-    }
-    .family-banner-title em {
-      color: var(--olive-soft);
-      font-style: normal;
-      text-shadow: 0 0 40px rgba(133,146,100,0.4), 0 2px 30px rgba(0,0,0,0.5);
-    }
-    .family-banner-caption {
-      font-family: var(--body);
-      font-size: 1rem;
-      line-height: 1.55;
-      font-weight: 400;
-      color: rgba(245,237,220,0.9);
-      max-width: 36ch;
-      text-shadow: 0 1px 12px rgba(0,0,0,0.4);
+      filter: brightness(0.92) contrast(1.04) saturate(1.04);
     }
     .hero-right-overlay {
       position: absolute; inset: 0;
@@ -1180,14 +1105,6 @@
       .connect-heading { font-size: clamp(2.2rem, 7vw, 3rem); }
     }
     @media (max-width: 768px) {
-      .family-banner { aspect-ratio: 4 / 5; max-height: none; }
-      .family-banner img { object-position: center 35%; }
-      .family-banner-overlay {
-        background:
-          linear-gradient(to top, rgba(26,41,66,0.92) 0%, rgba(26,41,66,0.45) 40%, transparent 65%);
-      }
-      .family-banner-content { left: 5%; right: 5%; bottom: 1.75rem; max-width: 100%; }
-      .family-banner-caption { font-size: 0.92rem; }
       .exp-stats { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; padding: 1.75rem 0; margin-bottom: 3rem; }
       .exp-stat { border-right: none !important; padding: 0 0.5rem; }
       .exp-stat:nth-child(odd) { border-right: 1px solid var(--border) !important; }
@@ -1318,8 +1235,8 @@
   </div>
 
   <div class="hero-right">
-    <img src="dave-mullen.jpeg" class="hero-bg-photo"
-         alt="Dave Mullen, Republican candidate for Yakima County Commissioner District 1"
+    <img src="family.jpg" class="hero-bg-photo"
+         alt="Dave Mullen with his family in the Yakima Valley"
          loading="eager">
     <div class="hero-right-overlay"></div>
     <div class="hero-slice"></div>
@@ -1333,19 +1250,6 @@
     </div>
   </div>
 </div>
-
-<!-- FAMILY BANNER: full-width photo, no cropping -->
-<section class="family-banner" aria-label="Dave Mullen and his family in the Yakima Valley">
-  <img src="family.jpg" alt="Dave Mullen with his family in the Yakima Valley" loading="lazy">
-  <div class="family-banner-overlay"></div>
-  <div class="family-banner-content">
-    <div class="family-banner-eyebrow">
-      <span class="star">★</span> Home in the Valley <span class="star">★</span>
-    </div>
-    <h3 class="family-banner-title">A husband. A father. <em>A neighbor.</em></h3>
-    <p class="family-banner-caption">Dave with his family in the Yakima Valley. Raising his kids, coaching youth sports, and serving the same community he grew up in.</p>
-  </div>
-</section>
 
 <!-- TICKER -->
 <div class="ticker-wrap" aria-hidden="true">
