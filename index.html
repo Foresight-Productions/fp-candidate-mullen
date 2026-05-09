@@ -173,15 +173,16 @@
     .hero {
       min-height: 100vh;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 0.95fr 1.05fr;
       padding-top: 91px;
       position: relative;
     }
     .hero-left {
       display: flex; flex-direction: column; justify-content: center;
-      padding: 6rem 6% 6rem 8%;
+      padding: 6rem 8% 6rem 6%;
       background: var(--bg);
       position: relative; z-index: 1; overflow: hidden;
+      order: 2;
     }
     .hero-left::before {
       content: '';
@@ -194,10 +195,37 @@
     .hero-left > * { position: relative; z-index: 2; }
 
     .hero-left-bar {
-      position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+      position: absolute; top: 0; right: 0; width: 4px; height: 100%;
       background: var(--olive);
       box-shadow: 0 0 24px var(--glow), 0 0 60px rgba(133,146,100,0.2);
       z-index: 3;
+    }
+
+    /* Republican Party Badge — modeled on the COMMISSIONER bar of Mullen's lawn sign */
+    .party-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      background: var(--olive);
+      color: var(--cream);
+      padding: 0.55rem 1.1rem 0.55rem 1.1rem;
+      margin-bottom: 1.6rem;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1;
+      clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%);
+      position: relative;
+    }
+    .party-badge .star {
+      color: var(--cream);
+      font-size: 0.78rem;
+      filter: drop-shadow(0 0 4px rgba(245,237,220,0.4));
+      line-height: 1;
+    }
+    .party-badge .label {
+      font-weight: 400;
     }
 
     .hero-stars {
@@ -223,17 +251,27 @@
     .hero-name {
       font-family: 'Bebas Neue', 'Oswald', sans-serif;
       font-weight: 400;
-      line-height: 0.85;
-      font-size: clamp(6rem, 11vw, 14rem);
-      letter-spacing: 0.01em;
+      line-height: 0.84;
+      letter-spacing: 0.005em;
       text-transform: uppercase;
       margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
     }
-    .hero-name-solid { display: block; color: var(--cream); }
-    .hero-name-outline {
-      display: block; color: transparent;
-      -webkit-text-stroke: 3px var(--olive);
-      text-shadow: 0 0 40px rgba(133,146,100,0.30);
+    .hero-name-given {
+      display: block;
+      color: var(--cream);
+      font-size: clamp(2.8rem, 5.5vw, 5.5rem);
+      letter-spacing: 0.02em;
+      line-height: 0.95;
+    }
+    .hero-name-family {
+      display: block;
+      color: var(--olive-soft);
+      font-size: clamp(6rem, 13vw, 16rem);
+      letter-spacing: 0.005em;
+      line-height: 0.82;
+      text-shadow: 0 4px 50px rgba(133,146,100,0.35);
     }
 
     .hero-divider {
@@ -963,8 +1001,8 @@
       from { clip-path: inset(0 0 100% 0); transform: translateY(10px); opacity: 0; }
       to   { clip-path: none; transform: translateY(0); opacity: 1; }
     }
-    .hero-left.in .hero-name-solid { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
-    .hero-left.in .hero-name-outline { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.32s both; }
+    .hero-left.in .hero-name-given { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
+    .hero-left.in .hero-name-family { animation: nameReveal 0.85s cubic-bezier(0.16,1,0.3,1) 0.32s both; }
 
     @media (prefers-reduced-motion: reduce) {
       .fade-up { opacity: 1 !important; transform: none !important; transition: none !important; }
@@ -982,8 +1020,8 @@
       .hero-right { height: 82vw; max-height: 540px; order: -1; }
       .hero-right .hero-slice { display: none; }
       .hero-left { padding: 3rem 5%; align-items: center; text-align: center; justify-content: flex-start; }
-      .hero-tag { justify-content: center; }
-      .hero-tag::before { display: none; }
+      .party-badge { flex-wrap: wrap; justify-content: center; gap: 0.55rem; padding: 0.6rem 1.5rem; clip-path: none; font-size: 0.78rem; }
+      .party-badge .label { font-size: 0.78rem; }
       .hero-divider { display: none; }
       .hero-left-bar { display: none; }
       .hero-left::before { opacity: 0.3; }
@@ -1015,7 +1053,8 @@
       .issue-row { grid-template-columns: 48px 1fr; gap: 1rem; }
       .issue-arrow { display: none; }
       .issue-num { font-size: 2.5rem; }
-      .hero-tag { display: block; text-align: center; font-size: 0.65rem; letter-spacing: 0.16em; }
+      .party-badge { font-size: 0.72rem; }
+      .party-badge .label { font-size: 0.72rem; }
       .hero-btns { flex-direction: column; align-items: center; width: 100%; }
       .hero-btns .btn-olive, .hero-btns .btn-ghost { width: 100%; max-width: 300px; justify-content: center; }
       .hero-election-date { display: none; }
@@ -1038,8 +1077,8 @@
       .recognition-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 480px) {
-      .hero-name { font-size: clamp(3.8rem, 17vw, 6rem); }
-      .hero-name-outline { -webkit-text-stroke-width: 2px; }
+      .hero-name-given { font-size: clamp(2.2rem, 7vw, 3rem); }
+      .hero-name-family { font-size: clamp(4.2rem, 17vw, 6rem); }
       .statement-quote { font-size: clamp(2.4rem, 9vw, 4rem); }
       .pillars-strip { grid-template-columns: 1fr; }
       .pillar-item { padding: 2rem 1.5rem; }
@@ -1066,7 +1105,7 @@
     </span>
     <div>
       <div class="nav-brand-name">Dave <em>Mullen</em></div>
-      <div class="nav-brand-sub">Yakima County Commissioner · Dist 1</div>
+      <div class="nav-brand-sub">Republican · Yakima County Commissioner · Dist 1</div>
     </div>
   </div>
   <div class="nav-links">
@@ -1094,18 +1133,19 @@
   <div class="hero-left fade-up">
     <div class="hero-left-bar"></div>
 
-    <div class="hero-stars">
-      <span class="hero-star">★</span>
-      <span class="hero-star">★</span>
-      <span class="hero-star">★</span>
-      <span class="hero-stars-line"></span>
+    <div class="party-badge">
+      <span class="star">★</span>
+      <span class="label">Republican</span>
+      <span class="star">★</span>
+      <span class="label">Yakima County Commissioner</span>
+      <span class="star">★</span>
+      <span class="label">District 1</span>
+      <span class="star">★</span>
     </div>
 
-    <div class="hero-tag">Republican &middot; Yakima County Commissioner &middot; District 1</div>
-
     <h1 class="hero-name">
-      <span class="hero-name-solid">Dave</span>
-      <span class="hero-name-outline">Mullen</span>
+      <span class="hero-name-given">Dave</span>
+      <span class="hero-name-family">Mullen</span>
     </h1>
 
     <div class="hero-divider">
@@ -1113,7 +1153,7 @@
       <div class="hero-divider-dot"></div>
     </div>
 
-    <div class="hero-sub">Yakima County Commissioner &middot; District 1 &middot; 2026</div>
+    <div class="hero-sub">Republican Candidate &middot; General Election &middot; November 3, 2026</div>
     <p class="hero-tagline">Working Today. <em>Building Tomorrow.</em><br>Air Force veteran. Executive leader. Lifelong Yakima Valley.</p>
     <div class="hero-btns">
       <a href="#donate" class="btn-olive">Donate Now</a>
@@ -1138,20 +1178,22 @@
 <div class="ticker-wrap" aria-hidden="true">
   <div class="ticker">
     <div class="ticker-track">
+      <span>Vote Republican</span><span class="ticker-star">★</span>
       <span>Strong Farmers</span><span class="ticker-star">★</span>
       <span>Water Rights</span><span class="ticker-star">★</span>
       <span>Fiscal Responsibility</span><span class="ticker-star">★</span>
       <span>Stronger Communities</span><span class="ticker-star">★</span>
       <span>Local Values · Local Voice</span><span class="ticker-star">★</span>
       <span>Working Today · Building Tomorrow</span><span class="ticker-star">★</span>
-      <span>Vote Mullen 2026</span><span class="ticker-star">★</span>
+      <span>Mullen for Yakima County</span><span class="ticker-star">★</span>
+      <span>Vote Republican</span><span class="ticker-star">★</span>
       <span>Strong Farmers</span><span class="ticker-star">★</span>
       <span>Water Rights</span><span class="ticker-star">★</span>
       <span>Fiscal Responsibility</span><span class="ticker-star">★</span>
       <span>Stronger Communities</span><span class="ticker-star">★</span>
       <span>Local Values · Local Voice</span><span class="ticker-star">★</span>
       <span>Working Today · Building Tomorrow</span><span class="ticker-star">★</span>
-      <span>Vote Mullen 2026</span><span class="ticker-star">★</span>
+      <span>Mullen for Yakima County</span><span class="ticker-star">★</span>
     </div>
   </div>
 </div>
@@ -1493,7 +1535,7 @@
       <span class="donate-star">★</span>
       <span class="donate-star">★</span>
     </div>
-    <p class="donate-tagline">Help Elect</p>
+    <p class="donate-tagline">Help Elect &middot; Republican</p>
     <h2 class="donate-headline fade-up">Dave Mullen<br>For County Commissioner</h2>
     <a href="#donate-placeholder" class="btn-cream fade-up" data-delay="2">Donate Today</a>
   </div>
@@ -1594,7 +1636,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">&copy; 2026 Dave Mullen for Yakima County</span>
+      <span class="footer-copy">&copy; 2026 Dave Mullen for Yakima County · Republican</span>
       <span class="footer-disclosure">
         Paid for by Friends of Dave Mullen &bull;
         Yakima, WA &bull;
