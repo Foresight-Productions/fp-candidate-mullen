@@ -1710,10 +1710,11 @@
     <div class="section-eyebrow">Stay Connected</div>
     <h2 class="section-heading" style="font-size:clamp(2.5rem,5vw,5rem); margin-bottom:0.5rem;">Get Campaign<br>Updates</h2>
     <p style="font-family:var(--body);font-size:0.92rem;color:var(--muted);margin-top:0.8rem;line-height:1.75;">Events, endorsements, and ways to make a difference in District 1.</p>
-    <form class="updates-form" id="updatesForm" action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
+    <form class="updates-form" id="updatesForm" novalidate>
       <input type="email" name="email" id="updatesEmail" placeholder="Your email address" required aria-label="Email address">
       <button type="submit" id="updatesBtn">Sign Up</button>
     </form>
+    <p id="updatesMsg" style="display:none;margin-top:1rem;font-family:var(--body);font-size:0.9rem;"></p>
   </div>
 </section>
 
@@ -1769,7 +1770,7 @@
       </div>
     </div>
 
-    <form class="connect-form" id="campaignForm" action="mailto:campaign@davemullenforyakima.com" method="post" enctype="text/plain">
+    <form class="connect-form" id="campaignForm" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label for="cf-first">First Name</label>
@@ -1806,6 +1807,7 @@
         <textarea id="cf-msg" name="message" placeholder="Say hello, ask a question, or share what matters to you..."></textarea>
       </div>
       <button type="submit" class="btn-submit" id="formSubmitBtn">Send Message</button>
+      <p id="campaignFormMsg" style="display:none;margin-top:1rem;font-family:var(--body);font-size:0.9rem;"></p>
     </form>
 
   </div>
@@ -1994,6 +1996,106 @@ document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate')
   document.querySelectorAll('a[href="#donate"], a[href="#donate-placeholder"], .btn-nav-donate').forEach(el => {
     el.addEventListener('click', e => { e.preventDefault(); openModal(); });
   });
+})();
+
+// ── Form Submissions ─────────────────────────────────────────────────────────
+(function () {
+  // ⚙️  Update this after deploying the Worker:
+  //     wrangler deploy  →  copy the workers.dev URL here
+  const WORKER_BASE = 'https://mullen-forms.foresightproductions.workers.dev';
+
+  function showMsg(el, text, ok) {
+    el.textContent = text;
+    el.style.display = 'block';
+    el.style.color = ok ? 'var(--olive-soft)' : '#e07070';
+  }
+
+  // — Email signup form —
+  const updatesForm = document.getElementById('updatesForm');
+  const updatesMsg  = document.getElementById('updatesMsg');
+  const updatesBtn  = document.getElementById('updatesBtn');
+
+  if (updatesForm) {
+    updatesForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      const email = document.getElementById('updatesEmail').value.trim();
+      if (!email) return;
+
+      updatesBtn.disabled = true;
+      updatesBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(`${WORKER_BASE}/signup`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email }),
+        });
+        const data = await res.json();
+        if (data.ok) {
+          updatesForm.reset();
+          showMsg(updatesMsg, '✓ You\'re in! We\'ll keep you posted.', true);
+        } else {
+          showMsg(updatesMsg, 'Something went wrong. Please try again.', false);
+        }
+      } catch {
+        showMsg(updatesMsg, 'Network error. Please try again.', false);
+      } finally {
+        updatesBtn.disabled = false;
+        updatesBtn.textContent = 'Sign Up';
+      }
+    });
+  }
+
+  // — Contact / volunteer form —
+  const campaignForm = document.getElementById('campaignForm');
+  const campaignMsg  = document.getElementById('campaignFormMsg');
+  const submitBtn    = document.getElementById('formSubmitBtn');
+
+  if (campaignForm) {
+    campaignForm.addEventListener('submit', async e => {
+      e.preventDefault();
+
+      const interests = [...campaignForm.querySelectorAll('input[name="interests"]:checked')]
+        .map(cb => cb.value);
+
+      const payload = {
+        first_name: document.getElementById('cf-first').value.trim(),
+        last_name:  document.getElementById('cf-last').value.trim(),
+        email:      document.getElementById('cf-email').value.trim(),
+        phone:      document.getElementById('cf-phone').value.trim(),
+        message:    document.getElementById('cf-msg').value.trim(),
+        interests,
+      };
+
+      if (!payload.first_name || !payload.last_name || !payload.email) {
+        showMsg(campaignMsg, 'Please fill in your name and email.', false);
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(`${WORKER_BASE}/contact`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const data = await res.json();
+        if (data.ok) {
+          campaignForm.reset();
+          showMsg(campaignMsg, '✓ Message received! Dave\'s team will be in touch soon.', true);
+        } else {
+          showMsg(campaignMsg, 'Something went wrong. Please try again.', false);
+        }
+      } catch {
+        showMsg(campaignMsg, 'Network error. Please try again.', false);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    });
+  }
 })();
 </script>
 </body>
