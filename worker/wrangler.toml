@@ -1,10 +1,9 @@
-name            = "mullen-forms"
-main            = "index.js"
+name               = "mullen-forms"
+main               = "index.js"
 compatibility_date = "2025-01-01"
 
-# After deploying, set your secret:
-#   wrangler secret put RESEND_API_KEY
-# Then paste your key from resend.com/api-keys
-
-# Workers will be live at:
-#   https://mullen-forms.<your-subdomain>.workers.dev
+# Native Cloudflare email — no API keys needed.
+# Sends from forms@mullenforyakima.com → daveforyakimaco@gmail.com
+[[send_email]]
+name                = "SEND_EMAIL"
+destination_address = "daveforyakimaco@gmail.com"
