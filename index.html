@@ -1980,7 +1980,7 @@ document.querySelectorAll('.btn-olive, .btn-ghost, .btn-cream, .btn-nav-donate')
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
   document.querySelectorAll('a[href="#donate"], a[href="#donate-placeholder"], .btn-nav-donate').forEach(el => {
-    el.addEventListener('click', e => { e.preventDefault(); openModal(); });
+    el.addEventListener('click', e => { e.preventDefault(); window.location.href = 'donate.html'; });
   });
 })();
 
